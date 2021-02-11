@@ -1,0 +1,32 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em; //FIXME: Not supported in Safari
+    margin: 1em 0;
+
+    .service {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        &:not(:last-of-type) {
+            margin-bottom: 1em;
+        }
+
+        img {
+            max-width: 100px;
+            margin-right: 1em;
+        }
+
+        .meta {
+            h2,
+            h3 {
+                margin: 0;
+                margin-bottom: 0.5em;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

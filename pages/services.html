@@ -6,5 +6,22 @@ menu: main
 permalink: /services
 ---
 {% assign services = site.data.service %}
+<h1>Services and platforms</h1>
+<div class="services">
+    {% for service in services %}
+        <div class="service">
 
-{{ services }}
+            <span class="logo">
+                <img src="/assets/img/services/{{ service[0] }}/{{ service[1].logo }}" alt="{{ service[1].name }} logo">
+            </span>
+            <span class="meta">
+                <h2>{{ service[1].name }}</h2>
+                <h3>Owned by {{ service[1].owner }}</h3>
+                <p class="desc">
+                    {{ service[1].desc }}
+                </p>
+            </span>
+
+        </div>
+    {% endfor %}
+</div>
