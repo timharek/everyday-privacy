@@ -9,7 +9,7 @@ permalink: /services
 <h1>Services and platforms</h1>
 <div class="services">
     {% for service in services %}
-        <div class="service">
+        <a href="/services/{{ service[0] }}" class="service">
 
             <span class="logo">
                 <img src="/assets/img/services/{{ service[0] }}/{{ service[1].logo }}" alt="{{ service[1].name }} logo">
@@ -22,6 +22,6 @@ permalink: /services
                 </p>
             </span>
 
-        </div>
+        </a>
     {% endfor %}
 </div>
