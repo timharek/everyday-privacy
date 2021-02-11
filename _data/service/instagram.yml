@@ -1,0 +1,45 @@
+name: Instagram
+logo: logo.png
+owner: Facebook, Inc.
+desc: >-
+  It is a very popular social media platform
+security:
+  - desc: Activate 2FA
+    steps:
+      - Go here
+      - And here
+      - And then here
+  - desc: Hire a hacker
+    steps:
+      - Go here
+      - And here
+      - And then here
+privacy:
+  - desc: Do not share everything
+    steps:
+      - Go here
+      - And here
+      - And then here
+  - desc: Download your data
+    steps:
+      - Go here
+      - And here
+      - And then here
+breaches:
+  - name: 1st breach
+    url: https://example.com
+  - name: 2nd breach
+    url: https://example.com
+  - name: 3rd breach
+    url: https://example.com
+headlines:
+  - name: 1st headline
+    url: https://example.com
+  - name: 2nd headline
+    url: https://example.com
+collect: # What they collect
+  - Your life
+  - Soul
+  - History
+alternatives:
+  - mastodon
