@@ -38,8 +38,14 @@ headlines:
   - name: 2nd headline
     url: https://example.com
 collect: # What they collect
-  - Your life
-  - Soul
-  - History
+  - name: Your life
+    how: Through using you.
+    source: https://example.com
+  - name: Soul
+    how: Through using you.
+    source: https://example.com
+  - name: History
+    how: Through using you.
+    source: https://example.com
 alternatives:
   - mastodon

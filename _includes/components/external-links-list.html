@@ -1,0 +1,12 @@
+{% if include.array %}
+<div class="external-links">
+    <h1>{{ include.title }}</h1>
+    <ul>
+        {% for item in include.array %}
+        <li>
+            <a href="{{ item.url }}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

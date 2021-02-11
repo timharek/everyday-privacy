@@ -13,6 +13,15 @@ sass:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
+
+page_gen-dirs: false
+
+page_gen:
+  - data: 'service'
+    template: 'service'
+    name: 'name'
+    dir: 'services'
 
 exclude:
   - README.md

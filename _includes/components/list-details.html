@@ -1,0 +1,13 @@
+<div class="expand-box">
+    <h1>{{ include.title }}</h1>
+    {% for item in include.array %}
+    <details>
+        <summary>{{ item.desc }}</summary>
+        <{{ include.type }}>
+            {% for step in item.steps %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </{{ include.type }}>
+    </details>
+    {% endfor %}
+</div>

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="service-page">
+    <div class="heading">
+        <div class="title">
+            <img src="/assets/img/services/{{ page.title | lowercase }}/{{ page.logo }}" alt="{{ page.title }} logo">
+            <span class="name-owner">
+                <h1>{{ page.title }}</h1>
+                <h2>Owned by {{ page.owner }}</h2>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <p class="desc">
+            {{ page.desc }}
+        </p>
+        {% include components/list-details.html array=page.security title="Security" type="ol" %}
+        {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}
+        {% include components/external-links-list.html array=page.breaches title="Breaches" %}
+        {% include components/external-links-list.html array=page.headlines title="Recent headlines" %}
+        <div class="collect">
+            <h1>What they collect</h1>
+            {% for item in page.collect %}
+            <details>
+                <summary>{{ item.name }}</summary>
+                <p class="desc">
+                    {{ item.how }}
+                    <a href="{{ item.source }}">Source</a>
+                </p>
+            </details>
+            {% endfor %}
+        </div>
+        <div class="alternatives">
+            <h1>Alternatives</h1>
+            {% for alt in page.alternatives %}
+                <div class="alternative">
+                    <img src="/assets/img/alternatives/{{ alt }}/logo.png" alt="">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
