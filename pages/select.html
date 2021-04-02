@@ -1,0 +1,11 @@
+---
+layout: default
+permalink: /select
+---
+
+{% assign services = site.data.service %}
+
+
+{% for service in services %}
+    {{ service }}
+{% endfor %}
