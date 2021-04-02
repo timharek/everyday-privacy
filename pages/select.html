@@ -9,7 +9,7 @@ permalink: /select
 <section class="select">
     {% for service in services %}
     <label class="service" for="{{ service[1].name | downcase }}-select">
-        <input type="checkbox" class="service-checkbox" id="{{ service[1].name | downcase }}-select" value="{{ service[1].name | lowercase }}" name="{{ service[1].name | lowercase }}" />
+        <input type="checkbox" class="service-checkbox" id="{{ service[1].name | downcase }}-select" value="{{ service[1].name | lowercase }}" name="{{ service[1].name }}" />
         <div class="service-container" >
             <img src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
             <h2>{{ service[1].name }}</h2>
@@ -17,3 +17,6 @@ permalink: /select
     </label>
     {% endfor %}
 </section>
+<button class="submit" onclick="setLocalStorage()">Submit</button>
+
+<script type="text/javascript" src="/src/select.js"></script>
