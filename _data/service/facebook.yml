@@ -5,7 +5,7 @@ tags:
   - Proprietary
   - Free
 desc: >-
-  Free online social media and network service connecting people with friends, family, classmates and more.
+  "Free" online social media and network service connecting people with friends, family, classmates and more.
 security:
   - desc: Activate Two-Factor Authentication (2FA)
     steps:
@@ -64,14 +64,17 @@ headlines:
   - name: 2nd headline
     url: https://example.com
 collect: # What they collect
-  - name: Your life
-    how: Through using you.
-    source: https://example.com
-  - name: Soul
-    how: Through using you.
-    source: https://example.com
-  - name: History
-    how: Through using you.
-    source: https://example.com
+  - name: Communications (Content, location data, who and when)
+    how: Through posts, photos and messages.
+    source: https://www.facebook.com/policy/
+  - name: Network and connections
+    how: Who you are in contact with, people, pages, groups, hashtags.
+    source: https://www.facebook.com/policy/
+  - name: Your usage
+    how: How you interact with all of their products, engagement, who you share with, duration of interaction.
+    source: https://www.facebook.com/policy/
+  - name: What others share and say about you
+    how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
+    source: https://www.facebook.com/policy/
 alternatives:
   - mastodon
