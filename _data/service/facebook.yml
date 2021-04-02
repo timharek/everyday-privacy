@@ -1,8 +1,11 @@
 name: Facebook
 logo: logo.png
 owner: Facebook, Inc.
+tags: 
+  - Proprietary
+  - Free
 desc: >-
-  It is a very popular social media platform
+  Free online social media and network service connecting people with friends, family, classmates and more.
 security:
   - desc: Activate 2FA
     steps:
