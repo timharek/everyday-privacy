@@ -15,12 +15,8 @@
     <meta name="apple-mobile-web-app-capable" content="no" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <link rel="shortcut icon" type="image/png" sizes="192x192" href="{{ "/assets/img/symbol.png" | relative_url }}" /> <link rel="apple-touch-icon" href="{{
-    "/assets/img/symbol.png" | relative_url }}" /> <link rel="mask-icon" href="{{ "/assets/img/symbol.svg" | relative_url }}" /> <link rel="preload" href="{{
-    "/assets/main.css" | relative_url }}" as="style"> <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
-
-    <script async defer data-domain="timharek.no" src="https://stats.timharek.no/js/index.js"></script>
+    <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style"> <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
 
     {%- feed_meta -%} {% if page.title %}
     <title>{{ site.title }} - {{ page.title }}</title>
