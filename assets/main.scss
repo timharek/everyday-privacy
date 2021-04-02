@@ -1,13 +1,8 @@
 ---
 ---
-@import "constants", "header", "footer", "services";
 
-html, body {
-    font-family: $font-family-sans;
-}
+//@import "abstracts";
+@import "base";
+@import "layouts";
+@import "components";
 
-.container {
-    max-width: $page-max-width;
-    padding: 0 1em;
-    margin: 0 auto;
-}

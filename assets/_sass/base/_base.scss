@@ -1,0 +1,11 @@
+$page-max-width: 1024px;
+
+html, body {
+    font-family: $font-family-sans;
+}
+
+.container {
+    max-width: $page-max-width;
+    padding: 0 1em;
+    margin: 0 auto;
+}
