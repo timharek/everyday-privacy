@@ -8,6 +8,7 @@
     .service {
         display: flex;
         flex-wrap: nowrap;
+        max-width: 50%;
         
         &:not(:last-of-type) {
             margin-bottom: 1em;
