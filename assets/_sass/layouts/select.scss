@@ -1,0 +1,33 @@
+.select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; // TODO: Add breakpoint for small screens
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1em;
+
+    .service-checkbox {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+
+        &:checked + .service-container {
+            background: black;
+            color: white;
+        }
+    }
+
+    .service {
+        text-align: center;
+
+        .service-container {
+            padding: 1em;
+            border-radius: 5px;
+            transition: all 250ms ease-in-out;
+        }
+
+        img {
+            max-width: 200px;
+        }
+    }
+}
