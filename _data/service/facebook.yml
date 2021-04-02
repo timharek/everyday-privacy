@@ -7,16 +7,27 @@ tags:
 desc: >-
   Free online social media and network service connecting people with friends, family, classmates and more.
 security:
-  - desc: Activate 2FA
+  - desc: Activate Two-Factor Authentication (2FA)
     steps:
-      - Go here
-      - And here
-      - And then here
-  - desc: Hire a hacker
+      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
+      - Then go to <b>Security and Login</b>
+      - Find the section, called <b>Two-Factor Authentication</b>
+      - At <b>Use two-factor authentication</b>, press the <b>Add</b>-button
+      - You will be asked for your account password
+      - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
+      - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
+  - desc: Verify where you're logged in
     steps:
-      - Go here
-      - And here
-      - And then here
+      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
+      - Then go to <b>Security and Login</b>
+      - Verify your devices
+      - If there are some you do not recognize, or you are not sure, it's recommended to use <b>Log out of all sessions</b>-button.
+  - desc: Choose a strong password (preferably from a password manager)
+    steps:
+      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
+      - Then go to <b>Security and Login</b>
+      - Under <b>Login</b>, select <b>Edit</b> for <b>Change password</b>
+      - Use a password with at least 25 characters with lower- and uppercase characters, numbers and special symbols.
 privacy:
   - desc: Do not share everything
     steps:
