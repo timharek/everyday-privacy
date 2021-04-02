@@ -15,6 +15,10 @@
             background: black;
             color: white;
         }
+
+        &:focus ~ .service-container {
+            outline: 1px solid black;
+        }
     }
 
     .service {
