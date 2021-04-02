@@ -52,12 +52,12 @@ privacy:
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
 breaches:
-  - name: 1st breach
-    url: https://example.com
-  - name: 2nd breach
-    url: https://example.com
-  - name: 3rd breach
-    url: https://example.com
+  - name: Facebook admits year-long data breach exposed 6 million users
+    url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
+  - name: Facebook Bug Made Up to 14 Million Users' Posts Public for Days
+    url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
+  - name: Facebook–Cambridge Analytica data scandal
+    url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
 headlines:
   - name: 1st headline
     url: https://example.com
