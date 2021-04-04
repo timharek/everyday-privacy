@@ -11,9 +11,9 @@ function getCheckedBoxes(checkboxName) {
     return servicesChecked.length > 0 ? servicesChecked : null;
 }
 
-function setLocalStorage() {
+function setLocalStorageAndRedirect() {
     var services = getCheckedBoxes('service-checkbox');
     localStorage.setItem('services', JSON.stringify(services));
-    console.log(services);
-    console.log(localStorage.getItem('services'));
+
+    location.href = '/my';
 }
