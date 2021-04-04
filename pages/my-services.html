@@ -1,0 +1,29 @@
+---
+layout: default
+title: My services
+permalink: /my
+---
+{% assign services = site.data.service %}
+
+<h1>Your services</h1>
+
+<div class="selected">
+    {% for service in services %}
+        <div id="{{ service[1].name | downcase }}" class="service">
+
+            <span class="logo">
+                <img style="max-width: 150px" src="{{ service[1].logo }}" alt="{{ service[1].name }} logo">
+            </span>
+            <span class="meta">
+                <h2>{{ service[1].name }}</h2>
+                <h3>Owned by {{ service[1].owner }}</h3>
+                <p class="desc">
+                    {{ service[1].desc }}
+                </p>
+            </span>
+
+        </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript" src="/src/my-services.js"></script>
