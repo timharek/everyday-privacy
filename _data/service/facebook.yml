@@ -16,12 +16,12 @@ security:
       - You will be asked for your account password
       - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
       - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you're logged in
+  - desc: Verify where you are logged in
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
       - Verify your devices
-      - If there are some you do not recognize, or you are not sure, it's recommended to use <b>Log out of all sessions</b>-button.
+      - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
   - desc: Choose a strong password (preferably from a password manager)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
@@ -54,7 +54,7 @@ privacy:
 breaches:
   - name: Facebook admits year-long data breach exposed 6 million users
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
-  - name: Facebook Bug Made Up to 14 Million Users' Posts Public for Days
+  - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
     url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
