@@ -9,7 +9,7 @@
         display: flex;
         flex-wrap: nowrap;
         max-width: 50%;
-        
+
         &:not(:last-of-type) {
             margin-bottom: 1em;
         }
@@ -46,7 +46,7 @@
             }
             h1 {
                 margin: 0;
-                margin-bottom: .15em;
+                margin-bottom: 0.15em;
                 font-size: 2.5em;
             }
             h2 {
@@ -61,19 +61,13 @@
                 display: inline;
                 background: black;
                 color: white;
-                padding: .25em .5em;
+                padding: 0.25em 0.5em;
                 border-radius: 5px;
             }
         }
     }
 
     .content {
-        .warning {
-            background: #fa5246;
-            color: white;
-            border-radius: 5px;
-            padding: 1em;
-        }
         .critical,
         .steps-you-can-take {
             padding: 1em;
@@ -91,4 +85,10 @@
             }
         }
     }
+}
+.warning {
+    background: #fa5246;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
 }
