@@ -93,23 +93,38 @@
         dl {
             display: grid;
             grid-template-columns: auto 1fr;
-            
+
+
             dd {
                 margin-inline-start: 1em;
-                margin-bottom: .5em;
+                margin-bottom: 0.5em;
+            }
+            @media (max-width: $breakpoint-small) {
+                grid-template-columns: auto;
+
+                dd {
+                    margin-inline-start: 0;
+                }
             }
         }
 
         details {
             &:not(:last-of-type) {
-                margin-bottom: .5em;
+                margin-bottom: 0.5em;
             }
         }
     }
 }
 .warning {
-    background: var(--color-alert);
-    color: white;
     border-radius: 5px;
     padding: 1em;
+
+    &.red {
+        background: var(--color-alert);
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
 }

@@ -21,7 +21,7 @@ layout: default
         {% assign this_month = "now" | date: "%m" %}
         {% assign months_since_breach = recent_breach | minus: this_month  %}
         {% if months_since_breach <= 2 and months_since_breach >= -2 %}
-            <div class="warning">
+            <div class="warning red">
                 Most recent breach: {{ page.recent_breach }}
             </div>
         {% endif %}
@@ -45,7 +45,7 @@ layout: default
                 {% endfor %}
             </div>
         </div>
-        <h1>Steps you can take</h1>
+        <h1>Secure your account</h1>
         <div class="steps-you-can-take">
             {% include components/list-details.html array=page.security title="Security" type="ol" %}
             {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}
