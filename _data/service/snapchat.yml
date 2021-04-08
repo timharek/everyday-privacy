@@ -1,6 +1,7 @@
 name: Snapchat
 logo: /assets/img/services/snapchat/logo.png
 owner: Snap, Inc.
+recent_breach: 2014-01-01
 desc: >-
   It is a very popular social media platform
 security:
@@ -26,8 +27,9 @@ privacy:
       - And here
       - And then here
 breaches:
-  - name: 1st breach
-    url: https://example.com
+  - name: 4.6 million usernames and phone numbers exposed
+    url: https://www.troyhunt.com/searching-snapchat-data-breach-with/
+    date: 2014-01-01
   - name: 2nd breach
     url: https://example.com
   - name: 3rd breach
