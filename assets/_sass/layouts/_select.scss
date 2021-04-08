@@ -43,3 +43,16 @@
     }
 
 }
+
+button.submit {
+    position: fixed;
+    right: 0;
+
+    padding: 1em;
+    font-size: 1rem;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+}
