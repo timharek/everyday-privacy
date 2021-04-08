@@ -59,7 +59,7 @@
 
             li {
                 display: inline;
-                background: black;
+                background: var(--color-dark);
                 color: white;
                 padding: 0.25em 0.5em;
                 border-radius: 5px;
@@ -73,10 +73,15 @@
             padding: 1em;
         }
 
+        h1 ~ .critical {
+            padding-top: 0;
+        }
+
         .steps-you-can-take {
-            background: #3da9fc;
-            color: white;
-            border-radius: 5px;
+            background: var(--color-info);
+            border: 5px solid var(--color-dark);
+            color: var(--color-dark);
+            border-radius: 10px;
         }
 
         .expand-box {
@@ -84,10 +89,26 @@
                 width: fit-content;
             }
         }
+
+        dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            
+            dd {
+                margin-inline-start: 1em;
+                margin-bottom: .5em;
+            }
+        }
+
+        details {
+            &:not(:last-of-type) {
+                margin-bottom: .5em;
+            }
+        }
     }
 }
 .warning {
-    background: #fa5246;
+    background: var(--color-alert);
     color: white;
     border-radius: 5px;
     padding: 1em;

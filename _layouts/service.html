@@ -28,6 +28,7 @@ layout: default
         <p class="desc">
             {{ page.desc }}
         </p>
+        <h1>Relevant</h1> <!-- TODO: change this to a relevant heading -->
         <div class="critical">
             {% include components/external-links-list.html array=page.breaches title="Recent breaches" %}
             {% include components/external-links-list.html array=page.headlines title="Recent headlines" %}
@@ -44,7 +45,7 @@ layout: default
                 {% endfor %}
             </div>
         </div>
-        <h2>Steps you can take</h2>
+        <h1>Steps you can take</h1>
         <div class="steps-you-can-take">
             {% include components/list-details.html array=page.security title="Security" type="ol" %}
             {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}

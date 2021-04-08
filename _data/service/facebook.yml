@@ -57,20 +57,23 @@ privacy:
 breaches:
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
     url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
+    date: 2021-04-03 
   - name: Facebook admits year-long data breach exposed 6 million users
-    date: 
+    date: 2013-06-22 
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
   - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
-    date: 
+    date: 2018-07-06 
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
-    date: 
+    date: 2018-01-01 #TODO: need to verify this
     url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
 headlines:
-  - name: 1st headline
-    url: https://example.com
+  - name: Facebook Says It’s Your Fault That Hackers Got Half a Billion User Phone Numbers
+    url: https://www.vice.com/en/article/88awzp/facebook-says-its-your-fault-that-hackers-got-half-a-billion-user-phone-numbers
+    date: 2021-04-07
   - name: 2nd headline
     url: https://example.com
+    date: 2021-01-01 #TODO: Need a real article
 collect: # What they collect
   - name: Communications (Content, location data, who and when)
     how: Through posts, photos and messages.

@@ -1,6 +1,15 @@
 $page-max-width: 1024px;
 
+:root {
+    --color-primary: #3da9fc;
+    --color-alert: #ef4565;
+    --color-info: #d8eefe;
+    --color-dark: #094067;
+    --color-bg: #fffffe;
+}
+
 html, body {
+    background: var(--color-bg);
     font-family: $font-family-sans;
 }
 
