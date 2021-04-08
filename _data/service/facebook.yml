@@ -1,11 +1,14 @@
 name: Facebook
 logo: /assets/img/services/facebook/logo.png
 owner: Facebook, Inc.
+recent_breach: 2021-04-03
 tags: 
   - Proprietary
   - Free
-desc: >-
+brief_desc: >-
   "Free" online social media and network service connecting people with friends, family, classmates and more.
+desc: >-
+  As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
 security:
   - desc: Activate Two-Factor Authentication (2FA)
     steps:
@@ -52,11 +55,16 @@ privacy:
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
 breaches:
+  - name: 533 million Facebook users' phone numbers and personal data have been leaked online
+    url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
   - name: Facebook admits year-long data breach exposed 6 million users
+    date: 
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
   - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
+    date: 
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
+    date: 
     url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
 headlines:
   - name: 1st headline

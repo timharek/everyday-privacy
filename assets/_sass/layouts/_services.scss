@@ -68,6 +68,22 @@
     }
 
     .content {
+        .warning {
+            background: #fa5246;
+            color: white;
+            border-radius: 5px;
+            padding: 1em;
+        }
+        .critical,
+        .steps-you-can-take {
+            padding: 1em;
+        }
+
+        .steps-you-can-take {
+            background: #3da9fc;
+            color: white;
+            border-radius: 5px;
+        }
 
         .expand-box {
             details {

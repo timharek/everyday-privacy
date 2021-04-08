@@ -17,24 +17,37 @@ layout: default
         </div>
     </div>
     <div class="content">
+        {% assign recent_breach = page.recent_breach | date: "%m" %}
+        {% assign this_month = "now" | date: "%m" %}
+        {% assign months_since_breach = recent_breach | minus: this_month  %}
+        {% if months_since_breach <= 2 and months_since_breach >= -2 %}
+            <div class="warning">
+                Most recent breack: {{ page.recent_breach }}
+            </div>
+        {% endif %}
         <p class="desc">
             {{ page.desc }}
         </p>
-        {% include components/list-details.html array=page.security title="Security" type="ol" %}
-        {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}
-        {% include components/external-links-list.html array=page.breaches title="Breaches" %}
-        {% include components/external-links-list.html array=page.headlines title="Recent headlines" %}
-        <div class="collect">
-            <h1>What they collect</h1>
-            {% for item in page.collect %}
-            <details>
-                <summary>{{ item.name }}</summary>
-                <p class="desc">
-                    {{ item.how }}
-                    <a href="{{ item.source }}">Source</a>
-                </p>
-            </details>
-            {% endfor %}
+        <div class="critical">
+            {% include components/external-links-list.html array=page.breaches title="Recent breaches" %}
+            {% include components/external-links-list.html array=page.headlines title="Recent headlines" %}
+            <div class="collect">
+                <h2>What they collect</h2>
+                {% for item in page.collect %}
+                <details>
+                    <summary>{{ item.name }}</summary>
+                    <p class="desc">
+                        {{ item.how }}
+                        <a href="{{ item.source }}">Source</a>
+                    </p>
+                </details>
+                {% endfor %}
+            </div>
+        </div>
+        <h2>Steps you can take</h2>
+        <div class="steps-you-can-take">
+            {% include components/list-details.html array=page.security title="Security" type="ol" %}
+            {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}
         </div>
         <div class="alternatives">
             <h1>Alternatives</h1>
