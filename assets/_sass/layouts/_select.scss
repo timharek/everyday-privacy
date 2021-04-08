@@ -12,7 +12,7 @@
         left: -9999px !important;
 
         &:checked + .service-container {
-            background: black;
+            background: var(--color-primary);
             color: white;
         }
 
@@ -23,6 +23,7 @@
 
     .service {
         text-align: center;
+        margin-bottom: .5em;
 
         .service-container {
             padding: 1em;
@@ -32,6 +33,15 @@
 
         img {
             max-width: 200px;
+        }
+
+        @media (max-width: $breakpoint-small) {
+            h2 {
+                font-size: 1em;
+            }
+            img {
+                max-width: 75px;
+            }
         }
     }
 }
@@ -47,7 +57,11 @@
 button.submit {
     position: fixed;
     right: 0;
+    bottom: 0;
 
+    background: var(--color-primary);
+    color: white;
+    font-weight: bold;
     padding: 1em;
     font-size: 1rem;
 

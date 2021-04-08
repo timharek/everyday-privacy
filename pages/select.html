@@ -1,11 +1,14 @@
 ---
 layout: default
+title: Select
 permalink: /select
+menu: main
 ---
 
 {% assign services = site.data.service %}
 
-<h1>Select the services you use</h1>
+<h1>Select services</h1>
+<h2>That you use</h2>
 <section class="select">
     {% for service in services %}
     <label class="service" for="{{ service[1].name | downcase }}-select">
