@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1em; //FIXME: Not supported in Safari
     margin: 1em 0;
 
     .service {
         display: flex;
         flex-wrap: nowrap;
         max-width: 50%;
+        flex-grow: 1;
 
         &:not(:last-of-type) {
             margin-bottom: 1em;
@@ -30,6 +30,14 @@
             }
         }
     }
+        @media (max-width: $breakpoint-lg) {
+            flex-direction: column;
+
+            .service {
+                max-width: 100%;
+            }
+
+        }
 }
 
 .service-page {
