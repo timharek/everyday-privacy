@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
+{% include components/notification-breach.html %}
+
 {% assign services = site.data.service %}
-{% assign breaches = "" %}
-{% for service in services %}
-    {% assign recent_breach = service[1].recent_breach | date: "%Y-%m-%d" | append: "," %}
-    {% assign breaches = breaches | append: recent_breach %}
-{% endfor %}
-{% assign breaches = breaches | split: "," | sort | reverse %}
-<div class="warning red">
-    {% assign perpetrator = services | where: "recent_breach", breaches[0] %}
-    <a href="/services/{{ perpetrator[0].name | downcase }}">
-        There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
-    </a>
-</div>
-hei
+
+<h1>Select services you use</h1>
+<section class="select">
+    {% for service in services %}
+    <label class="service" for="{{ service[1].name | downcase }}-select">
+        <input type="checkbox" class="service-checkbox" id="{{ service[1].name | downcase }}-select" value="{{ service[1].name | lowercase }}" name="{{ service[1].name }}" />
+        <div class="service-container" >
+            <img src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
+            <h2>{{ service[1].name }}</h2>
+        </div>
+    </label>
+    {% endfor %}
+</section>
+<button class="submit" onclick="setLocalStorageAndRedirect()">Submit</button>
+
+<script type="text/javascript" src="/src/select.js"></script>
