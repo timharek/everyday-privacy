@@ -26,3 +26,5 @@ page_gen:
 exclude:
   - README.md
   - start.sh
+  - report.md
+  - report.pdf
