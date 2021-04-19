@@ -26,7 +26,7 @@ If there has recently been a breach or leak, there will be a notification alert 
 The website is built with a static-site generator, Jekyll[^1], using HTML, SASS and JavaScript. There is no back-end, nothing is rendered from the server, everything the user sees is already generated and is only displayed by their browser. The data provided by the user is stored in `localStorage` in their browser and never sent to a server. Jekyll uses a template engine called Liquid[^3], which makes it possible to populate HTML and Markdown from data-files
 instead of manually having to update vaules for each HTML or Markdown file.
 
-SASS[^2] is a CSS post-processor, that supports partials, nesting and much more. I chose to use this as it allows for more readability and sorting, since you can now split up the CSS into different files, while only needed to reference one in the HTML.
+SASS[^2] is a CSS post-processor, that supports partials, nesting and much more. I chose to use this as it allows for more readability and sorting, since you can now split up the CSS into different files, called partials, while it is only required to reference one main-stylesheet in HTML.
 
 Jekyll has the ability to populate HTML and Markdown with data-files, stored as `JSON`, `YAML`, `CSV` or `TSV`. I chose to use `YAML` for the added benefit that it can often be easier to read and understand, as the syntax is based on colons, hyphens and identations. All the different information about each service is stored in `_data/service/`, where each service has their own `YAML` file, this file is then being used to auto-generate a HTML-page from a layout-template. This
 auto-generation is not built into Jekyll by default, and is provided by a plugin, `jekyll-datapage_gen`[^4].
@@ -45,6 +45,9 @@ As everything is stored in the browser, the user has the ability to remove their
 
 ## Platforms/services 
 <!-- TODO -->
+I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifcally Facebook, Instagram and Snapchat. They are all social networks, and function in different ways.
+
+Disclaimer: The website has more than these services, they are more a proof of concept in order to show what the website would look like with information from all of the services.
 
 ### Similarities in terms of service
 <!-- TODO -->
