@@ -6,12 +6,23 @@ button, .btn {
     cursor: pointer;
 
     &.submit {
-        position: fixed;
+        position: absolute;
         right: 0;
         bottom: 0;
 
         background: var(--color-primary);
         color: white;
         font-weight: bold;
+
+        transition: all 250ms ease;
+
+        &:hover {
+            background: var(--color-dark);
+        }
+
+        &:active {
+            background: var(--color-info);
+            color: var(--color-dark);
+        }
     }
 }

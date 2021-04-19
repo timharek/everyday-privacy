@@ -148,6 +148,10 @@
 /*
     Selection page, index.html
 */
+.select-wrapper {
+    position: relative;
+    padding-bottom: 2em;
+}
 
 .select {
     display: flex;
