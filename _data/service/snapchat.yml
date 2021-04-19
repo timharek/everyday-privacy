@@ -40,8 +40,29 @@ headlines:
   - name: 2nd headline
     url: https://example.com
 collect: # What they collect
-  - Your life
-  - Soul
-  - History
+  - what: Account details 
+    how: When you sign up, you are required to provide your real name, email, phone number & date of birth.
+  - what: Debit or credit card number (optional)
+    how: If you purchase any of their paid services they store your debit or credit card number.
+  - what: Snaps and messages (chat)
+    how: >-
+      Whenever you send a message via chat and/or message. This is deleted from their servers when the snap or message is opened or expired IF it's not saved by the recipeient in chat or snap memories.
+  - what: Your usage
+    how: >- 
+      Which filters you view and/or apply to snaps, which stories you watch on Discover, whether you use Spectacles and your search queries.
+  - what: Your communications 
+    how: Timestamp, number of messages, which friends, message interactions, via your message and photo exchanges.
+  - what: Device information
+    how: Hardware model, operating system, device memory, advertising identifiers, apps installed, unique device identifiers, browser type, language, battery level and time zone. 
+  - what: Details from device sensors
+    how: How fast your device is moving, via the accelerometers, rotation via gyroscopes, direction via compass, sound via microphones and if you have headphones connected.
+  - what: Wireless and mobile network connections
+    how: Via your phone number, service provider (ISP), IP address and signal strength.
+  - what: Address book (optional)
+    how: If you allow the Snapchat mobile app access to your address book.
+  - what: Device photos (optional)
+    how: In order to send or upload from your camera roll, Snapchat needs access to your camera and/or photos.
+  - what: Location information (optional)
+    how: With permission, they can collect precise location using GPS, wireless netoworks, cell towers, Wi-Fi access points, bluetooth, gyroscopes, accelerometers and compasses.
 alternatives:
   - mastodon

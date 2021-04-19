@@ -5,6 +5,7 @@ recent_breach: 2021-04-03
 tags: 
   - Proprietary
   - Free
+  - Social Media
 brief_desc: >-
   "Free" online social media and network service connecting people with friends, family, classmates and more.
 desc: >-
@@ -74,18 +75,32 @@ headlines:
   - name: 2nd headline
     url: https://example.com
     date: 2021-01-01 #TODO: Need a real article
+policy: https://www.facebook.com/policy/
 collect: # What they collect
-  - name: Communications (Content, location data, who and when)
+  - what: Information in camera viewport (optional)
+    how: Using the camera in the app, everything is analyzed in order to provide filters, masks and tips for using the camera.
+  - what: Communications (Content, location data, who and when)
     how: Through posts, photos and messages.
-    source: https://www.facebook.com/policy/
-  - name: Network and connections
+  - what: Network and connections
     how: Who you are in contact with, people, pages, groups, hashtags.
-    source: https://www.facebook.com/policy/
-  - name: Your usage
+  - what: Your usage
     how: How you interact with all of their products, engagement, who you share with, duration of interaction.
-    source: https://www.facebook.com/policy/
-  - name: What others share and say about you
+  - what: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-    source: https://www.facebook.com/policy/
+  - what: Debit or credit card number (optional)
+    how: If you make any purchases using Facebook, these details will be saved and collected for 7 years.
+  - what: Device information
+    how: Via computers, phones, connected TVs and other web-connected device. Operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names, types and plugins (browsers).
+  - what: Device operations
+    how: Operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, mouse movements.
+  - what: Identifiers
+    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs. 
+  - what: Information from partners (even without an account)
+    how: >-
+      Your interactions with apps, ads using Facebook's Analytics tools. These partners provide information about your activities off Facebook - including information about your device, websites you visit, purchases you make, the ads yu see, and how you use their services, whether or not you have a Facebook account or are logged into Facebook.
+  - what: Activities from other Facebook products
+    how: They connect information about your activities on different Facebook products and devices.
+  - what: Location information
+    how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
 alternatives:
   - mastodon

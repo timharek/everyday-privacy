@@ -27,10 +27,9 @@ permalink: /my
                 <h2>What they collect</h2>
                 {% for item in service[1].collect %}
                 <details>
-                    <summary>{{ item.name }}</summary>
+                    <summary>{{ item.what }}</summary>
                     <p class="desc">
                         {{ item.how }}
-                        <a href="{{ item.source }}">Source</a>
                     </p>
                 </details>
                 {% endfor %}

@@ -30,16 +30,15 @@ layout: default
         </p>
         <h1>Relevant</h1> <!-- TODO: change this to a relevant heading -->
         <div class="critical">
-            {% include components/external-links-list.html array=page.breaches title="Recent breaches" %}
-            {% include components/external-links-list.html array=page.headlines title="Recent headlines" %}
+            {% include components/external-links-list.html array=page.breaches title="Breaches" %}
+            {% include components/external-links-list.html array=page.headlines title="Headlines" %}
             <div class="collect">
-                <h2>What they collect</h2>
+                <h2>What they collect [<a href="{{ page.policy }}">source</a>]</h2>
                 {% for item in page.collect %}
                 <details>
-                    <summary>{{ item.name }}</summary>
+                    <summary>{{ item.what }}</summary>
                     <p class="desc">
                         {{ item.how }}
-                        <a href="{{ item.source }}">Source</a>
                     </p>
                 </details>
                 {% endfor %}
