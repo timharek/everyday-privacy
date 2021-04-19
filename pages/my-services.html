@@ -8,7 +8,7 @@ permalink: /my
 
 <h1>Secure your accounts</h1>
 
-<div class="selected">
+<section class="selected">
     {% for service in services %}
     <div id="{{ service[1].name | downcase }}" class="selected--service">
         <div class="service--container">
@@ -40,6 +40,6 @@ permalink: /my
         </div>
     </div>
     {% endfor %}
-</div>
+</section>
 
 <script type="text/javascript" src="/src/my-services.js"></script>

@@ -7,7 +7,7 @@ permalink: /services
 ---
 {% assign services = site.data.service %}
 <h1>Services and platforms</h1>
-<div class="all-services">
+<section class="all-services">
     {% for service in services %}
         <a href="/services/{{ service[0] }}" class="service">
 
@@ -21,4 +21,4 @@ permalink: /services
 
         </a>
     {% endfor %}
-</div>
+</section>
