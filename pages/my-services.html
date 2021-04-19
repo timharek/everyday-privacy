@@ -10,7 +10,7 @@ permalink: /my
 
 <section class="selected">
     {% for service in services %}
-    <div id="{{ service[1].name | downcase }}" class="selected--service">
+    <div id="{{ service[1].name | downcase }}" class="selected--service info-box blue">
         <div class="service--container">
             <span class="service--logo">
                 <img style="max-width: 150px" src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
