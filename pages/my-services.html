@@ -24,15 +24,18 @@ permalink: /my
                 {% include components/list-details.html array=security title="Security" type="ol" %}
                 {% include components/list-details.html array=privacy title="Privacy" type="ol" %}
 
-                <h2>What they collect</h2>
-                {% for item in service[1].collect %}
-                <details>
-                    <summary>{{ item.what }}</summary>
-                    <p class="desc">
-                        {{ item.how }}
-                    </p>
-                </details>
-                {% endfor %}
+                <div class="what-they-collect">
+                    <h2>What they collect</h2>
+                    {% for item in service[1].collect %}
+                    <details>
+                        <summary>{{ item.what }}</summary>
+                        <p class="desc">
+                            {{ item.how }}
+                        </p>
+                    </details>
+                    {% endfor %}
+                </div>
+                <a class="learn-more" href="/services/{{ service[1].name | downcase }}">Learn more</a>
             </div>
         </div>
     </div>
