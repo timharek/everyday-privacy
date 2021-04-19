@@ -1,0 +1,17 @@
+button, .btn {
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    &.submit {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+
+        background: var(--color-primary);
+        color: white;
+        font-weight: bold;
+    }
+}

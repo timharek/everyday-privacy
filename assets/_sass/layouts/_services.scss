@@ -1,4 +1,7 @@
-.services {
+/*
+    All services, pages/services.html
+*/
+.all-services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,6 +43,9 @@
         }
 }
 
+/*
+    Individual service page, _layout/service.html
+*/
 .service-page {
     margin-bottom: 1em;
     .heading {
@@ -135,4 +141,112 @@
             color: white;
         }
     }
+}
+
+/*
+    Selection page, index.html
+*/
+
+.select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; // TODO: Add breakpoint for small screens
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1em;
+
+    .service-checkbox {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+
+        &:checked + .service-container {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        &:focus ~ .service-container {
+            outline: 1px solid black;
+        }
+    }
+
+    .service {
+        text-align: center;
+        margin-bottom: 0.5em;
+
+        .service-container {
+            padding: 1em;
+            border-radius: 5px;
+            transition: all 250ms ease-in-out;
+        }
+
+        img {
+            max-width: 200px;
+        }
+
+        @media (max-width: $breakpoint-small) {
+            h2 {
+                font-size: 1em;
+            }
+            img {
+                max-width: 75px;
+            }
+        }
+    }
+}
+
+/*
+   Selected page, pages/my-services.html
+*/
+
+.selected {
+    &--service {
+        display: none;
+        &:not(:last-of-type) {
+            margin-bottom: 1em;
+        }
+    }
+
+    .service {
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0.5em;
+
+            background: var(--color-info);
+            border: 5px solid var(--color-dark);
+            color: var(--color-dark);
+            border-radius: 10px;
+
+            @media (max-width: $breakpoint-medium) {
+                align-items: flex-start;
+                padding: 1em;
+
+                .service--logo {
+                    align-self: center;
+                }
+            }
+        }
+
+        &--logo {
+            margin-right: 1em;
+            text-align: center;
+            width: 15em;
+
+            h3 {
+                margin: 0;
+                font-weight: normal;
+            }
+        }
+
+        &--more {
+            flex-grow: 1;
+        }
+    }
+}
+
+.learn-more {
+    display: inline-block;
+    margin: 1em 0;
 }
