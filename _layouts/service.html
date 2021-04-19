@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="service-page">
-    <div class="heading">
+    <div class="heading info-box border dark">
         <div class="title">
             <img src="{{ page.logo }}" alt="{{ page.title }} logo">
             <span class="name-owner">
@@ -15,6 +15,9 @@ layout: default
                 </ul>
             </span>
         </div>
+        <p class="desc">
+            {{ page.desc }}
+        </p>
     </div>
     <div class="content">
         {% assign recent_breach = page.recent_breach | date: "%m" %}
@@ -25,24 +28,21 @@ layout: default
                 Most recent breach: {{ page.recent_breach }}
             </div>
         {% endif %}
-        <p class="desc">
-            {{ page.desc }}
-        </p>
-        <h1>Relevant</h1> <!-- TODO: change this to a relevant heading -->
-        <div class="critical">
+        <h1>Recent</h1> <!-- TODO: change this to a relevant heading -->
+        <div class="recent">
             {% include components/external-links-list.html array=page.breaches title="Breaches" %}
             {% include components/external-links-list.html array=page.headlines title="Headlines" %}
-            <div class="collect">
-                <h2>What they collect [<a href="{{ page.policy }}">source</a>]</h2>
-                {% for item in page.collect %}
-                <details>
-                    <summary>{{ item.what }}</summary>
-                    <p class="desc">
-                        {{ item.how }}
-                    </p>
-                </details>
-                {% endfor %}
-            </div>
+        </div>
+        <div class="collect info-box border alert">
+            <h1>What they collect [<a href="{{ page.policy }}">source</a>]</h1>
+            {% for item in page.collect %}
+            <details>
+                <summary>{{ item.what }}</summary>
+                <p class="desc">
+                    {{ item.how }}
+                </p>
+            </details>
+            {% endfor %}
         </div>
         <h1>Secure your account</h1>
         <div class="steps-you-can-take info-box blue">
