@@ -3,7 +3,7 @@ logo: /assets/img/services/instagram/logo.png
 owner: Facebook, Inc.
 recent_breach: 2020-01-12
 desc: >-
-  It is a very popular social media platform
+  Photo and video sharing social network, usually connected to your Facebook account. 
 security:
   - desc: Activate 2FA
     steps:
@@ -27,17 +27,13 @@ privacy:
       - And here
       - And then here
 breaches:
-  - name: 1st breach
-    url: https://example.com
-  - name: 2nd breach
-    url: https://example.com
-  - name: 3rd breach
-    url: https://example.com
+  - name: Facebook probes breach of millions of influencer accounts, Instagram
+    url: https://www.bbc.com/news/world-asia-india-48347592
+    date: 2019-05-21
 headlines:
-  - name: 1st headline
-    url: https://example.com
-  - name: 2nd headline
-    url: https://example.com
+  - name: Facebook Buys Instagram For $1 Billion
+    url: https://www.forbes.com/sites/bruceupbin/2012/04/09/facebook-buys-instagram-for-1-billion-wheres-the-revenue/
+    date: 2012-04-09
 collect: # What they collect
   - Your life
   - Soul

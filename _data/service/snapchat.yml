@@ -3,7 +3,7 @@ logo: /assets/img/services/snapchat/logo.png
 owner: Snap, Inc.
 recent_breach: 2014-01-01
 desc: >-
-  It is a very popular social media platform
+  A multimedia messaging app, where you mainly send photos as messages, which is stored on their servers until the reciepent opens the message.
 security:
   - desc: Activate 2FA
     steps:
