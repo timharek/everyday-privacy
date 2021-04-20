@@ -78,10 +78,11 @@
             padding: 0;
 
             li {
-                display: inline;
+                display: inline-block;
                 background: var(--color-dark);
                 color: white;
                 padding: 0.25em 0.5em;
+                margin: .25em 0;
                 border-radius: 5px;
             }
         }
@@ -225,7 +226,6 @@
     .service {
         &--container {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             padding: 0.5em;
 
