@@ -9,7 +9,7 @@ numbersections: true
 ---
 # Introduction
 <!-- TODO -->
-The goal of this project is to teach everyone about online privacy and security, by securing their accounts and removing unnecessary data.
+The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and show what information is being collected.
 
 # Website
 <!-- TODO -->
@@ -45,9 +45,9 @@ As everything is stored in the browser, the user has the ability to remove their
 I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifcally Facebook, Instagram and Snapchat, or even more specifically Facebook Inc. and Snap Inc. They are all social networks, and function in different ways.
 
 <!-- Explain what each service is -->
-Snap Inc. is camera company, they provide fast and fun ways to express yourself, live in the momemnt, learn about the world and have fun together. Facebook Inc. is a technology company that offers services in their social network ecosystem, i.e. Facebook and Instagram.
+Snap Inc. is camera company, they provide fast and fun ways to express yourself, live in the momemnt, learn about the world and have fun together. Facebook Inc. is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram and WhatsApp.
 
-Disclaimer: The website has more than these services, they are more a proof of concept in order to show what the website would look like with information from all of the services.
+Disclaimer: The project-website has more than these services, they are more a proof of concept in order to show what the website would look like with information from all of the services.
 
 ## Privacy policies
 <!-- TODO -->
@@ -66,7 +66,7 @@ The policy is divided into different sections;
 - "Control Over Your Information"
 - And users in different parts of the world, EU, Brazil, Mexico and California
 
-As you can tell from the project website, they collect a lot of different details about you. According to their policy, these details are collected in order provide you with a better service and to serve you targeted advertisments. They share their details with other users, with business partners, third parties and the general public. Who they end up sharing the information with, depends on how you use the service. The Snapchat app is "constantly collecting and
+As you can tell from the project-website, they collect a lot of different details about you. According to their policy, these details are collected in order provide you with a better service and to serve you targeted advertisments. They share their details with other users; business partners, third parties and the general public. Who they end up sharing the information with, depends on how you use the service. The Snapchat app is "constantly collecting and
 updating information about the things you might like and dislike", so that they can provide you with more relevant content and advertisements. They mention that they are not responsible for how third parties collect and/or use your information. They delete the content whenever it is neccessary, it depends on how you use the app, if you are under investigation or if you have save messages and/or photos in the app.
 
 They give you a quick rundown that you are the one in control over your information, you can request to download your own data, but the request can be denied if the request "risks the privacy of other users or is unlawful". You can limit the permission their app has, but this will also limit the app experience. You can modify your advertising preferences, but as mention earlier, they are "constantly collecting and updating information about the things you might like and dislike", so
@@ -76,6 +76,57 @@ It is explicitly mentioned that "Snap Inc. is the controller of your personal in
 
 ### Facebook and Instagram (Facebook Inc.)
 <!-- TODO -->
+Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy senteneces.
+
+The policy is divided into different sections with more sub-sections;
+- Things you and others do and provide
+    - Information and content you provide
+    - Networks and connections
+    - Your usage
+    - Information about transactions made on our Products
+    - Things others do and information they provide about you
+- Device information
+    - Device attributes
+    - Device operations
+    - Identifiers
+    - Device signals
+    - Cookie data
+- Information from partners
+- How do we use this information?
+    - Provide, personalize and improve our Products
+        - Information across Facebook Products and devices
+        - Location-related information
+        - Product research and development
+        - Face recognition
+        - Ads and other sponsored content
+    - Provide measurement, analytics, and other business services
+    - Promote safety, integrity and security
+    - Communicate with you
+    - Research and innovate for social good
+- How is this information shared?
+    - Sharing on Facebook Products
+        - People and accounts you share and communicate with
+        - Public information
+        - Content others share or reshare about you
+        - Information about your active status or presence on our Products
+        - Apps, websites, and third-party integrations on or using our Products
+        - New owner
+    - Sharing with Third-Party partners
+        - Partners who use our analytics services
+        - Advertisers
+        - Measurement partners
+        - Partners offering goods and services in our Products
+        - Vendors and service providers
+        - Researchers and academics
+        - Law enforcement or legal requests
+- How do the Facebook Companies work together?
+- What is our legal basis for processing data?
+- How can you exercise your rights provided under the GDPR?
+- Data retention, account deactivation and deletion
+- How do we respond to legal requests or prevent harm?
+- How do we operate and transfer data as part of our global services?
+- How will we notify you of changes to this policy?
+- How to contact Facebook with questions
 
 # Breach/leaked data
 <!-- TODO -->
