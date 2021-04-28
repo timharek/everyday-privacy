@@ -49,6 +49,7 @@ layout: default
             {% include components/list-details.html array=page.security title="Security" type="ol" %}
             {% include components/list-details.html array=page.privacy title="Privacy" type="ol" %}
         </div>
+        {% if alternatives %}
         <div class="alternatives">
             <h1>Alternatives</h1>
             {% for alt in page.alternatives %}
@@ -57,5 +58,6 @@ layout: default
                 </div>
             {% endfor %}
         </div>
+        {% endif %}
     </div>
 </div>

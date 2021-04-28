@@ -68,5 +68,3 @@ collect: # What they collect
     how: In order to send or upload from your camera roll, Snapchat needs access to your camera and/or photos.
   - what: Location information
     how: With permission, they can collect precise location using GPS, wireless netoworks, cell towers, Wi-Fi access points, bluetooth, gyroscopes, accelerometers and compasses.
-alternatives:
-  - mastodon
