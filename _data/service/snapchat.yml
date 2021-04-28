@@ -42,7 +42,7 @@ headlines:
 collect: # What they collect
   - what: Account details 
     how: When you sign up, you are required to provide your real name, email, phone number & date of birth.
-  - what: Debit or credit card number (optional)
+  - what: Debit or credit card number
     how: If you purchase any of their paid services they store your debit or credit card number.
   - what: Snaps and messages (chat)
     how: >-
@@ -58,11 +58,11 @@ collect: # What they collect
     how: How fast your device is moving, via the accelerometers, rotation via gyroscopes, direction via compass, sound via microphones and if you have headphones connected.
   - what: Wireless and mobile network connections
     how: Via your phone number, service provider (ISP), IP address and signal strength.
-  - what: Address book (optional)
+  - what: Address book
     how: If you allow the Snapchat mobile app access to your address book.
-  - what: Device photos (optional)
+  - what: Device photos
     how: In order to send or upload from your camera roll, Snapchat needs access to your camera and/or photos.
-  - what: Location information (optional)
+  - what: Location information
     how: With permission, they can collect precise location using GPS, wireless netoworks, cell towers, Wi-Fi access points, bluetooth, gyroscopes, accelerometers and compasses.
 alternatives:
   - mastodon

@@ -77,7 +77,7 @@ headlines:
     date: 2021-01-01 #TODO: Need a real article
 policy: https://www.facebook.com/policy/
 collect: # What they collect
-  - what: Information in camera viewport (optional)
+  - what: Information in camera viewport
     how: Using the camera in the app, everything is analyzed in order to provide filters, masks and tips for using the camera.
   - what: Communications (Content, location data, who and when)
     how: Through posts, photos and messages.
@@ -87,7 +87,7 @@ collect: # What they collect
     how: How you interact with all of their products, engagement, who you share with, duration of interaction.
   - what: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-  - what: Debit or credit card number (optional)
+  - what: Debit or credit card number 
     how: If you make any purchases using Facebook, these details will be saved and collected for 7 years.
   - what: Device information
     how: Via computers, phones, connected TVs and other web-connected device. Operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names, types and plugins (browsers).
