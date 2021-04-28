@@ -10,6 +10,7 @@ brief_desc: >-
   "Free" online social media and network service connecting people with friends, family, classmates and more.
 desc: >-
   As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
+
 security:
   - desc: Activate Two-Factor Authentication (2FA)
     steps:
@@ -32,6 +33,7 @@ security:
       - Then go to <b>Security and Login</b>
       - Under <b>Login</b>, select <b>Edit</b> for <b>Change password</b>
       - Use a password with at least 25 characters with lower- and uppercase characters, numbers and special symbols.
+
 privacy:
   - desc: Privacy Checkup
     steps:
@@ -68,13 +70,12 @@ breaches:
   - name: Facebook–Cambridge Analytica data scandal
     date: 2018-01-01 #TODO: need to verify this
     url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
+
 headlines:
   - name: Facebook Says It’s Your Fault That Hackers Got Half a Billion User Phone Numbers
     url: https://www.vice.com/en/article/88awzp/facebook-says-its-your-fault-that-hackers-got-half-a-billion-user-phone-numbers
     date: 2021-04-07
-  - name: 2nd headline
-    url: https://example.com
-    date: 2021-01-01 #TODO: Need a real article
+
 policy: https://www.facebook.com/policy/
 collect: # What they collect
   - what: Information in camera viewport
@@ -102,5 +103,3 @@ collect: # What they collect
     how: They connect information about your activities on different Facebook products and devices.
   - what: Location information
     how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
-alternatives:
-  - mastodon

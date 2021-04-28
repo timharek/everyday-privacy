@@ -2,8 +2,12 @@ name: Snapchat
 logo: /assets/img/services/snapchat/logo.png
 owner: Snap, Inc.
 recent_breach: 2014-01-01
+tags: 
+  - Proprietary
+  - Free
+  - Social Media
 desc: >-
-  A multimedia messaging app, where you mainly send photos as messages, which is stored on their servers until the reciepent opens the message.
+  A multimedia messaging app, where you mainly send photos as messages.
 security:
   - desc: Activate 2FA
     steps:
