@@ -45,7 +45,8 @@ As everything is stored in the browser, the user has the ability to remove their
 I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifically Facebook products and Snapchat, or even more specifically Facebook Inc. and Snap Inc. They are all social networks, and function in different ways.
 
 <!-- Explain what each service is -->
-Snap Inc. is camera company, they provide fast and fun ways to express yourself, live in the moment, learn about the world and have fun together. Facebook Inc. is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus.
+Snap Inc. is camera company, they provide fast and fun ways to express yourself, live in the moment, learn about the world and have fun together. 
+Facebook Inc. is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus. This report will go into detail for Facebook products, specifically Facebook, Instagram and Messenger, as all of these share the same policy.
 
 Disclaimer: The project-website has more than these services, they are more a proof of concept in order to show what the website would look like with information from all of the services.
 
