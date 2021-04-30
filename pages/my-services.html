@@ -6,7 +6,7 @@ permalink: /my
 
 {% assign services = site.data.service %}
 
-<h1>Secure your accounts</h1>
+<h1>Secure your accounts (self-configuration)</h1>
 
 <section class="selected">
     {% for service in services %}
@@ -21,8 +21,8 @@ permalink: /my
                 {% assign security = service[1].security %}
                 {% assign privacy = service[1].privacy %}
 
-                {% include components/list-details.html array=security title="Security" type="ol" %}
-                {% include components/list-details.html array=privacy title="Privacy" type="ol" %}
+                {% include components/list-details.html array=security title="Security settings" type="ol" %}
+                {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
 
                 <div class="what-they-collect">
                     <h2>What they collect</h2>
