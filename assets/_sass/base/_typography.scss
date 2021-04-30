@@ -12,8 +12,14 @@ a {
     transition: all 250ms ease;
 
     &:hover {
-    text-decoration-style: solid;
-        opacity: .65;
+        text-decoration-style: solid;
+        opacity: 0.65;
+    }
+
+    &.external {
+        &::after {
+            content: " ↗";
+        }
     }
 }
 

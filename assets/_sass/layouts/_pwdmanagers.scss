@@ -1,0 +1,31 @@
+.password-managers {
+}
+
+.pwd-manager {
+    @include box-info(none, var(--color-dark), black);
+
+    .pwd--header {
+        @include tags(var(--color-dark), white);
+
+        .header--title {
+            display: flex;
+            h1 {
+                margin: 0;
+                margin-bottom: 0.15em;
+                font-size: 2.5em;
+            }
+            h2 {
+                margin: 0;
+            }
+        }
+
+        .header--logo {
+            margin-right: 1em;
+            width: 100px;
+        }
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
+}

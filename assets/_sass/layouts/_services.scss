@@ -73,19 +73,7 @@
                 margin: 0;
             }
         }
-        .tags {
-            list-style: none;
-            padding: 0;
-
-            li {
-                display: inline-block;
-                background: var(--color-dark);
-                color: white;
-                padding: 0.25em 0.5em;
-                margin: 0.25em 0;
-                border-radius: 5px;
-            }
-        }
+        @include tags(var(--color-dark), white);
 
         .desc {
             margin-bottom: 0;

@@ -1,0 +1,65 @@
+.info-box {
+    border-radius: 10px;
+    padding: 1em;
+
+    &.blue {
+        background: var(--color-info);
+        border: 5px solid var(--color-dark);
+        color: var(--color-dark);
+    }
+
+    &.border {
+        &.dark {
+            --border-color: var(--color-dark);
+        }
+
+        &.alert {
+            --border-color: var(--color-alert);
+        }
+
+        border: 5px solid var(--border-color);
+    }
+}
+
+@mixin box-info($bg-color, $border-color, $font-color) {
+    border-radius: 10px;
+    padding: 1em;
+
+    background: $bg-color;
+    border: 5px solid $border-color;
+    color: $font-color;
+}
+
+@mixin label($bg-color, $font-color) {
+    display: inline-block;
+    background: $bg-color;
+    color: $font-color;
+    padding: 0.25em 0.5em;
+    margin: 0.25em 0;
+    border-radius: 5px;
+}
+
+@mixin tags($bg-color, $font-color) {
+    .tags {
+        list-style: none;
+        padding: 0;
+
+        li {
+            @include label($bg-color, $font-color);
+
+            &.green {
+                background: var(--color-green);
+            }
+
+            &.red {
+                background: var(--color-alert);
+            }
+
+            &.link {
+                &::after {
+                    content: '↗';
+                }
+            }
+        }
+    }
+}
