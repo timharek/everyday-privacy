@@ -25,7 +25,18 @@ layout: default
         {% assign months_since_breach = recent_breach | minus: this_month  %}
         {% if months_since_breach <= 2 and months_since_breach >= -2 %}
             <div class="warning red">
-                Most recent breach: {{ page.recent_breach }}, sometime ago <!-- TODO: Add natural language -->
+                Most recent breach: 
+                {% if months_since_breach == 0 %}
+                    {% assign breach_day = page.recent_breach | date: "%d" %}
+                    {% assign today_day = "now" | date: "%d" %}
+                    {% assign days_ago = today_day | minus: breach_day  %}
+                    <b>{{ days_ago }} days ago</b>
+                {% else if months_since_breach == 1 %}
+                    <b>{{ months_since_breach }} month ago</b>
+                {% else %}
+                    <b>{{ months_since_breach }} months ago</b>
+                {% endif %}
+                – {{ page.recent_breach }} 
             </div>
         {% endif %}
         <h1>Recent</h1> <!-- TODO: change this to a relevant heading -->
