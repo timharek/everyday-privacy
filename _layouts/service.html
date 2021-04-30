@@ -25,7 +25,7 @@ layout: default
         {% assign months_since_breach = recent_breach | minus: this_month  %}
         {% if months_since_breach <= 2 and months_since_breach >= -2 %}
             <div class="warning red">
-                Most recent breach: {{ page.recent_breach }}
+                Most recent breach: {{ page.recent_breach }}, sometime ago <!-- TODO: Add natural language -->
             </div>
         {% endif %}
         <h1>Recent</h1> <!-- TODO: change this to a relevant heading -->
