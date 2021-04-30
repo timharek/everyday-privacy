@@ -9,27 +9,55 @@ tags:
 desc: >-
   A multimedia messaging app, where you mainly send photos as messages.
 security:
-  - desc: Activate 2FA
+  - desc: Activate Two-Factor Authentication (2FA)
     steps:
-      - Go here
-      - And here
-      - And then here
-  - desc: Hire a hacker
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Then choose <b>Two-Factor Authentication</b>
+      - Chose 2FA method, recommended to use an <b>Authentication App</b> instead of <b>Text message</b>.
+      - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
+  - desc: Choose a strong password (preferably from a <a href="/password-manager">password manager</a>)
     steps:
-      - Go here
-      - And here
-      - And then here
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Select <b>Password</b>
+      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
+
 privacy:
-  - desc: Do not share everything
+  - desc: Adjust who can interact with you
     steps:
-      - Go here
-      - And here
-      - And then here
-  - desc: Download your data
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Under the section <b>Who can...</b>, you can specify different parts of your account
+  - desc: Advertisment preferences
     steps:
-      - Go here
-      - And here
-      - And then here
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Under <b>Additional services</b> select <b>Manage</b>
+      - Go to <b>Advert Preferences</b>
+      - Here you can toggle off all the different settings you want to opt-out of. This is how you can limit/control how Snapchat and third-parties use information about you.
+  - desc: Lifestyle & Interests
+    steps:
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Under <b>Additional services</b> select <b>Manage</b>
+      - Go to <b>Lifestyle & Interests</b>
+      - Here you can toggle off all the different settings you want to opt-out of. This is how you can limit/control how Snapchat and third-parties use information about you.
+  - desc: Remove imported Contacts data
+    steps:
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Under <b>Additional services</b> select <b>Manage</b>
+      - Select <b>Contacts</b>
+      - Toggle off <b>Sync Contacts</b>
+      - Lastly, press <b>Delete All Contacts data</b>
+  - desc: Limit App Permissions (Clipboard & iOS Shortcuts)
+    steps:
+      - (Via app)
+      - Go to <b>Settings</b>
+      - Under <b>Additional services</b> select <b>Manage</b>
+      - Select <b>Permissions</b>
+      - Here you are able to disable Clipboard & iOS Shortcuts
 breaches:
   - name: 4.6 million usernames and phone numbers exposed
     url: https://www.troyhunt.com/searching-snapchat-data-breach-with/
