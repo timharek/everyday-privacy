@@ -54,12 +54,6 @@
             &.red {
                 background: var(--color-alert);
             }
-
-            &.link {
-                &::after {
-                    content: '↗';
-                }
-            }
         }
     }
 }
