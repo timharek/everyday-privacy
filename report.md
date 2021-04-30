@@ -54,6 +54,8 @@ Disclaimer: The project-website has more than these services, they are more a pr
 <!-- TODO -->
 The purpose of a privacy policy is to disclose all of the different ways a company uses, discloses and manages a customer or client's data[^6]. Here I will go into what each of the policies say they collect and why they collect what they collect. 
 
+<!-- sub-sectionize each service -->
+
 ### Snapchat (Snap Inc.)
 Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information.
 
@@ -164,9 +166,6 @@ If you decide to delete your account, Facebook deletes "things" you have posted,
 # Breach/leaked data
 <!-- TODO -->
 
-## Why it matters
-<!-- TODO -->
-
 ## Potential attacks
 <!-- TODO -->
 
@@ -179,8 +178,17 @@ If you decide to delete your account, Facebook deletes "things" you have posted,
 ## Security and privacy settings
 <!-- TODO -->
 
+## Why data leaks matters <!-- TODO -->
+<!-- TODO -->
+
 # Conclusion
 <!-- TODO -->
+
+# Future work
+<!-- TODO -->
+
+# Appendix
+<!-- Include full TOC for services to give an understanding of how much data is collected -->
 
 
 [^1]: Jekyll: https://jekyllrb.com/
