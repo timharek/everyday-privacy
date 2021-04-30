@@ -82,7 +82,7 @@
                 background: var(--color-dark);
                 color: white;
                 padding: 0.25em 0.5em;
-                margin: .25em 0;
+                margin: 0.25em 0;
                 border-radius: 5px;
             }
         }
@@ -230,11 +230,13 @@
             padding: 0.5em;
 
             @media (max-width: $breakpoint-medium) {
+                flex-wrap: wrap;
+                justify-content: center;
                 align-items: flex-start;
                 padding: 1em;
 
-                .service--logo {
-                    align-self: center;
+                .secure-your-account {
+                    width: 100%;
                 }
             }
         }
