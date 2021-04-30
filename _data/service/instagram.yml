@@ -9,16 +9,15 @@ tags:
 desc: >-
   Photo and video sharing social network, usually connected to your Facebook account. 
 security:
-  - desc: Activate 2FA
+  - desc: Activate Two-Factor Authentication (2FA)
     steps:
-      - Go here
-      - And here
-      - And then here
-  - desc: Hire a hacker
-    steps:
-      - Go here
-      - And here
-      - And then here
+      - (Via app)
+      - Go to your profile
+      - Go to the hamburger menu -> <b>Settings</b>
+      - Select <b>Security</b>
+      - Select <b>Two-factor authentication</b>
+      - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
+      - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
 privacy:
   - desc: Do not share everything
     steps:
