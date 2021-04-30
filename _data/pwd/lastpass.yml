@@ -1,10 +1,10 @@
 name: LastPass
 logo: /assets/img/pwd/lastpass.svg
-owner: LogMeIN etc..
+owner: LogMeIn
 tags:
   - Proprietary
-  - Freemium
+  - '"Free"'
 recommended: false
 website: https://www.lastpass.com/
 desc: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Password Manager, Auto Form Filler, Random Password Generator & Secure Digital Wallet App. Only one free device. 
