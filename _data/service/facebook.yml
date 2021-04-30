@@ -27,12 +27,12 @@ security:
       - Then go to <b>Security and Login</b>
       - Verify your devices
       - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password (preferably from a password manager)
+  - desc: Choose a strong password (preferably from a <a href="/password-manager">password manager</a>)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
       - Under <b>Login</b>, select <b>Edit</b> for <b>Change password</b>
-      - Use a password with at least 25 characters with lower- and uppercase characters, numbers and special symbols.
+      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
 
 privacy:
   - desc: Privacy Checkup
