@@ -12,7 +12,8 @@ desc: >-
   As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
 
 security:
-  - desc: Activate Two-Factor Authentication (2FA) (via browser)
+  - desc: Activate Two-Factor Authentication (2FA)
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
@@ -21,13 +22,15 @@ security:
       - You will be asked for your account password
       - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
       - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you are logged in (via browser)
+  - desc: Verify where you are logged in 
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
       - Verify your devices
       - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password (via browser) (preferably from a <a href="/password-manager">password manager</a>)
+  - desc: Choose a strong password  (preferably from a <a href="/password-manager">password manager</a>)
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
@@ -35,17 +38,20 @@ security:
       - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
 
 privacy:
-  - desc: Privacy Checkup (via browser)
+  - desc: Privacy Checkup 
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Privacy Checkup</b>
       - Go through each topic, and select the options that suits you the most
   - desc: Turn off Location History
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Account Settings</b>
       - From here, select <b>Location</b>
       - Press <b>Edit</b> and chose the option <b>Off</b>
-  - desc: Delete Location History (only via app)
+  - desc: Delete Location History 
+    device: app-only
     steps:
       - Go to the hamburger-menu in bottom right corner
       - Expand <b>Settings & Privacy</b>
@@ -54,25 +60,29 @@ privacy:
       - Tap <b>View your Location History</b>
       - Tap the <i>three dots</i> in the top right
       - Tap <b>Delete all location history</b>
-  - desc: Turn off Face recognition (via browser)
+  - desc: Turn off Face recognition 
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Privacy</b>
       - From here, select <b>Face Recognition</b>
       - Press <b>Edit</b> and choose the option <b>Off</b>
-  - desc: Disable data sharing with advertisers (via browser)
+  - desc: Disable data sharing with advertisers 
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Select <b>Ads</b> on the left side
       - Choose <b>Ad Setting</b> on the left side
       - Click on each of the different categories and disable everything
-  - desc: Download Your Information (via browser)
+  - desc: Download Your Information 
+    device: browser
     steps:
       - Go to <a href="https://www.facebook.com/dyi" target="_blank">facebook.com/dyi</a>
       - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
-  - desc: Delete Your account (via app)
+  - desc: Delete Your account 
+    device: app
     steps:
       - Go to the hamburger-menu in bottom right corner
       - Expand <b>Settings & Privacy</b>
@@ -81,7 +91,8 @@ privacy:
       - Select <Deactivation and Deletion</b>
       - Choose <b>Delete account</b> and read the consequences
       - Tap <b>Continue to Account Deletion</b> and proceed with the in-app instructions
-  - desc: Delete Your account (via browser)
+  - desc: Delete Your account 
+    device: browser
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Privacy</b>
