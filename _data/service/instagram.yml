@@ -83,7 +83,7 @@ privacy:
   - desc: Delete your account 
     device: browser-only
     steps:
-      - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account<a>-page
+      - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account</a>-page
       - Select an option
       - Click <b>Delete [username]</b>
 breaches:
