@@ -93,6 +93,25 @@
             details {
                 width: fit-content;
             }
+            span.device::after {
+                position: relative;
+                right: -.5em;
+                font-size: .75rem;
+
+                &.browser {
+                    @include label(var(--color-green), white)
+                    content: 'browser';
+                }
+
+                &.app {
+                    @include label(var(--color-dark), white)
+                    content: 'app';
+                }
+                &.app-only {
+                    @include label(var(--color-alert), white)
+                    content: 'app only';
+                }
+            }
         }
 
         dl {

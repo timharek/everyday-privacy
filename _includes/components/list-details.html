@@ -2,7 +2,13 @@
     <h2>{{ include.title }}</h2>
     {% for item in include.array %}
     <details>
-        <summary>{{ item.desc }}</summary>
+        <summary>
+            <span
+                {% if item.device %}
+                    class="device {{ item.device }}"
+                {% endif %}
+                    >{{ item.desc }}</span>
+        </summary>
         <{{ include.type }}>
             {% for step in item.steps %}
             <li>{{ step }}</li>
