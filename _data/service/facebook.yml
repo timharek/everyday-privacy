@@ -45,6 +45,15 @@ privacy:
       - Then go to <b>Account Settings</b>
       - From here, select <b>Location</b>
       - Press <b>Edit</b> and chose the option <b>Off</b>
+  - desc: Delete Location History (only via app)
+    steps:
+      - Go to the hamburger-menu in bottom left corner
+      - Expand <b>Settings & Privacy</b>
+      - Tap <b>Privacy Shortcuts</b>
+      - Tap <b>Manage your location settings.</b>
+      - Tap <b>View your Location History</b>
+      - Tap the <i>three dots</i> in the top right
+      - Tap <b>Delete all location history</b>
   - desc: Turn off Face recognition
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
@@ -57,6 +66,24 @@ privacy:
       - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
+  - desc: Delete Your account (via app)
+    steps:
+      - Go to the hamburger-menu in bottom left corner
+      - Expand <b>Settings & Privacy</b>
+      - Tap <b>Settings</b>
+      - Tap <b>Profile Access and Control</b>
+      - Select <Deactivation and Deletion</b>
+      - Choose <b>Delete account</b> and read the consequences
+      - Tap <b>Continue to Account Deletion</b> and proceed with the in-app instructions
+  - desc: Delete Your account (via browser)
+    steps:
+      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
+      - Then go to <b>Privacy</b>
+      - From here, select <b>Your Facebook Information</b> on the left side
+      - Click <b>View</b> on <b>Deactivate and Deletion</b>
+      - Choose <b>Delete account</b> and read read the consequences
+      - Click <b>Continue to Account Deletion</b> and proceed with the instructions
+
 breaches:
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
     url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
