@@ -5,6 +5,7 @@ subtitle: Z-INF
 author: Tim Hårek Andreassen
 date: 2021-04-20
 
+geometry: margin=3cm
 numbersections: true
 toc: true
 ---
