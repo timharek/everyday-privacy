@@ -59,21 +59,17 @@ The purpose of a privacy policy is to disclose all of the different ways a compa
 ### Snapchat (Snap Inc.)
 Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information.
 
-The policy is divided into different sections;
+The policy is divided into different sections, see \ref{appendix:snapchat_toc}.
 
 
-- "Information We Collect", 
-- "How We Use Information", 
-- "How We Share Information", 
-- "Third-Party Content and Integrations", 
-- "How Long We Keep Your Information", 
-- "Control Over Your Information"
-- And users in different parts of the world, EU, Brazil, Mexico and California
 
 
+#### Why they collect the data
 
 As you can tell from the project-website, they collect a lot of different details about you. According to their policy, these details are collected in order provide you with a better service and to serve you targeted advertisements. They share their details with other users; business partners, third parties and the general public. Who they end up sharing the information with, depends on how you use the service. The Snapchat app is "constantly collecting and
 updating information about the things you might like and dislike", so that they can provide you with more relevant content and advertisements. They mention that they are not responsible for how third parties collect and/or use your information. They delete the content whenever it is necessary, it depends on how you use the app, if you are under investigation or if you have save messages and/or photos in the app.
+
+#### Who is in control of the data
 
 They give you a quick rundown that you are the one in control over your information, you can request to download your own data, but the request can be denied if the request "risks the privacy of other users or is unlawful". You can limit the permission their app has, but this will also limit the app experience. You can modify your advertising preferences, but as mention earlier, they are "constantly collecting and updating information about the things you might like and dislike", so
 updating your advertising preference will update itself later according to how you interact with the service. You can limit who can contact you, view your "Stories" etc. If you want to remove any other information, you have to request to delete your account.
@@ -84,8 +80,88 @@ It is explicitly mentioned that "Snap Inc. is the controller of your personal in
 <!-- TODO -->
 Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences.
 
-The policy is divided into different sections with more sub-sections;
+The policy is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
 
+
+
+#### Why they collect the data
+
+As you may be able to tell, both from the project-website and the overview above, it is a lot of data. Same as Snapchat, according to their policy, these details are collected in order to provide you with a better service and to serve you target advertisements. Facebook connects your information across Facebook Products and devices, they use the information they have ("including your activity off our Products, such as the websites you visit and ads you see"). 
+They also use the information they have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences. This is done in order to maintain their integrity, promote safety and security on and off their products. Information provided is use for research and innovation, for a social good, i.e. general social welfare, technological advancement, public interest, health and well-being.
+
+#### How they share data
+
+The section about "How is this information shared?" indicates that you are control of who you share your information with, if you want to disclose it to the following; `Public`, `Friends of friends`, `Friends only` and `Only me`. This is also true for what others might share about you, that is already available on Facebook Products.
+If you chose to use/enable third-party integrations, such as apps and websites, they receive information about what you post and share.
+If Facebook were to be acquired, they may transfer all your information to the new owner.
+Facebook works with third-party partners, they help Facebook provide and improve their products, and Facebook helps the partners grow their business, which "makes it possible to operate our companies and provide free services to people around the world". In the same paragraph, they say "We don't sell any of information to anyone, and we never will". A contradicting statement when they explain in the subsection below that they provide their partners and advertisers with statistics and reports about user engagement. They do not share personally identifiable information, unless you have given them permission.
+
+
+The Facebook companies/products share the same infrastructure, systems and technology. This means that they all share data between them, so that they can "provide an innovative, relevant, consistent and safe experience..." across all the products.
+
+Reasoning behind all the collection and sharing mentioned earlier, is because; they need to fulfill their terms of service, comply with their legal obligations, protect your vital interest, or those of others, as necessary in the public interest and "as necessary for our legitimate interest, including our interest in providing an innovative, personalized, safe, and profitable service to our users and partners...".
+
+
+#### Who is in control of the data
+
+Facebook stores data "until it is no longer necessary to provide our services and Facebook products, or until your account is deleted - whichever comes first". <!-- Contradicting statement -->
+You are able to delete data at any time, for example if you were to search something, you are able to delete that query at any time, but the log will be deleted automatically after 6 months. 
+If you decide to delete your account, Facebook deletes "things" you have posted, such as photos and status updates. But information others have shared about you will not be deleted.
+
+You are able to exercise your rights provided under the GDPR, which includes; right to access, rectify, port and erase your data. They provide simple instruction to simple view the settings for the different products, and also a link to a form where you can object to how their managing your data.
+
+
+## Security and privacy settings
+<!-- TODO -->
+
+# Breach/leaked data
+<!-- TODO -->
+
+## Potential attacks
+<!-- TODO -->
+
+# Discussions
+<!-- Brief overview of what I'm going to discuss -->
+
+## Privacy policies
+<!-- TODO -->
+
+## Security and privacy settings
+<!-- TODO -->
+
+## Why data leaks matters <!-- TODO -->
+<!-- TODO -->
+
+# Conclusion
+<!-- TODO -->
+
+# Future work
+<!-- TODO -->
+
+\newpage
+\appendix
+# Appendix
+<!-- Include full TOC for services to give an understanding of how much data is collected -->
+
+## Snapchat's privacy policy \label{appendix:snapchat_toc}
+
+- Information We Collect 
+    - Information You Provide
+    - Information we get when you use our services
+    - Information we get from third parties
+- How We Use Information 
+- How We Share Information 
+- Third-Party Content and Integrations
+- How Long We Keep Your Information"
+- Control Over Your Information
+- Users in the European Union
+- Users in Brazil
+- Users in Mexico
+- California Residents
+- Children
+- Revisions to the Privacy Policy
+
+## Facebook data policy table of contents \label{appendix:fb_toc}
 
 - Things you and others do and provide
     - Information and content you provide
@@ -135,60 +211,6 @@ The policy is divided into different sections with more sub-sections;
 - How do we operate and transfer data as part of our global services?
 - How will we notify you of changes to this policy?
 - How to contact Facebook with questions
-
-
-
-As you may be able to tell, both from the project-website and the overview above, it is a lot of data. Same as Snapchat, according to their policy, these details are collected in order to provide you with a better service and to serve you target advertisements. Facebook connects your information across Facebook Products and devices, they use the information they have ("including your activity off our Products, such as the websites you visit and ads you see"). 
-They also use the information they have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences. This is done in order to maintain their integrity, promote safety and security on and off their products. Information provided is use for research and innovation, for a social good, i.e. general social welfare, technological advancement, public interest, health and well-being.
-
-
-The section about "How is this information shared?" indicates that you are control of who you share your information with, if you want to disclose it to the following; `Public`, `Friends of friends`, `Friends only` and `Only me`. This is also true for what others might share about you, that is already available on Facebook Products.
-If you chose to use/enable third-party integrations, such as apps and websites, they receive information about what you post and share.
-If Facebook were to be acquired, they may transfer all your information to the new owner.
-Facebook works with third-party partners, they help Facebook provide and improve their products, and Facebook helps the partners grow their business, which "makes it possible to operate our companies and provide free services to people around the world". In the same paragraph, they say "We don't sell any of information to anyone, and we never will". A contradicting statement when they explain in the subsection below that they provide their partners and advertisers with statistics and reports about user engagement. They do not share personally identifiable information, unless you have given them permission.
-
-
-The Facebook companies/products share the same infrastructure, systems and technology. This means that they all share data between them, so that they can "provide an innovative, relevant, consistent and safe experience..." across all the products.
-
-Reasoning behind all the collection and sharing mentioned above, is because; they need to fulfill their terms of service, comply with their legal obligations, protect your vital interest, or those of others, as necessary in the public interest and "as necessary for our legitimate interest, including our interest in providing an innovative, personalized, safe, and profitable service to our users and partners...".
-
-
-You are able to exercise your rights provided under the GDPR, which includes; right to access, rectify, port and erase your data. They provide simple instruction to simple view the settings for the different products, and also a link to a form where you can object to how their managing your data.
-
-
-Facebook stores data "until it is no longer necessary to provide our services and Facebook products, or until your account is deleted - whichever comes first". <!-- Contradicting statement -->
-You are able to delete data at any time, for example if you were to search something, you are able to delete that query at any time, but the log will be deleted automatically after 6 months. 
-If you decide to delete your account, Facebook deletes "things" you have posted, such as photos and status updates. But information others have shared about you will not be deleted.
-
-## Security and privacy settings
-<!-- TODO -->
-
-# Breach/leaked data
-<!-- TODO -->
-
-## Potential attacks
-<!-- TODO -->
-
-# Discussions
-<!-- Brief overview of what I'm going to discuss -->
-
-## Privacy policies
-<!-- TODO -->
-
-## Security and privacy settings
-<!-- TODO -->
-
-## Why data leaks matters <!-- TODO -->
-<!-- TODO -->
-
-# Conclusion
-<!-- TODO -->
-
-# Future work
-<!-- TODO -->
-
-# Appendix
-<!-- Include full TOC for services to give an understanding of how much data is collected -->
 
 
 [^1]: Jekyll: https://jekyllrb.com/
