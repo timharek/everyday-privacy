@@ -111,6 +111,10 @@
                     @include label(var(--color-alert), white)
                     content: 'app only';
                 }
+                &.browser-only {
+                    @include label(var(--color-alert), white)
+                    content: 'browser only';
+                }
             }
         }
 
