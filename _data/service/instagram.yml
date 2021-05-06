@@ -9,7 +9,7 @@ tags:
 desc: >-
   Photo and video sharing social network, usually connected to your Facebook account. 
 security:
-  - desc: Activate Two-Factor Authentication (2FA)
+  - desc: Activate Two-Factor Authentication (2FA) (via app)
     steps:
       - (Via app)
       - Go to your profile
@@ -18,17 +18,71 @@ security:
       - Select <b>Two-factor authentication</b>
       - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
       - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
+  - desc: Verify where you are logged in (via app)
+    steps:
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Security</b>
+      - Verify where you are logged in
+      - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
+  - desc: Choose a strong password (via browser) (preferably from a <a href="/password-manager">password manager</a>)
+    steps:
+      - Go to <b>Settings</b>
+      - Select <b>Change Password</b> on the left side
+      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
+  - desc: Choose a strong password (via app) (preferably from a <a href="/password-manager">password manager</a>)
+    steps:
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Security</b>
+      - Then choose <b>Password</b>
+      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
+
 privacy:
-  - desc: Do not share everything
+  - desc: Disable contact syncing (via app only)
     steps:
-      - Go here
-      - And here
-      - And then here
-  - desc: Download your data
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Account</b>
+      - Go to <b>Contact syncing</b>
+      - Toggle it off
+  - desc: Delete synced contacts (via browser only)
     steps:
-      - Go here
-      - And here
-      - And then here
+      - Go to <b>Settings</b>
+      - Select <b>Manage Contacts</b> on the left side
+      - Click <b>Delete All</b>
+    steps:
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Account</b>
+      - Go to <b>Contact syncing</b>
+      - Toggle it off
+  - desc: Disable data sharing with advertisers (via app only)
+    steps:
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Ads</b>
+      - Go to <b>Data About Your Activity From Partners</b>
+      - Toggle off <b>Use Data from Partners</b>
+  - desc: Download your data (via app)
+    steps:
+      - Go to your profile in the bottom right corner
+      - Go to the hamburger-menu in top right corner
+      - Tap <b>Settings</b>, choose </b>Security</b>
+      - Choose <b>Download Data</b>
+      - Input your email and tap <b>Request Download</b>
+      - It may take up to 48 hours to receive the data
+  - desc: Download your data (via browser)
+    steps:
+      - Go to <b>Settings</b>
+      - Select <b>Privacy and Security</b> on the left side
+      - Under <b>Data Download</b>, click <b>Request Download</b>
+      - Choose HTML for easiest to read data and click <b>Next</b>
+  - desc: Delete your account (via browser only)
+    steps:
+      - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account<a>-page
+      - Select an option
+      - Click <b>Delete [username]</b>
 breaches:
   - name: Facebook probes breach of millions of influencer accounts, Instagram
     url: https://www.bbc.com/news/world-asia-india-48347592
