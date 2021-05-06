@@ -6,7 +6,10 @@ author: Tim Hårek Andreassen
 date: 2021-04-20
 
 numbersections: true
+toc: true
 ---
+
+\newpage
 # Introduction
 <!-- TODO -->
 The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and show what information is being collected.
@@ -59,9 +62,7 @@ The purpose of a privacy policy is to disclose all of the different ways a compa
 ### Snapchat (Snap Inc.)
 Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information.
 
-The policy is divided into different sections, see \ref{appendix:snapchat_toc}.
-
-
+The policy[^7] is divided into different sections, see \ref{appendix:snapchat_toc}.
 
 
 #### Why they collect the data
@@ -80,8 +81,7 @@ It is explicitly mentioned that "Snap Inc. is the controller of your personal in
 <!-- TODO -->
 Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences.
 
-The policy is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
-
+The policy[^8] is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
 
 
 #### Why they collect the data
@@ -219,3 +219,5 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 [^4]: `jekyll-datapage_gen`: https://github.com/avillafiorita/jekyll-datapage_gen
 [^5]: CSS Media queries: https://www.w3schools.com/Css/css3_mediaqueries_ex.asp
 [^6]: Privacy policy: https://en.wikipedia.org/wiki/Privacy_policy
+[^7]: Snapchat's privacy policy: https://snap.com/en-US/privacy/privacy-policy
+[^8]: Facebook's data policy: https://www.facebook.com/about/privacy/ 
