@@ -32,9 +32,9 @@ layout: default
                     {% assign days_ago = today_day | minus: breach_day  %}
                     <b>{{ days_ago }} days ago</b>
                 {% else if months_since_breach == 1 %}
-                    <b>{{ months_since_breach }} month ago</b>
+                    <b>{{ months_since_breach | abs }} month ago</b>
                 {% else %}
-                    <b>{{ months_since_breach }} months ago</b>
+                    <b>{{ months_since_breach | abs }} months ago</b>
                 {% endif %}
                 – {{ page.recent_breach }} 
             </div>
