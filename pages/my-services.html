@@ -47,4 +47,15 @@ permalink: /my
     {% endfor %}
 </section>
 
-<script type="text/javascript" src="/src/my-services.js"></script>
+<script type="text/javascript">
+    window.onload = populateTemplate();
+
+    function populateTemplate() {
+        var array = JSON.parse(localStorage.getItem("services"));
+
+        for (i = 0; i < array.length; i++) {
+            document.getElementById(array[i].toLowerCase()).style.display = "block";
+        }
+
+    }
+</script>
