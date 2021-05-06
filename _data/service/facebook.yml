@@ -66,9 +66,9 @@ privacy:
       - Select <b>Ads</b> on the left side
       - Choose <b>Ad Setting</b> on the left side
       - Click on each of the different categories and disable everything
-  - desc: Download Your Information
+  - desc: Download Your Information (via browser)
     steps:
-      - Go to <a href="https://www.facebook.com/dyi" target="_blank">Facebook.com/dyi</a>
+      - Go to <a href="https://www.facebook.com/dyi" target="_blank">facebook.com/dyi</a>
       - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
