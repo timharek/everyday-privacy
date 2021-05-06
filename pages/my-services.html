@@ -16,6 +16,11 @@ permalink: /my
                 <img style="max-width: 150px" src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
                 <h2>{{ service[1].name }}</h2>
                 <h3>Owned by {{ service[1].owner }}</h3>
+                <ul class="tags">
+                    {% for tag in service[1].tags %}
+                        <li>{{ tag }}</li>
+                    {% endfor %}
+                </ul>
             </span>
             <div class="secure-your-account">
                 {% assign security = service[1].security %}

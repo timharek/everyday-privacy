@@ -239,6 +239,8 @@
                 margin: 0;
                 font-weight: normal;
             }
+            
+            @include tags(var(--color-dark), white);
         }
 
         &--more {
