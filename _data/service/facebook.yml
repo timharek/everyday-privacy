@@ -47,7 +47,7 @@ privacy:
       - Press <b>Edit</b> and chose the option <b>Off</b>
   - desc: Delete Location History (only via app)
     steps:
-      - Go to the hamburger-menu in bottom left corner
+      - Go to the hamburger-menu in bottom right corner
       - Expand <b>Settings & Privacy</b>
       - Tap <b>Privacy Shortcuts</b>
       - Tap <b>Manage your location settings.</b>
@@ -68,7 +68,7 @@ privacy:
       - And wait, you will either get an email or a notification letting you know when you can download the data.
   - desc: Delete Your account (via app)
     steps:
-      - Go to the hamburger-menu in bottom left corner
+      - Go to the hamburger-menu in bottom right corner
       - Expand <b>Settings & Privacy</b>
       - Tap <b>Settings</b>
       - Tap <b>Profile Access and Control</b>
