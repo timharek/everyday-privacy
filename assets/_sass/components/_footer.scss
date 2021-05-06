@@ -1,4 +1,37 @@
 footer {
-    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
     border-top: 2px solid var(--color-dark);
+
+    a {
+        border-bottom: 0;
+    }
+}
+
+.footer--section {
+    &-heading {
+        font-size: 1em;
+        margin: 0;
+    }
+}
+
+.footer--copyright {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.footer--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &.inline {
+        display: inline-flex;
+
+        & > *:not(:last-of-type) {
+            margin-right: .5em;
+        }
+    }
 }
