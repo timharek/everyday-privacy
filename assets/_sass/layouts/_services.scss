@@ -93,29 +93,6 @@
             details {
                 width: fit-content;
             }
-            span.device::after {
-                position: relative;
-                right: -.5em;
-                font-size: .75rem;
-
-                &.browser {
-                    @include label(var(--color-green), white)
-                    content: 'browser';
-                }
-
-                &.app {
-                    @include label(var(--color-dark), white)
-                    content: 'app';
-                }
-                &.app-only {
-                    @include label(var(--color-alert), white)
-                    content: 'app only';
-                }
-                &.browser-only {
-                    @include label(var(--color-alert), white)
-                    content: 'browser only';
-                }
-            }
         }
 
         dl {
@@ -253,6 +230,7 @@
         }
 
         &--logo {
+            flex-shrink: 0;
             margin-right: 1em;
             text-align: center;
             width: 15em;
@@ -294,5 +272,27 @@
         }
 
         border: 5px solid var(--border-color);
+    }
+}
+
+span.device {
+    &::before {
+        display: inline-block;
+        position: relative;
+        font-size: 0.75rem;
+        left: -0.5em;
+
+        &.browser {
+            @include label(var(--color-green), white) content: "browser";
+        }
+        &.app {
+            @include label(var(--color-dark), white) content: "app";
+        }
+        &.app-only {
+            @include label(var(--color-alert), white) content: "app only";
+        }
+        &.browser-only {
+            @include label(var(--color-alert), white) content: "browser only";
+        }
     }
 }
