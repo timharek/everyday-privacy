@@ -61,15 +61,14 @@ The purpose of a privacy policy is to disclose all of the different ways a compa
 <!-- sub-sectionize each service -->
 
 ### Snapchat (Snap Inc.)
-Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information.
-
-The policy[^7] is divided into different sections, see \ref{appendix:snapchat_toc}.
+Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information. The policy[^7] is divided into different sections, see \ref{appendix:snapchat_toc}.
 
 
 #### Why they collect the data
 
 As you can tell from the project-website, they collect a lot of different details about you. According to their policy, these details are collected in order provide you with a better service and to serve you targeted advertisements. They share their details with other users; business partners, third parties and the general public. Who they end up sharing the information with, depends on how you use the service. The Snapchat app is "constantly collecting and
 updating information about the things you might like and dislike", so that they can provide you with more relevant content and advertisements. They mention that they are not responsible for how third parties collect and/or use your information. They delete the content whenever it is necessary, it depends on how you use the app, if you are under investigation or if you have save messages and/or photos in the app.
+
 
 #### Who is in control of the data
 
@@ -78,11 +77,10 @@ updating your advertising preference will update itself later according to how y
 
 It is explicitly mentioned that "Snap Inc. is the controller of your personal information". Depending on where you live you have varying rights of your own personal information. They justify since their service is free, they can use some of your information to "try and show you ads you'll find interesting", and mention that this does not outweigh your right to privacy, they only use data that does not "significantly impact your privacy".
 
+
 ### Facebook products
 <!-- TODO -->
-Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences.
-
-The policy[^8] is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
+Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences. The policy[^8] is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
 
 
 #### Why they collect the data
@@ -113,7 +111,32 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 
 
 ## Security and privacy settings
-<!-- TODO -->
+
+For both Snapchat and Facebook the steps needed in order to increase your accounts security and maintain you privacy is similar, but there are some difference.
+
+In order to change any setting on Snapchat, it is required that you use the mobile application, you are not able to do so in a browser. For Facebook's products, Facebook, Messenger and Instagram, you are able to almost everything from the browser, but some settings are limited to the mobile application. 
+One example for this would be deleting all Location History data, you are unable to delete this while accessing Facebook from the browser, even their Help-page says the option is only available on iOS and Android[^9].
+
+### Security
+
+One notable difference in which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
+
+
+### Privacy
+
+On both Facebook (does not count for Instagram) and Snapchat you are able to configure your advertisement settings. 
+On Snapchat the settings are presented as how their partners can use information about you, both on and off Snapchat, they also have a separate setting where you are able to toggle different interests, so that Snapchat can serve you more personalised content and advertisements.
+On Facebook (also counts for Messenger account), the settings are presented with common questions as the introduction which resolves about "Does Facebook sell my data", other than that you are able to manage how your data is being used for advertisements.
+For Instagram, the settings are nearly identical to the ones on Facebook, but you are not given the option to limit advertisements off Instagram, which you are able to do on Facebook.
+
+For all services, including Instagram with Facebook, you are able to request your data to be downloaded in a human-readable format.
+
+#### Deleting your account
+
+In order to delete your accounts, the steps for each service varies. For Snapchat and Instagram you cannot delete you account from the apps, but for Snapchat you are given the steps from the app to delete the account, but in Instagram's app there is no mention of the step. For Facebook, you are able to delete your account via the browser or mobile app. Unexpectedly, both Facebook's and Instagram's guides suggest you download your data before deleting your
+account, which Snapchat does not mention at all.
+Also, it is not possible to delete your Messenger account without deleting your Facebook account. However, it is possible to deactivate your Facebook profile and still use Messenger, but it is not possible to have a Messenger account without an associated Facebook account.
+
 
 # Breach/leaked data
 <!-- TODO -->
@@ -222,3 +245,4 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 [^6]: Privacy policy: https://en.wikipedia.org/wiki/Privacy_policy
 [^7]: Snapchat's privacy policy: https://snap.com/en-US/privacy/privacy-policy
 [^8]: Facebook's data policy: https://www.facebook.com/about/privacy/ 
+[^9]: Facebook Help - Manage Location History: https://www.facebook.com/help/340945230067368
