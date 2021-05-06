@@ -112,28 +112,30 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 
 ## Security and privacy settings
 
-For both Snapchat and Facebook the steps needed in order to increase your accounts security and maintain you privacy is similar, but there are some difference.
+For both Snapchat and Facebook the steps needed in order to increase your accounts security and maintain you privacy are similar, but there are some difference.
 
-In order to change any setting on Snapchat, it is required that you use the mobile application, you are not able to do so in a browser. For Facebook's products, Facebook, Messenger and Instagram, you are able to almost everything from the browser, but some settings are limited to the mobile application. 
-One example for this would be deleting all Location History data, you are unable to delete this while accessing Facebook from the browser, even their Help-page says the option is only available on iOS and Android[^9].
+In order to change any setting on Snapchat, it is required that you use the mobile application, you are not able to do so in a browser. For Facebook's products, Facebook, Messenger and Instagram, you are able to almost everything from the browser, but some settings are limited to the mobile applications. 
+One example for this would be deleting all Location History data from Facebook, you are unable to delete this while accessing Facebook from the browser, even their Help-page explicitly say the option is only available on iOS and Android[^9].
 
 ### Security
 
-One notable difference in which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
+One notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
+
+<!-- TODO add more -->
 
 
 ### Privacy
 
-On both Facebook (does not count for Instagram) and Snapchat you are able to configure your advertisement settings. 
+On both Facebook and Snapchat you are able to configure your advertisement settings. 
 On Snapchat the settings are presented as how their partners can use information about you, both on and off Snapchat, they also have a separate setting where you are able to toggle different interests, so that Snapchat can serve you more personalised content and advertisements.
-On Facebook (also counts for Messenger account), the settings are presented with common questions as the introduction which resolves about "Does Facebook sell my data", other than that you are able to manage how your data is being used for advertisements.
-For Instagram, the settings are nearly identical to the ones on Facebook, but you are not given the option to limit advertisements off Instagram, which you are able to do on Facebook.
+On Facebook's products , the settings are presented with _"common questions"_ as the introduction, which resolves about **"Does Facebook sell my data"**, other than that you are able to manage how your data is being used for advertisements.
+For Instagram, the settings are nearly identical to the ones on Facebook, but you are not given the option to limit advertisements off Instagram based on your data, which you are able to do on Facebook.
 
-For all services, including Instagram with Facebook, you are able to request your data to be downloaded in a human-readable format.
+For all services, you are able to request your data to be downloaded in a human-readable format.
 
 #### Deleting your account
 
-In order to delete your accounts, the steps for each service varies. For Snapchat and Instagram you cannot delete you account from the apps, but for Snapchat you are given the steps from the app to delete the account, but in Instagram's app there is no mention of the step. For Facebook, you are able to delete your account via the browser or mobile app. Unexpectedly, both Facebook's and Instagram's guides suggest you download your data before deleting your
+In order to delete your accounts, the steps for each service varies. For Snapchat and Instagram you cannot delete you account from the apps, but for Snapchat you can find the instructions from the app, which will take you to the correct web-page. But on Instagram's app there is no mention of the step, you either have to look it up online or login on their website. For Facebook, you are able to delete your account via the browser or mobile app. Unexpectedly, both Facebook's and Instagram's guides suggest you download your data before deleting your
 account, which Snapchat does not mention at all.
 Also, it is not possible to delete your Messenger account without deleting your Facebook account. However, it is possible to deactivate your Facebook profile and still use Messenger, but it is not possible to have a Messenger account without an associated Facebook account.
 
@@ -165,7 +167,6 @@ Also, it is not possible to delete your Messenger account without deleting your 
 \newpage
 \appendix
 # Appendix
-<!-- Include full TOC for services to give an understanding of how much data is collected -->
 
 ## Snapchat's privacy policy \label{appendix:snapchat_toc}
 
