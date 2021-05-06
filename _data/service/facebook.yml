@@ -12,7 +12,7 @@ desc: >-
   As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
 
 security:
-  - desc: Activate Two-Factor Authentication (2FA)
+  - desc: Activate Two-Factor Authentication (2FA) (via browser)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
@@ -21,13 +21,13 @@ security:
       - You will be asked for your account password
       - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
       - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you are logged in
+  - desc: Verify where you are logged in (via browser)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
       - Verify your devices
       - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password (preferably from a <a href="/password-manager">password manager</a>)
+  - desc: Choose a strong password (via browser) (preferably from a <a href="/password-manager">password manager</a>)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Security and Login</b>
@@ -35,7 +35,7 @@ security:
       - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
 
 privacy:
-  - desc: Privacy Checkup
+  - desc: Privacy Checkup (via browser)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Privacy Checkup</b>
       - Go through each topic, and select the options that suits you the most
@@ -54,12 +54,18 @@ privacy:
       - Tap <b>View your Location History</b>
       - Tap the <i>three dots</i> in the top right
       - Tap <b>Delete all location history</b>
-  - desc: Turn off Face recognition
+  - desc: Turn off Face recognition (via browser)
     steps:
       - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
       - Then go to <b>Privacy</b>
       - From here, select <b>Face Recognition</b>
       - Press <b>Edit</b> and choose the option <b>Off</b>
+  - desc: Disable data sharing with advertisers (via browser)
+    steps:
+      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
+      - Select <b>Ads</b> on the left side
+      - Choose <b>Ad Setting</b> on the left side
+      - Click on each of the different categories and disable everything
   - desc: Download Your Information
     steps:
       - Go to <a href="https://www.facebook.com/dyi" target="_blank">Facebook.com/dyi</a>
