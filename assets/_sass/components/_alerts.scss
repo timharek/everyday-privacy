@@ -1,0 +1,3 @@
+.warning {
+    @include alert(var(--color-alert), white);
+}

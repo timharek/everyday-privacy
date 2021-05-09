@@ -1,26 +1,3 @@
-.info-box {
-    border-radius: 10px;
-    padding: 1em;
-
-    &.blue {
-        background: var(--color-info);
-        border: 5px solid var(--color-dark);
-        color: var(--color-dark);
-    }
-
-    &.border {
-        &.dark {
-            --border-color: var(--color-dark);
-        }
-
-        &.alert {
-            --border-color: var(--color-alert);
-        }
-
-        border: 5px solid var(--border-color);
-    }
-}
-
 @mixin box-info($bg-color, $border-color, $font-color) {
     border-radius: 10px;
     padding: 1em;
@@ -55,5 +32,16 @@
                 background: var(--color-alert);
             }
         }
+    }
+}
+
+@mixin alert($bg-color, $font-color) {
+    border-radius: 5px;
+    padding: 1em;
+    background: $bg-color;
+    color: $font-color;
+
+    a {
+        color: $font-color;
     }
 }

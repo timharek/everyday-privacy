@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="service-page">
-    <section class="heading info-box border dark">
+    <header class="heading">
         <header class="title">
             <div class="title--wrapper">
                 <img src="{{ page.logo }}" alt="{{ page.title }} logo">
@@ -23,13 +23,13 @@ layout: default
         <p class="desc">
             {{ page.desc }}
         </p>
-    </section>
-    <div class="content">
+    </header>
+    <section class="content">
         {% assign recent_breach = page.recent_breach | date: "%m" %}
         {% assign this_month = "now" | date: "%m" %}
         {% assign months_since_breach = recent_breach | minus: this_month  %}
         {% if months_since_breach <= 2 and months_since_breach >= -2 %}
-            <div class="warning red">
+            <div class="warning">
                 Most recent breach: 
                 {% if months_since_breach == 0 %}
                     {% assign breach_day = page.recent_breach | date: "%d" %}
@@ -44,12 +44,12 @@ layout: default
                 – {{ page.recent_breach }} 
             </div>
         {% endif %}
-        <h1>Recent</h1> <!-- TODO: change this to a relevant heading -->
+        <h1>Recent</h1> 
         <div class="recent">
             {% include components/external-links-list.html array=page.breaches title="Breaches" %}
             {% include components/external-links-list.html array=page.headlines title="Headlines" %}
         </div>
-        <div class="collect info-box border alert">
+        <div class="collect">
             <h1>What they collect [<a href="{{ page.policy }}">source</a>]</h1>
             {% for item in page.collect %}
             <details>
@@ -61,7 +61,7 @@ layout: default
             {% endfor %}
         </div>
         <h1>Secure your account (self-configuration)</h1>
-        <div class="steps-you-can-take info-box blue">
+        <div class="steps-you-can-take">
             {% include components/list-details.html array=page.security title="Security settings" type="ol" %}
             {% include components/list-details.html array=page.privacy title="Privacy settings" type="ol" %}
         </div>
@@ -75,5 +75,5 @@ layout: default
             {% endfor %}
         </div>
         {% endif %}
-    </div>
+    </section>
 </div>

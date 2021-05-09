@@ -5,7 +5,7 @@
     {% assign breaches = breaches | append: recent_breach %}
 {% endfor %}
 {% assign breaches = breaches | split: "," | sort | reverse %}
-<div class="warning red">
+<div class="warning">
     {% assign perpetrator = services | where: "recent_breach", breaches[0] %}
     <a href="/services/{{ perpetrator[0].name | downcase }}">
         There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}

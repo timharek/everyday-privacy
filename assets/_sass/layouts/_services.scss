@@ -50,6 +50,7 @@
     .heading {
         margin-bottom: 1em;
         transition: all 250ms ease;
+        @include box-info(none, var(--color-dark), inherit);
 
         &:hover {
             background: var(--color-info);
@@ -122,19 +123,13 @@
             }
         }
     }
-}
 
-.warning {
-    border-radius: 5px;
-    padding: 1em;
+    .collect {
+        @include box-info(none, var(--color-alert), inherit);
+    }
 
-    &.red {
-        background: var(--color-alert);
-        color: white;
-
-        a {
-            color: white;
-        }
+    .steps-you-can-take {
+        @include box-info(var(--color-info), var(--color-dark), var(--color-dark));
     }
 }
 
@@ -210,6 +205,9 @@
 .selected {
     &--service {
         display: none;
+
+        @include box-info(var(--color-info), var(--color-dark), var(--color-dark));
+
         &:not(:last-of-type) {
             margin-bottom: 1em;
         }
@@ -256,29 +254,6 @@
 .learn-more {
     display: inline-block;
     margin: 1em 0;
-}
-
-.info-box {
-    border-radius: 10px;
-    padding: 1em;
-
-    &.blue {
-        background: var(--color-info);
-        border: 5px solid var(--color-dark);
-        color: var(--color-dark);
-    }
-
-    &.border {
-        &.dark {
-            --border-color: var(--color-dark);
-        }
-
-        &.alert {
-            --border-color: var(--color-alert);
-        }
-
-        border: 5px solid var(--border-color);
-    }
 }
 
 span.device {
