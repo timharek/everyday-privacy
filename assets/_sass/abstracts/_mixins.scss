@@ -45,3 +45,28 @@
         color: $font-color;
     }
 }
+
+@mixin button($bg-color, $font-color, $hover-bg-color, $hover-font-color, $active-bg-color, $active-font-color) {
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    background: $bg-color;
+    color: $font-color;
+    font-weight: bold;
+
+    transition: all 250ms ease;
+
+    &:hover {
+        background: $hover-bg-color;
+        color: $hover-font-color;
+    }
+
+    &:active {
+        background: $active-bg-color;
+        color: $active-font-color;
+    }
+
+}

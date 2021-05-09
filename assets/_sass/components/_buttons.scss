@@ -1,28 +1,11 @@
-button, .btn {
-    padding: 1em;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-
+button,
+.btn {
     &.submit {
         position: absolute;
         right: 0;
         bottom: 0;
+        width: 100%;
 
-        background: var(--color-primary);
-        color: white;
-        font-weight: bold;
-
-        transition: all 250ms ease;
-
-        &:hover {
-            background: var(--color-dark);
-        }
-
-        &:active {
-            background: var(--color-info);
-            color: var(--color-dark);
-        }
+        @include button(var(--color-primary), white, var(--color-dark), inherit, var(--color-info), var(--color-dark));
     }
 }
