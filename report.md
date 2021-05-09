@@ -141,10 +141,33 @@ Also, it is not possible to delete your Messenger account without deleting your 
 
 
 # Breach/leaked data
-<!-- TODO -->
+
+Breach data, can both be an intentional or unintentional release of secure or private information to an untrusted environment[^10].
+In the context of this report, we will focus on the potential dangers of having personal data exposed online, and with personal data, this includes; name, date of birth, address, phone number(s), friends and family, political views, religion etc.
+
+Both Facebook's products and Snapchat has both been victims to having data about their users released online, unintentionally. Facebook has had much more of a spotlight in this regard, because of their extremely large user base, with 2.8 billion monthly active users[^11]. Also because of how mainstream media picked up the story about the Cambridge Analytica data scandal, where 50 million peoples data was harvested[^12].
+For Snapchat, they have not had a lot of data breaches except for December 2013 when 4.6 million Snapchat usernames and phone numbers were made publically available on snapchatdb.info[^13].
+
 
 ## Potential attacks
 <!-- TODO -->
+
+There are a lot of potential attacks that are possible with just a few bits of data associated to a name, here we will go through some of the more common attacks that are possible and that you should be aware of and how you could prevent it.
+
+### SMS Two-Factor Authentication
+
+By using SMS as a two-factor authentication method, you are vulnerable to social engineering and identity theft attacks. If your phone number and password were leaked alongside your username for a given service, they could potentially contact you via phone, email or social media impersonating the given service to try to get your two-factor authentication code. But, a scary scenario, would be that they try to try impersonate you while contacting your phone number's carrier in order
+to get a new SIM-card they could control in your name. Then they would be able to get the same two-factor code as you and login.
+
+### Phishing attacks
+
+Your email provider is most likely able to detect some of the more common phishing attacks methods, but your phone number is not. Like the previous example, if your phone number were leaked alongside your username for a given service, they could try to get you to provide them with credentials for the given and/or other services while they impersonate someone they are not.
+
+An example for this could be an older person, where their phone number were leaked along with their age, confirming for the attacker that this is an older person, which may not be tech savvy. Then the attacker could send this person an survey where they ask them which services they use, and if the victim answers this survey of the more common phishing attacks methods, but your phone number is not. Like the previous example, if your phone number were leaked alongside your username for a
+given service, they could try to get you to provide them with credentials for the given and/or other services while they impersonate someone they are not.
+
+An example for this could be an older person, where their phone number were leaked along with their age, confirming for the attacker that this is an older person, which may not be tech savvy. Then the attacker could send this person an survey where they ask them which services they use. If the victim answers this survey, the attacker could call them an impersonate for example their bank in order to try to get their banking details.
+
 
 # Discussions
 <!-- Brief overview of what I'm going to discuss -->
@@ -247,3 +270,7 @@ Also, it is not possible to delete your Messenger account without deleting your 
 [^7]: Snapchat's privacy policy: https://snap.com/en-US/privacy/privacy-policy
 [^8]: Facebook's data policy: https://www.facebook.com/about/privacy/ 
 [^9]: Facebook Help - Manage Location History: https://www.facebook.com/help/340945230067368
+[^10]: Data breach - Wikipedia: https://en.wikipedia.org/wiki/Data_breach
+[^11]: Facebook - Inverstors report: https://investor.fb.com/investor-news/press-release-details/2021/Facebook-Reports-Fourth-Quarter-and-Full-Year-2020-Results/default.aspx
+[^12]: Facebook's privacy problems: a roundup: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
+[^13]: Searching the Snapchat data breach: https://www.troyhunt.com/searching-snapchat-data-breach-with/
