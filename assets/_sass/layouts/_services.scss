@@ -226,6 +226,11 @@
                 align-items: flex-start;
                 padding: 1em;
 
+                .service--logo {
+                    flex-grow: 1;
+                    margin-right: 0;
+                }
+
                 .secure-your-account {
                     width: 100%;
                 }
