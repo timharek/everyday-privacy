@@ -119,7 +119,7 @@ One example for this would be deleting all Location History data from Facebook, 
 
 ### Security
 
-One notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
+A notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
 
 <!-- TODO add more -->
 
