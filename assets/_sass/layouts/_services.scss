@@ -57,6 +57,10 @@
 
         .title {
             display: flex;
+            justify-content: space-between;
+        }
+        .title--wrapper {
+            display: flex;
             flex-wrap: nowrap;
             align-items: center;
 

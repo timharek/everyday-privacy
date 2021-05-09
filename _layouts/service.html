@@ -2,23 +2,28 @@
 layout: default
 ---
 <div class="service-page">
-    <div class="heading info-box border dark">
-        <div class="title">
-            <img src="{{ page.logo }}" alt="{{ page.title }} logo">
-            <span class="name-owner">
-                <h1>{{ page.title }}</h1>
-                <h2>Owned by {{ page.owner }}</h2>
-                <ul class="tags">
-                    {% for tag in page.tags %}
-                        <li>{{ tag }}</li>
-                    {% endfor %}
-                </ul>
+    <section class="heading info-box border dark">
+        <header class="title">
+            <div class="title--wrapper">
+                <img src="{{ page.logo }}" alt="{{ page.title }} logo">
+                <span class="name-owner">
+                    <h1>{{ page.title }}</h1>
+                    <h2>Owned by {{ page.owner }}</h2>
+                    <ul class="tags">
+                        {% for tag in page.tags %}
+                            <li>{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                </span>
+            </div>
+            <span class="last-updated">
+                Last updated: {{ page.last_update }}
             </span>
-        </div>
+        </header>
         <p class="desc">
             {{ page.desc }}
         </p>
-    </div>
+    </section>
     <div class="content">
         {% assign recent_breach = page.recent_breach | date: "%m" %}
         {% assign this_month = "now" | date: "%m" %}
