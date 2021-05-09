@@ -119,6 +119,9 @@ headlines:
   - name: Facebook Says It’s Your Fault That Hackers Got Half a Billion User Phone Numbers
     url: https://www.vice.com/en/article/88awzp/facebook-says-its-your-fault-that-hackers-got-half-a-billion-user-phone-numbers
     date: 2021-04-07
+  - name: "Facebook's privacy problems: a roundup"
+    url: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
+    date: 2018-12-15
 
 policy: https://www.facebook.com/policy/
 collect: # What they collect
