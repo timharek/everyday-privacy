@@ -8,6 +8,7 @@ tags:
   - Social Media
 desc: >-
   Photo and video sharing social network, usually connected to your Facebook account. 
+
 security:
   - desc: Activate Two-Factor Authentication (2FA) 
     device: app
@@ -86,14 +87,35 @@ privacy:
       - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account</a>-page
       - Select an option
       - Click <b>Delete [username]</b>
+
 breaches:
   - name: Facebook probes breach of millions of influencer accounts, Instagram
     url: https://www.bbc.com/news/world-asia-india-48347592
     date: 2019-05-21
+  - name: 533 million Facebook users' phone numbers and personal data have been leaked online
+    url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
+    date: 2021-04-03 
+  - name: Facebook admits year-long data breach exposed 6 million users
+    date: 2013-06-22 
+    url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
+  - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
+    date: 2018-07-06 
+    url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
+  - name: Facebook–Cambridge Analytica data scandal
+    date: 2018-01-01 #TODO: need to verify this
+    url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
+
 headlines:
   - name: Facebook Buys Instagram For $1 Billion
     url: https://www.forbes.com/sites/bruceupbin/2012/04/09/facebook-buys-instagram-for-1-billion-wheres-the-revenue/
     date: 2012-04-09
+  - name: Facebook Says It’s Your Fault That Hackers Got Half a Billion User Phone Numbers
+    url: https://www.vice.com/en/article/88awzp/facebook-says-its-your-fault-that-hackers-got-half-a-billion-user-phone-numbers
+    date: 2021-04-07
+  - name: "Facebook's privacy problems: a roundup"
+    url: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
+    date: 2018-12-15
+
 collect: # What they collect
   - what: Information in camera viewport
     how: Using the camera in the app, everything is analyzed in order to provide filters, masks and tips for using the camera.
