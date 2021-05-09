@@ -143,11 +143,8 @@
 }
 
 .select {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; // TODO: Add breakpoint for small screens
-    align-items: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: 1em;
 
     .service-checkbox {
@@ -185,7 +182,7 @@
         }
 
         img {
-            max-width: 200px;
+            max-width: 150px;
         }
 
         @media (max-width: $breakpoint-small) {
