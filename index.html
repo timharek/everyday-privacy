@@ -3,7 +3,8 @@ layout: default
 ---
 {% include components/notification-breach.html %}
 
-{% assign services = site.data.service %}
+{% assign services_hash = site.data.service %}
+{% include liquid/get_services.html %}
 
 <section class="introduction">
     <h1>Learn about privacy and security</h1>
@@ -16,12 +17,13 @@ layout: default
 <h1>Select services you use</h1>
 <section class="select-wrapper">
     <section class="select">
-        {% for service in services %}
-        <label class="service" for="{{ service[1].name | downcase }}-select">
-            <input type="checkbox" class="service-checkbox" id="{{ service[1].name | downcase }}-select" value="{{ service[1].name | lowercase }}" name="{{ service[1].name }}" />
+        {% for the_service in services %}
+        {% assign service = services_hash[the_service] %}
+        <label class="service" for="{{ service.name | downcase }}-select">
+            <input type="checkbox" class="service-checkbox" id="{{ service.name | downcase }}-select" value="{{ service.name | lowercase }}" name="{{ service.name }}" />
             <div class="service-container" >
-                <img src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
-                <h2>{{ service[1].name }}</h2>
+                <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
+                <h2>{{ service.name }}</h2>
             </div>
         </label>
         {% endfor %}

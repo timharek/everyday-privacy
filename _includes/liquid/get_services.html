@@ -1,0 +1,7 @@
+{% capture get_services %}
+    {% for service in services_hash %}
+        {{ service | first }}
+    {% endfor %}
+{% endcapture %}
+{% assign services = get_services | split: ' ' | sort %}
+

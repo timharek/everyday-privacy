@@ -5,18 +5,21 @@ short_title: All Services
 menu: main
 permalink: /services
 ---
-{% assign services = site.data.service %}
+{% assign services_hash = site.data.service %}
+{% include liquid/get_services.html %}
+
 <h1>Services and platforms</h1>
 <section class="all-services">
-    {% for service in services %}
-        <a href="/services/{{ service[0] }}" class="service">
+    {% for the_service in services %}
+        {% assign service = services_hash[the_service] %}
+        <a href="/services/{{ service.name | downcase }}" class="service">
 
             <span class="logo">
-                <img src="{{ service[1].logo }}" alt="{{ service[1].name }} logo">
+                <img src="{{ service.logo }}" alt="{{ service.name }} logo">
             </span>
             <span class="meta">
-                <h2>{{ service[1].name }}</h2>
-                <h3>Owned by {{ service[1].owner }}</h3>
+                <h2>{{ service.name }}</h2>
+                <h3>Owned by {{ service.owner }}</h3>
             </span>
 
         </a>

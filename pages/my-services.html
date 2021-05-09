@@ -4,7 +4,8 @@ title: My services
 permalink: /my
 ---
 
-{% assign services = site.data.service %}
+{% assign services_hash = site.data.service %}
+{% include liquid/get_services.html %}
 
 <h1>Secure your accounts (self-configuration)</h1>
 <div class="none-selected">
@@ -12,29 +13,30 @@ permalink: /my
 </div>
 
 <section class="selected">
-    {% for service in services %}
-    <div id="{{ service[1].name | downcase }}" class="selected--service">
+    {% for the_service in services %}
+    {% assign service = services_hash[the_service] %}
+    <div id="{{ service.name | downcase }}" class="selected--service">
         <div class="service--container">
             <span class="service--logo">
-                <img style="max-width: 150px" src="{{ service[1].logo }}" alt="{{ service[1].name }} logo" />
-                <h2>{{ service[1].name }}</h2>
-                <h3>Owned by {{ service[1].owner }}</h3>
+                <img style="max-width: 150px" src="{{ service.logo }}" alt="{{ service.name }} logo" />
+                <h2>{{ service.name }}</h2>
+                <h3>Owned by {{ service.owner }}</h3>
                 <ul class="tags">
-                    {% for tag in service[1].tags %}
+                    {% for tag in service.tags %}
                         <li>{{ tag }}</li>
                     {% endfor %}
                 </ul>
             </span>
             <div class="secure-your-account">
-                {% assign security = service[1].security %}
-                {% assign privacy = service[1].privacy %}
+                {% assign security = service.security %}
+                {% assign privacy = service.privacy %}
 
                 {% include components/list-details.html array=security title="Security settings" type="ol" %}
                 {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
 
                 <div class="what-they-collect">
                     <h2>What they collect</h2>
-                    {% for item in service[1].collect %}
+                    {% for item in service.collect %}
                     <details>
                         <summary>{{ item.what }}</summary>
                         <p class="desc">
@@ -43,7 +45,7 @@ permalink: /my
                     </details>
                     {% endfor %}
                 </div>
-                <a class="learn-more" href="/services/{{ service[1].name | downcase }}">Learn more</a>
+                <a class="learn-more" href="/services/{{ service.name | downcase }}">Learn more</a>
             </div>
         </div>
     </div>
