@@ -5,8 +5,16 @@ layout: default
 
 {% assign services = site.data.service %}
 
+<section class="introduction">
+    <h1>Learn about privacy and security</h1>
+    <p>
+        Your information is for sale. Your deepest secrets are being shared around the web.
+        Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much.
+    </p>
+</section>
+
 <h1>Select services you use</h1>
-<div class="select-wrapper">
+<section class="select-wrapper">
     <section class="select">
         {% for service in services %}
         <label class="service" for="{{ service[1].name | downcase }}-select">
@@ -19,7 +27,7 @@ layout: default
         {% endfor %}
     </section>
     <button class="submit" onclick="setLocalStorageAndRedirect()">Submit</button>
-</div>
+</section>
 
 <script type="text/javascript">
     function getCheckedBoxes(checkboxName) {
