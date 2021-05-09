@@ -77,15 +77,15 @@ breaches:
   - name: 4.6 million usernames and phone numbers exposed
     url: https://www.troyhunt.com/searching-snapchat-data-breach-with/
     date: 2014-01-01
-  - name: 2nd breach
-    url: https://example.com
-  - name: 3rd breach
-    url: https://example.com
+
 headlines:
-  - name: 1st headline
-    url: https://example.com
-  - name: 2nd headline
-    url: https://example.com
+  - name: Snapchat’s newest feature is also its biggest privacy threat
+    url: https://www.theverge.com/2017/6/23/15864552/snapchat-snap-map-privacy-threat
+    date: 2017-07-23
+  - name: Snapchat Employees Abused Data Access to Spy on Users
+    url: https://www.vice.com/en/article/xwnva7/snapchat-employees-abused-data-access-spy-on-users-snaplion
+    date: 2019-05-23
+
 collect: # What they collect
   - what: Account details 
     how: When you sign up, you are required to provide your real name, email, phone number & date of birth.
