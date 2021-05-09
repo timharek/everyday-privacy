@@ -1,9 +1,14 @@
-@mixin box-info($bg-color, $border-color, $font-color) {
+@mixin box-border($border-color) {
+    box-sizing: border-box;
     border-radius: 10px;
+    border: 5px solid $border-color;
+}
+
+@mixin box-info($bg-color, $border-color, $font-color) {
     padding: 1em;
 
+    @include box-border($border-color);
     background: $bg-color;
-    border: 5px solid $border-color;
     color: $font-color;
 }
 
