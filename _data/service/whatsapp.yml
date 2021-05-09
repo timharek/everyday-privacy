@@ -9,6 +9,7 @@ brief_desc: >-
   "Free" online social media and network service connecting people with friends, family, classmates and more.
 desc: >-
   As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
+
 security:
   - desc: Activate Two-Factor Authentication (2FA)
     steps:
@@ -31,6 +32,7 @@ security:
       - Then go to <b>Security and Login</b>
       - Under <b>Login</b>, select <b>Edit</b> for <b>Change password</b>
       - Use a password with at least 25 characters with lower- and uppercase characters, numbers and special symbols.
+
 privacy:
   - desc: Privacy Checkup
     steps:
@@ -54,23 +56,17 @@ privacy:
       - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
       - Press <b>Create File</b>-button
       - And wait, you will either get an email or a notification letting you know when you can download the data.
+
 breaches:
-  - name: 533 million Facebook users' phone numbers and personal data have been leaked online
-    url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
-  - name: Facebook admits year-long data breach exposed 6 million users
-    date: 
-    url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
-  - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
-    date: 
-    url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
-  - name: Facebook–Cambridge Analytica data scandal
-    date: 
-    url: https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
+  - name: Example 
+    url: example.com 
+    date: 2021-01-01
+
 headlines:
-  - name: 1st headline
-    url: https://example.com
-  - name: 2nd headline
-    url: https://example.com
+  - name: Example 
+    url: example.com 
+    date: 2021-01-01
+
 collect: # What they collect
   - name: Communications (Content, location data, who and when)
     how: Through posts, photos and messages.
