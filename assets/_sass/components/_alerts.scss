@@ -1,3 +1,4 @@
 .warning {
+    margin-bottom: 1em;
     @include alert(var(--color-alert), white);
 }

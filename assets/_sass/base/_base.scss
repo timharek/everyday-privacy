@@ -7,12 +7,13 @@
     --color-green: #008a5e;
 }
 
-html, body {
+html,
+body {
     background: var(--color-bg);
     font-family: $font-family-sans;
-    
+
     font-size: $font-size-desktop;
-    
+
     @media (max-width: $breakpoint-small) {
         font-size: $font-size-mobile;
     }
@@ -22,4 +23,12 @@ html, body {
     max-width: $page-max-width;
     padding: 0 1em;
     margin: 0 auto;
+}
+
+.introduction {
+    @include box-info(none, var(--color-dark), var(--color-dark));
+    
+    h1 {
+        font-size: 2em;
+    }
 }
