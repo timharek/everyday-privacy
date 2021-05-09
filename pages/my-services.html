@@ -7,6 +7,9 @@ permalink: /my
 {% assign services = site.data.service %}
 
 <h1>Secure your accounts (self-configuration)</h1>
+<div class="none-selected">
+    <p>You have not selected any services, go back to the <a href="/">front-page</a> or see <a href="/services">all services</a></p>
+</div>
 
 <section class="selected">
     {% for service in services %}
@@ -53,9 +56,14 @@ permalink: /my
     function populateTemplate() {
         var array = JSON.parse(localStorage.getItem("services"));
 
-        for (i = 0; i < array.length; i++) {
-            document.getElementById(array[i].toLowerCase()).style.display = "block";
+        if (array === undefined || array === null) {
+            document.querySelector(".none-selected").style.display = "block";
+        } else {
+            for (i = 0; i < array.length; i++) {
+                document.getElementById(array[i].toLowerCase()).style.display = "block";
+            }
         }
+            
 
     }
 </script>
