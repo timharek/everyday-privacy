@@ -2,20 +2,15 @@
     All services, pages/services.html
 */
 .all-services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 
     .service {
         display: flex;
         flex-wrap: nowrap;
-        max-width: 50%;
+        align-items: center;
         flex-grow: 1;
-
-        &:not(:last-of-type) {
-            margin-bottom: 1em;
-        }
 
         img {
             max-width: 100px;
@@ -34,11 +29,7 @@
         }
     }
     @media (max-width: $breakpoint-lg) {
-        flex-direction: column;
-
-        .service {
-            max-width: 100%;
-        }
+        grid-template-columns: 1fr;
     }
 }
 
