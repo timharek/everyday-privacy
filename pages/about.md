@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about
-menu: main
+menu: footer
 ---
 
 Here you will be able to find the about section, for project and website.
