@@ -80,3 +80,5 @@ collect: # What they collect
   - name: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
     source: https://www.facebook.com/policy/
+
+last_update: 2021-05-09
