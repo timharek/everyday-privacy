@@ -110,6 +110,24 @@ If you decide to delete your account, Facebook deletes "things" you have posted,
 You are able to exercise your rights provided under the GDPR, which includes; right to access, rectify, port and erase your data. They provide simple instruction to simple view the settings for the different products, and also a link to a form where you can object to how their managing your data.
 
 
+### WhatsApp
+
+<!-- How they present their policy -->
+
+
+
+### LinkedIn
+
+<!-- How they present their policy -->
+
+
+
+### Signal
+
+<!-- How they present their policy -->
+
+
+
 ## Security and privacy settings
 
 For both Snapchat and Facebook the steps needed in order to increase your accounts security and maintain you privacy are similar, but there are some difference.
@@ -259,6 +277,125 @@ An example for this could be an older person, where their phone number were leak
 - How do we operate and transfer data as part of our global services?
 - How will we notify you of changes to this policy?
 - How to contact Facebook with questions
+
+
+## WhatsApp's Privacy Policy table of contents \label{appendix:whatsapp_toc}
+
+- WhatsApp Legal Info
+- Information We Collect
+    - Information You Provide
+        - Your account information
+        - Your messages
+        - Your connections
+        - Status information
+        - Transactions and payments data
+        - Customer support and other communications
+    - Automatically Collected Information
+        - Usage and log information
+        - Device and connection information
+        - Location information
+        - Cookies
+- Third-Party Information
+    - Information Other provide about you
+    - User reports
+    - Businesses on WhatsApp
+    - Third-Party Service Providers
+    - Third-Party services
+- How We Use Information
+    - Our services
+    - Safety, security and integrity
+    - Communication about our services and the Facebook Companies
+    - No third-party banner ads
+    - Business interactions
+- Information You and We Share
+- How We Work With other Facebook Companies
+- Assignment, Change of control, and transfer
+- Managing and Retaining Your Information
+- Law, Our Rights, and Protection
+- Our Global Operations
+- Updates to Our Policy
+- California Consumer Privacy Act
+- Brazilian General Data Protection Law
+- Contact Us
+
+## LinkedIn's Privacy Policy table of contents \label{appendix:linkedin_toc}
+
+- Introduction
+    - Services
+    - Data Controllers and Contracting Parties
+    - Change
+- Data We Collect
+    - Data You Provide To Us
+        - Registration
+        - Profile
+        - Posting and Uploading
+    - Data From Others
+        - Content and News
+        - Contact and Calendar Information
+        - Partners
+        - Related Companies and Other Services
+    - Service Use
+    - Cookies and Similar Technologies
+    - Your Device and Location
+    - Messages
+    - Workplace and School Provided Information
+    - Sites and Services of Others
+    - Other
+- How We Use Your Data
+    - Services
+        - Stay connected
+        - Stay informed
+        - Career
+        - Productivity
+    - Premium Services
+    - Communications
+    - Advertising
+        - Ad Choices
+        - Info to Ad Providers
+    - Marketing
+    - Developing Services and Research
+        - Service Development
+        - Other Research
+        - Surveys
+    - Customer Support
+    - Insights That Do Not Identify You
+    - Security and Investigations
+- How We Share Information
+    - Our Services
+        - Profile
+        - Posts, Likes, Follows, Comments, Messages
+        - Enterprise Accounts
+    - Communication Archival
+    - Other' Services
+    - Related Services
+    - Service Providers
+    - Legal Disclosures
+    - Change in Control or Sale
+- Your Choices & Obligations
+    - Data Retention
+    - Rights to Access and Control Your Personal Data
+    - Account Closure
+- Other Important Information
+    - Security
+    - Cross-Border Data Transfers
+    - Lawful Bases for Processing
+    - Direct Marketing and Do Not Track Signals
+    - Contact Information
+
+## Signal's Privacy policy table of contents \label{appendix:signal_toc}
+
+- Information you provide
+    - Account information
+    - Messages
+    - Contacts
+    - User support
+    - Managing your information
+- Information we may share
+    - Third Parties
+    - Other instances where Signal may need to share your data
+- Updates
+- Terms
+- Contact Us
 
 
 [^1]: Jekyll: https://jekyllrb.com/
