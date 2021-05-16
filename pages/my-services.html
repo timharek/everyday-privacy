@@ -30,9 +30,13 @@ permalink: /my
             <div class="secure-your-account">
                 {% assign security = service.security %}
                 {% assign privacy = service.privacy %}
-
-                {% include components/list-details.html array=security title="Security settings" type="ol" %}
-                {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
+                
+                {% if security %}
+                    {% include components/list-details.html array=security title="Security settings" type="ol" %}
+                {% endif %}
+                {% if privacy %}
+                    {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
+                {% endif %}
 
                 <div class="what-they-collect">
                     <h2>What they collect</h2>

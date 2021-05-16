@@ -46,8 +46,12 @@ layout: default
         {% endif %}
         <h1>Recent</h1> 
         <div class="recent">
-            {% include components/external-links-list.html array=page.breaches title="Breaches" %}
-            {% include components/external-links-list.html array=page.headlines title="Headlines" %}
+            {% if page.breaches %}
+                {% include components/external-links-list.html array=page.breaches title="Breaches" %}
+            {% endif %}
+            {% if page.headlines %}
+                {% include components/external-links-list.html array=page.headlines title="Headlines" %}
+            {% endif %}
         </div>
         <div class="collect">
             <h1>What they collect [<a href="{{ page.policy }}">source</a>]</h1>
@@ -60,11 +64,17 @@ layout: default
             </details>
             {% endfor %}
         </div>
-        <h1>Secure your account (self-configuration)</h1>
-        <div class="steps-you-can-take">
-            {% include components/list-details.html array=page.security title="Security settings" type="ol" %}
-            {% include components/list-details.html array=page.privacy title="Privacy settings" type="ol" %}
-        </div>
+        {% if page.security or page.privacy %}
+            <h1>Secure your account (self-configuration)</h1>
+            <div class="steps-you-can-take">
+                {% if page.security %}
+                    {% include components/list-details.html array=page.security title="Security settings" type="ol" %}
+                {% endif %}
+                {% if page.privacy %}
+                    {% include components/list-details.html array=page.privacy title="Privacy settings" type="ol" %}
+                {% endif %}
+            </div>
+        {% endif %}
         {% if alternatives %}
         <div class="alternatives">
             <h1>Alternatives</h1>
