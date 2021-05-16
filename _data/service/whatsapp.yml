@@ -5,80 +5,58 @@ recent_breach:
 tags: 
   - Proprietary
   - Free
-brief_desc: >-
-  "Free" online social media and network service connecting people with friends, family, classmates and more.
+  - Messaging
 desc: >-
-  As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
-
-security:
-  - desc: Activate Two-Factor Authentication (2FA)
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
-      - Then go to <b>Security and Login</b>
-      - Find the section, called <b>Two-Factor Authentication</b>
-      - At <b>Use two-factor authentication</b>, press the <b>Add</b>-button
-      - You will be asked for your account password
-      - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
-      - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you are logged in
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
-      - Then go to <b>Security and Login</b>
-      - Verify your devices
-      - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password (preferably from a password manager)
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
-      - Then go to <b>Security and Login</b>
-      - Under <b>Login</b>, select <b>Edit</b> for <b>Change password</b>
-      - Use a password with at least 25 characters with lower- and uppercase characters, numbers and special symbols.
-
-privacy:
-  - desc: Privacy Checkup
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Privacy Checkup</b>
-      - Go through each topic, and select the options that suits you the most
-  - desc: Turn off Location History
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
-      - Then go to <b>Account Settings</b>
-      - From here, select <b>Location</b>
-      - Press <b>Edit</b> and chose the option <b>Off</b>
-  - desc: Turn off Face recognition
-    steps:
-      - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
-      - Then go to <b>Privacy</b>
-      - From here, select <b>Face Recognition</b>
-      - Press <b>Edit</b> and choose the option <b>Off</b>
-  - desc: Download Your Information
-    steps:
-      - Go to <a href="https://www.facebook.com/dyi" target="_blank">Facebook.com/dyi</a>
-      - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
-      - Press <b>Create File</b>-button
-      - And wait, you will either get an email or a notification letting you know when you can download the data.
+  A secure messaging and calling app, available on phones all over the world.
 
 breaches:
-  - name: Example 
-    url: example.com 
-    date: 2021-01-01
+  - name: WhatsApp leaks usernames, telephone numbers and messages 
+    url: https://web.archive.org/web/20110523235136/http://www.yourdailymac.net/2011/05/whatsapp-leaks-usernames-telephone-numbers-and-messages/ 
+    date: 2011-05-19
+  - name: Sniffer tool displays other people's WhatsApp messages
+    url: http://www.h-online.com/security/news/item/Sniffer-tool-displays-other-people-s-WhatsApp-messages-1574382.html
+    date: 2012-05-13
 
 headlines:
-  - name: Example 
-    url: example.com 
-    date: 2021-01-01
+  - name: "Where WhatsApp Went Wrong: EFF's Four Biggest Security Concerns" 
+    url: https://www.eff.org/deeplinks/2016/10/where-whatsapp-went-wrong-effs-four-biggest-security-concerns 
+    date: 2016-10-13
+  - name: "New WhatsApp Warning: Security Flaw Confirmed—1 Billion Users Told Update Apps Now"
+    url: https://www.forbes.com/sites/zakdoffman/2019/10/03/new-whatsapp-warning-security-flaw-confirmed1-billion-users-told-update-apps-now/
+    date: 2019-10-03
+  - name: WhatsApp to start sharing user data with Facebook
+    url: https://www.theverge.com/2016/8/25/12638698/whatsapp-to-start-sharing-user-data-with-facebook#
+    date: 2016-08-25
+  - name: WhatsApp adds end-to-end encryption
+    url: https://www.bbc.com/news/technology-35969739
+    date: 2016-04-16
+  - name: Facebook to Acquire WhatsApp
+    url: https://about.fb.com/news/2014/02/facebook-to-acquire-whatsapp/
+    date: 2014-02-19
 
+policy: https://www.whatsapp.com/legal/updates/privacy-policy/
 collect: # What they collect
-  - name: Communications (Content, location data, who and when)
-    how: Through posts, photos and messages.
-    source: https://www.facebook.com/policy/
-  - name: Network and connections
-    how: Who you are in contact with, people, pages, groups, hashtags.
-    source: https://www.facebook.com/policy/
-  - name: Your usage
-    how: How you interact with all of their products, engagement, who you share with, duration of interaction.
-    source: https://www.facebook.com/policy/
-  - name: What others share and say about you
-    how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-    source: https://www.facebook.com/policy/
+  - what: Your phone number
+    how: When registering, you are unable to sign up for WhatsApp without a phone number.
+  - what: Communications (metadata; location, who and when)
+    how: Even though they do not retain the content of the message, they collect location (even without permissions through IPs) and who and when the messages and/or calls take place.
+  - what: Your contacts (and your contacts contacts)
+    how: If you chose to upload/give access to your address book. This goes both ways, if one of your contacts chooses to do the same.
+  - what: Transactional data
+    how: If you do any purchases through WhatsApp and/or Facebook Pay.
+  - what: Copies of messages (via customer support)
+    how: If you are in contact with customer support, and you provide them with screenshots and "any other information you deem helpful"
+  - what: Your usage
+    how: Via diagnostics, performance information, if you interact with a business (when, how often and duration of interaction), log files, crashes, website visits, how often you message and/or call, status updates, group calling and messaging, payments, online-status and when you last updated your "about" section.
+  - what: Device information
+    how: Via browsers, phones and other services; hardware model, operating system, battery level, signal strength, app version, browser information, mobile network, connection information, language, time zone, IP address and device identifiers.
+  - what: Location information
+    how: Either from your devices GPS if you've given permission, else via your IP address and phone number.
+  - what: What others share about you
+    how: If someone shares an address book with your phone number inside, all metadata associated with that number will be collected, i.e. real name, address, birthday etc.
+  - what: How businesses interact with you
+    how: A business on WhatsApp can choose you share their interaction with you to WhatsApp.
+  - what: Information from partners
+    how: Through your interaction with their websites and applications, also from other Facebook products/companies.
 
-last_update: 2021-05-09
+last_update: 2021-05-16
