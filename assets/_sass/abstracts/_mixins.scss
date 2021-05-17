@@ -31,10 +31,14 @@
 
             &.green {
                 background: var(--color-green);
+                color: white;
+                font-weight: bold;
             }
 
             &.red {
                 background: var(--color-alert);
+                color: white;
+                font-weight: bold;
             }
         }
     }
