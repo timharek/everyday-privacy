@@ -11,82 +11,88 @@ desc: >-
 
 security:
   - desc: Activate Two-Factor Authentication (2FA) 
-    device: app
-    steps:
-      - Go to your profile
-      - Go to the hamburger menu -> <b>Settings</b>
-      - Select <b>Security</b>
-      - Select <b>Two-factor authentication</b>
-      - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
-      - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
+    device: 
+      - name: app
+        steps:
+          - Go to your profile
+          - Go to the hamburger menu -> <b>Settings</b>
+          - Select <b>Security</b>
+          - Select <b>Two-factor authentication</b>
+          - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
+          - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
   - desc: Verify where you are logged in 
-    device: app
-    steps:
-      - Go to your profile in the bottom right corner
-      - Go to the hamburger-menu in top right corner
-      - Tap <b>Settings</b>, choose </b>Security</b>
-      - Verify where you are logged in
-      - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password  (preferably from a <a href="/password-manager">password manager</a>)
-    device: browser
-    steps:
-      - Go to <b>Settings</b>
-      - Select <b>Change Password</b> on the left side
-      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
-  - desc: Choose a strong password  (preferably from a <a href="/password-manager">password manager</a>)
-    device: app
-    steps:
-      - Go to your profile in the bottom right corner
-      - Go to the hamburger-menu in top right corner
-      - Tap <b>Settings</b>, choose </b>Security</b>
-      - Then choose <b>Password</b>
-      - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols.
+    device: 
+      - name: app
+        steps:
+          - Go to your profile in the bottom right corner
+          - Go to the hamburger-menu in top right corner
+          - Tap <b>Settings</b>, choose </b>Security</b>
+          - Verify where you are logged in
+          - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
+  - desc: Choose a strong password  
+    device: 
+      - name: browser
+        steps:
+          - Go to <b>Settings</b>
+          - Select <b>Change Password</b> on the left side
+          - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols. (preferably from a <a href="/password-manager">password manager</a>)
+      - name: app
+        steps:
+          - Go to your profile in the bottom right corner
+          - Go to the hamburger-menu in top right corner
+          - Tap <b>Settings</b>, choose </b>Security</b>
+          - Then choose <b>Password</b>
+          - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols. (preferably from a <a href="/password-manager">password manager</a>)
 
 privacy:
   - desc: Disable contact syncing 
-    device: app-only
-    steps:
-      - Go to your profile in the bottom right corner
-      - Go to the hamburger-menu in top right corner
-      - Tap <b>Settings</b>, choose </b>Account</b>
-      - Go to <b>Contact syncing</b>
-      - Toggle it off
+    device: 
+      - name: app-only
+        steps:
+          - Go to your profile in the bottom right corner
+          - Go to the hamburger-menu in top right corner
+          - Tap <b>Settings</b>, choose </b>Account</b>
+          - Go to <b>Contact syncing</b>
+          - Toggle it off
   - desc: Delete synced contacts 
-    device: browser-only
-    steps:
-      - Go to <b>Settings</b>
-      - Select <b>Manage Contacts</b> on the left side
-      - Click <b>Delete All</b>
+    device: 
+      - name: browser-only
+        steps:
+          - Go to <b>Settings</b>
+          - Select <b>Manage Contacts</b> on the left side
+          - Click <b>Delete All</b>
   - desc: Disable data sharing with advertisers 
-    device: app-only
-    steps:
-      - Go to your profile in the bottom right corner
-      - Go to the hamburger-menu in top right corner
-      - Tap <b>Settings</b>, choose </b>Ads</b>
-      - Go to <b>Data About Your Activity From Partners</b>
-      - Toggle off <b>Use Data from Partners</b>
+    device: 
+      - name: app-only
+        steps:
+          - Go to your profile in the bottom right corner
+          - Go to the hamburger-menu in top right corner
+          - Tap <b>Settings</b>, choose </b>Ads</b>
+          - Go to <b>Data About Your Activity From Partners</b>
+          - Toggle off <b>Use Data from Partners</b>
   - desc: Download your data 
-    device: app
-    steps:
-      - Go to your profile in the bottom right corner
-      - Go to the hamburger-menu in top right corner
-      - Tap <b>Settings</b>, choose </b>Security</b>
-      - Choose <b>Download Data</b>
-      - Input your email and tap <b>Request Download</b>
-      - It may take up to 48 hours to receive the data
-  - desc: Download your data 
-    device: browser
-    steps:
-      - Go to <b>Settings</b>
-      - Select <b>Privacy and Security</b> on the left side
-      - Under <b>Data Download</b>, click <b>Request Download</b>
-      - Choose HTML for easiest to read data and click <b>Next</b>
+    device: 
+      - name: app
+        steps:
+          - Go to your profile in the bottom right corner
+          - Go to the hamburger-menu in top right corner
+          - Tap <b>Settings</b>, choose </b>Security</b>
+          - Choose <b>Download Data</b>
+          - Input your email and tap <b>Request Download</b>
+          - It may take up to 48 hours to receive the data
+      - name: browser
+        steps:
+          - Go to <b>Settings</b>
+          - Select <b>Privacy and Security</b> on the left side
+          - Under <b>Data Download</b>, click <b>Request Download</b>
+          - Choose HTML for easiest to read data and click <b>Next</b>
   - desc: Delete your account 
-    device: browser-only
-    steps:
-      - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account</a>-page
-      - Select an option
-      - Click <b>Delete [username]</b>
+    device: 
+      - name: browser-only
+        steps:
+          - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account</a>-page
+          - Select an option
+          - Click <b>Delete [username]</b>
 
 breaches:
   - name: Facebook probes breach of millions of influencer accounts, Instagram

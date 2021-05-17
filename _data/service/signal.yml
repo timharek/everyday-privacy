@@ -29,23 +29,26 @@ collect: # What they collect
 
 security:
   - desc: Add/change PIN
-    device: app-only
-    steps:
-      - Tap on your profile in the top left
-      - Go to <b>Account</b>
-      - Select <b>Change PIN</b>
+    device: 
+      - name: app-only
+        steps:
+          - Tap on your profile in the top left
+          - Go to <b>Account</b>
+          - Select <b>Change PIN</b>
   - desc: Verify Linked Devices
-    device: app-only
-    steps:
-      - Tap on your profile in the top left
-      - Go to <b>Linked Devices</b>
-      - Verify that you know these devices, delete those you do not know or need anymore
+    device: 
+      - name: app-only
+        steps:
+          - Tap on your profile in the top left
+          - Go to <b>Linked Devices</b>
+          - Verify that you know these devices, delete those you do not know or need anymore
 
 privacy:
   - desc: Revoke access to address book (contacts)
-    device: app-only
-    steps:
-      - Go to your device settings and look for Signal
-      - Un-toggle Signal's access to your <b>Contacts</b>
+    device: 
+      - name: app-only
+        steps:
+          - Go to your device settings and look for Signal
+          - Un-toggle Signal's access to your <b>Contacts</b>
 
 last_update: 2021-05-16

@@ -7,22 +7,24 @@ tags:
   - Free
   - Social Media
   - Messaging
-brief_desc: >-
-  "Free" online social media and network service connecting people with friends, family, classmates and more.
 desc: >-
   As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
 
 security:
   - desc: Same as <a href="/services/facebook">Facebook</a>
-    steps:
-      - The security settings are set on your Facebook account
-      - See <a href="/services/facebook">our Facebook-service page</a>
+    device:
+      - name: any device
+        steps:
+          - The security settings are set on your Facebook account
+          - See <a href="/services/facebook">our Facebook-service page</a>
 
 privacy:
   - desc: Same as <a href="/services/facebook">Facebook</a>
-    steps:
-      - The security settings are set on your Facebook account
-      - See <a href="/services/facebook">our Facebook-service page</a>
+    device:
+      - name: any device
+        steps:
+          - The security settings are set on your Facebook account
+          - See <a href="/services/facebook">our Facebook-service page</a>
 
 breaches:
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
