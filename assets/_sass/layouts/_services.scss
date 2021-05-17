@@ -194,76 +194,84 @@
     display: none;
 }
 
-.selected {
-    &--service {
-        display: none;
+.selected--service {
+    display: none;
 
-        @include box-info(var(--color-info), var(--color-dark), var(--color-dark));
-        padding: 0;
+    @include box-info(var(--color-info), var(--color-dark), var(--color-dark));
+    padding: 0;
 
-        &:not(:last-of-type) {
-            margin-bottom: 1em;
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
+
+    .service--container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+
+        & > * {
+            width: calc(50% - .5em);
+            flex-grow: 0;
+
+            &:only-child {
+                width: 100%;
+            }
+
+            @media (max-width: $breakpoint-medium) {
+                width: 100%;
+            }
         }
     }
 
-    .service {
-        &--container {
+    .service--logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: var(--color-dark);
+        color: white;
+        padding: 0.5em;
+
+        .logo--text {
             display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 1em;
-            padding: 1em;
-
-            .expand-box {
-                width: calc(50% - .5em);
-
-                @media (max-width: $breakpoint-medium) {
-                    width: 100%;
-                }
-            }
-        }
-
-        &--logo {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            background: var(--color-dark);
-            color: white;
-            padding: .5em;
 
-            .logo--text {
-                display: flex;
-                align-items: center;
-
-                img {
-                    max-width: 75px;
-                    margin-right: .5em;
-                }
+            img {
+                max-width: 75px;
+                margin-right: 0.5em;
             }
-
-            h2 {
-                margin: 0;
-            }
-
-            h3 {
-                margin: 0;
-                font-weight: normal;
-            }
-            
-            @include tags(var(--color-info), var(--color-dark));
         }
 
-        &--more {
-            flex-grow: 1;
+        h2 {
+            margin: 0;
         }
+
+        h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        @include tags(var(--color-info), var(--color-dark));
+    }
+
+    .learn-more {
+        display: block;
+        background: var(--color-dark);
+        color: white;
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
 
 .expand-box details {
-    ol, ul {
+    ol,
+    ul {
         margin-top: 0;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
     }
 
     summary {
@@ -277,8 +285,6 @@
     & > details {
         margin-left: 1em;
     }
-
-
 }
 
 .learn-more {

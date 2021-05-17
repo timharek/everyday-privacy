@@ -33,12 +33,16 @@ permalink: /my
         <div class="service--container">
             {% assign security = service.security %}
             {% assign privacy = service.privacy %}
-            
-            {% if security %}
-                {% include components/list-details.html array=security title="Security settings" type="ol" %}
-            {% endif %}
-            {% if privacy %}
-                {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
+
+            {% if security and privacy %}
+                <div>
+                    {% if security %}
+                        {% include components/list-details.html array=security title="Security settings" type="ol" %}
+                    {% endif %}
+                    {% if privacy %}
+                        {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
+                    {% endif %}
+                </div>
             {% endif %}
 
             <div class="what-they-collect">
@@ -51,9 +55,9 @@ permalink: /my
                     </p>
                 </details>
                 {% endfor %}
-                <a class="learn-more" href="/services/{{ service.name | downcase }}">Learn more</a>
             </div>
         </div>
+        <a class="learn-more" href="/services/{{ service.name | downcase }}">Learn more</a>
     </div>
     {% endfor %}
 </section>
