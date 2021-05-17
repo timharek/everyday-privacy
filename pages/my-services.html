@@ -16,39 +16,41 @@ permalink: /my
     {% for the_service in services %}
     {% assign service = services_hash[the_service] %}
     <div id="{{ service.name | downcase }}" class="selected--service">
+        <span class="service--logo">
+            <div class="logo--text">
+                <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
+                <span class="name-owner">
+                    <h2>{{ service.name }}</h2>
+                    <h3>Owned by {{ service.owner }}</h3>
+                </span>
+            </div>
+            <ul class="tags">
+                {% for tag in service.tags %}
+                    <li>{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        </span>
         <div class="service--container">
-            <span class="service--logo">
-                <img style="max-width: 150px" src="{{ service.logo }}" alt="{{ service.name }} logo" />
-                <h2>{{ service.name }}</h2>
-                <h3>Owned by {{ service.owner }}</h3>
-                <ul class="tags">
-                    {% for tag in service.tags %}
-                        <li>{{ tag }}</li>
-                    {% endfor %}
-                </ul>
-            </span>
-            <div class="secure-your-account">
-                {% assign security = service.security %}
-                {% assign privacy = service.privacy %}
-                
-                {% if security %}
-                    {% include components/list-details.html array=security title="Security settings" type="ol" %}
-                {% endif %}
-                {% if privacy %}
-                    {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
-                {% endif %}
+            {% assign security = service.security %}
+            {% assign privacy = service.privacy %}
+            
+            {% if security %}
+                {% include components/list-details.html array=security title="Security settings" type="ol" %}
+            {% endif %}
+            {% if privacy %}
+                {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
+            {% endif %}
 
-                <div class="what-they-collect">
-                    <h2>What they collect</h2>
-                    {% for item in service.collect %}
-                    <details>
-                        <summary>{{ item.what }}</summary>
-                        <p class="desc">
-                            {{ item.how }}
-                        </p>
-                    </details>
-                    {% endfor %}
-                </div>
+            <div class="what-they-collect">
+                <h2>What they collect</h2>
+                {% for item in service.collect %}
+                <details>
+                    <summary>{{ item.what }}</summary>
+                    <p class="desc">
+                        {{ item.how }}
+                    </p>
+                </details>
+                {% endfor %}
                 <a class="learn-more" href="/services/{{ service.name | downcase }}">Learn more</a>
             </div>
         </div>
