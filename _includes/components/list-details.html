@@ -3,17 +3,27 @@
     {% for item in include.array %}
     <details>
         <summary>
-            <span
-                {% if item.device %}
-                    class="device {{ item.device }}"
-                {% endif %}
-                    >{{ item.desc }}</span>
+            {{ item.desc }}
         </summary>
-        <{{ include.type }}>
-            {% for step in item.steps %}
-            <li>{{ step }}</li>
-            {% endfor %}
-        </{{ include.type }}>
+        {% for device in item.device %}
+            {% if item.device.size > 1 %}
+                <details>
+                    <summary>Via {{ device.name }}</summary>
+                    <{{ include.type }}>
+                        {% for step in device.steps %}
+                        <li>{{ step }}</li>
+                        {% endfor %}
+                    </{{ include.type }}>
+                </details>
+            {% else %}
+                Via {{ device.name }}
+                <{{ include.type }}>
+                    {% for step in device.steps %}
+                    <li>{{ step }}</li>
+                    {% endfor %}
+                </{{ include.type }}>
+            {% endif %}
+        {% endfor %}
     </details>
     {% endfor %}
 </div>
