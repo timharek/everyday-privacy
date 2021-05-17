@@ -36,3 +36,25 @@ ol {
     overflow-wrap: break-word;
     hyphens: auto;
 }
+
+details {
+    max-width: max-content;
+
+    & summary {
+        cursor: pointer;
+
+        & > * {
+            display: inline;
+        }
+    }
+    
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    & > details {
+        margin-left: 1em;
+    }
+}

@@ -267,26 +267,6 @@
     }
 }
 
-.expand-box details {
-    ol,
-    ul {
-        margin-top: 0;
-        margin-bottom: 0.5em;
-    }
-
-    summary {
-        cursor: pointer;
-
-        & > * {
-            display: inline;
-        }
-    }
-
-    & > details {
-        margin-left: 1em;
-    }
-}
-
 .learn-more {
     display: inline-block;
     margin: 1em 0;
