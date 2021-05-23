@@ -59,7 +59,6 @@ Signal is a encrypted messaging services developed and owned by the non-profit o
 <!-- TODO -->
 The purpose of a privacy policy is to disclose all of the different ways a company uses, discloses and manages a customer or client's data[^6]. Here I will go into what each of the policies say they collect and why they collect what they collect. 
 
-<!-- sub-sectionize each service -->
 
 ### Snapchat (Snap Inc.)
 Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information. The policy[^7] is divided into different sections, see \ref{appendix:snapchat_toc}.
@@ -113,7 +112,6 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 
 ### WhatsApp
 
-<!-- How they present their policy -->
 WhatsApp presents their privacy policy[^14] in a straight forward way, everything is laid out with a natural language, but some parts may seem a bit technical when they mention how they share information with other Facebook products. Their policy is divided into multiple sections, see \ref{appendix:whatsapp_toc}.
 
 
@@ -174,7 +172,6 @@ Most of your personal data is kept as long as your account is active, in order t
 
 ### Signal
 
-<!-- How they present their policy -->
 Signal's privacy policy[^16] is something different than the others, as it is the shortest and gets straight to the point. The policy, as with the others, are divided into sections, see \ref{appendix:signal_toc}
 
 
@@ -270,11 +267,33 @@ An example for this could be an older person, where their phone number were leak
 # Discussions
 <!-- Brief overview of what I'm going to discuss -->
 
+In these discussions I will walk through how the different privacy policies differs, how the different services presents their settings for both security and privacy, and why data breaches/leaks matters.
+
 ## Privacy policies
-<!-- TODO -->
+
+As you may be able to tell by having read this report, the different services have a lot in common when it comes to what they collect and the reason behind it. The common denominator here is "to provide you with the service", and in most cases the data is being shared, or more correctly sold to third parties. This is not the case for all services, like Signal, as their only revenue stream is from donations, but for Facebook products; Facebook, Messenger, Instagram and WhatsApp their
+revenue comes from selling the data provided by their users, even though they explicitly say that they "*Do not sell your data*". It is very contradicting to say that you do not say that you sell your users data when you also mention on multiple occasions in your policy that you must share your users data in order to provide them with a service. 
+It is fair to assume that they do not share this data for free, because how can they run their service? They need to share this data for a fee in order to exist. A good example on exactly this is a very recent article published by the Signal Foundation about the data Facebook provides advertisers with[^18].
+The same is also true for the other services like Snapchat and LinkedIn, but the type of data provided may not be as accurate as Facebook's since they have a much larger user base to base their data on.
+
+With WhatsApp policy, it is mentioned multiple times that the messages users exchange is encrypted and deleted from WhatsApp's (Facebook) servers after it has been delivered, but only the encrypted part is deleted, all the metadata sent along the message is not being mentioned as being deleted upon delivery to the recipient. This means personal data like location information, even without GPS permissions, recipients, timestamps and device information is being collected. 
+There is no need to collect this information in order to provide the service, but it is necessary to have recipients and timestamps in order to deliver the message, but there is no need to collect and save the data.
+
+A common similarity on multiple of these policies, is that they mention first that you, the user, is the main controller of the data you have provided, but when it comes to the section that mentions goes into detail it is revealed that it actually the service itself that owns and controls the data. 
+You are just able to add, edit and delete it, but it is not guaranteed that the data is deleted after it has been edited nor deleted because it could be of the services interest to keep this information for security, privacy and commercially purposes. 
+I would also like to point out that LinkedIn's policy stands out in this regard, because they are very clear from the beginning that they are the ones who are in the actual control of your data, and they even state it on multiple occasions.
+
+Another thing that is mentioned in multiple policies, is that of address books. How come someone I know has the right to upload and share my information with a service that I might not want to use or support? The service should simply just delete this information if there is match. Someone could have added a bunch of personal data to their address book, like real addresses, multiple emails, family relations etc. No one other than yourself should have the right to be allowed to store this sensitive information with one service.
+This goes a bit back to when Facebook's policies says they use information they get from their partners to give you personalized advertisements, even though you do not have an Facebook account. This also mentioned, in clear plain text that they collect data about you "whether or not you have a Facebook account", even though Facebook has denied that they do this when asked about *Shadow profiles*[^19].
+
 
 ## Security and privacy settings
-<!-- TODO -->
+
+The types of settings you are able to change for each services varies, as you may have been able to see on the project's website, but there are a few strange anomalies. For one, there should not be a difference in how you adjust settings via an app and browser when the service provide their service through both. 
+Like I mentioned earlier with Facebook's location history, why should I only be able to delete it via the application? There might be a valid reason to not have their app installed on your phone, therefore you should have the ability to do the same in the browser as you can via the app and vice versa.
+
+For Messenger, I find it strange you are unable to adjust any settings at all without having to go directly to your Facebook account. Messenger should have the same options as Facebook, since they both share exactly the same data between each other.
+
 
 ## Why data leaks matters <!-- TODO -->
 <!-- TODO -->
@@ -495,3 +514,5 @@ An example for this could be an older person, where their phone number were leak
 [^15]: LinkedIn privacy policy: https://www.linkedin.com/legal/privacy-policy
 [^16]: Signal privacy policy: https://signal.org/legal/
 [^17]: How to make Facebook send you encrypted notification emails: https://www.cnet.com/how-to/how-to-make-facebook-send-you-encrypted-notification-emails/
+[^18]: The Instagram ads Facebook won't show you: https://signal.org/blog/the-instagram-ads-you-will-never-see/
+[^19]: Zuckerberg denies knowledge of Facebook shadow profiles: https://techcrunch.com/2018/04/11/facebook-shadow-profiles-hearing-lujan-zuckerberg/
