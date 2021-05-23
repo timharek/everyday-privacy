@@ -46,13 +46,14 @@ As everything is stored in the browser, the user has the ability to remove their
 
 # Platforms/services 
 <!-- TODO -->
-I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifically Facebook products and Snapchat, or even more specifically Facebook Inc. and Snap Inc. They are all social networks, and function in different ways.
+I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifically Facebook products (Facebook, Messenger, Instagram and WhatsApp), Snapchat, LinkedIn and Signal. Some of them are social networks and some focus primarily on messaging.
 
 <!-- Explain what each service is -->
-Snap Inc. is camera company, they provide fast and fun ways to express yourself, live in the moment, learn about the world and have fun together. 
-Facebook Inc. is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus. This report will go into detail for Facebook products, specifically Facebook, Instagram and Messenger, as all of these share the same policy.
+Facebook products is owned and developed by Facebook Inc., which is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus. This report will go into detail for Facebook products, specifically Facebook, Instagram and Messenger, as all of these share the same policy.
+Snapchat is a social messaging application owned and developed by Snap Inc., which is camera company, they provide fast and fun ways to express yourself, live in the moment, learn about the world and have fun together. 
+LinkedIn is a professional networking social network owned and developed by Microsoft Corporation.
+Signal is a encrypted messaging services developed and owned by the non-profit organization Signal Foundation.
 
-Disclaimer: The project-website has more than these services, they are more a proof of concept in order to show what the website would look like with information from all of the services.
 
 ## Privacy policies
 <!-- TODO -->
@@ -113,18 +114,83 @@ You are able to exercise your rights provided under the GDPR, which includes; ri
 ### WhatsApp
 
 <!-- How they present their policy -->
+WhatsApp presents their privacy policy[^14] in a straight forward way, everything is laid out with a natural language, but some parts may seem a bit technical when they mention how they share information with other Facebook products. Their policy is divided into multiple sections, see \ref{appendix:whatsapp_toc}.
+
+
+#### Why they collect the data
+
+As with both Snapchat and the other Facebook products mentioned earlier, they collect a bunch of different data from their users, as you are also able to see on the project website. But what is making WhatsApp stand out, is that the content in the messages, the primary way of using the application, is encrypted and the content is not readable by Facebook. 
+WhatsApp collects data in order to "operate, improve, understand, customize, support and market..." their service. The types of data they collect may depend on the way you use their services. But if you choose not to provide the information required, you will be unable to access their services. They also collect data in order to connect your data with Facebook products that you may or may not use. 
+As with other Facebook products, they also collect data in order to combat harmful conduct and protect users.
+
+
+#### How they share data
+
+They share data based on metadata from your messages, location, summaries keywords from the message, who you are communicating with, timestamps and other telemetry data like device information, like battery level etc. They share your interactions you have made with WhatsApp Businesses, it is not explicitly mentioned what kind of data businesses can and cannot share, but it is mentioned that it is supposed to be in accordance with applicable laws.
+
+As with the other Facebook products, WhatsApp is no different when it comes to sharing among themselves, WhatsApp shares all the data they collect across all Facebook products. There is a whole separate section dedicated to how and why they share data among the Facebook products.
+
+It is not explicitly mentioned how they share information with third-parties, but they mentioned multiple times that this is something that they do, and that they required them to do so in accordance with their instructions and terms.
+
+
+#### Who is in control of the data
+
+The word "*control*" is only mentioned twice in the whole privacy policy, the first being that you are in control of who you communicate with and the second being in the event of a merger, acquisition etc. of WhatsApp, the new successors/owners are entitled to your data. I assume this means that WhatsApp (or Facebook Inc.) is the one in control of your data as long as you decide to have an account.
+
+When you delete your account, all account info, undelivered messages and message history is deleted from their servers.
 
 
 
 ### LinkedIn
 
 <!-- How they present their policy -->
+LinkedIn introduces us to the policy in different way than the others, they start of by showing an embedded YouTube video where they explain the privacy policy[^15] in a rather simple manner. The rest of the policy is presented in multiple section with detailed explanations for each section, see \ref{appendix:linkedin_toc}.
+
+
+#### Why they collect data
+
+As this is not mentioned or presented directly in the policy, it is insinuated multiple times that they collect data in order to provide you with a service where you can connect with colleagues, friends and other professionals in your field of work. Data is also collected in order to prevent security breaches, based on how they monitor the data and to give you relevant advertisements to grow their service.
+
+
+#### How they share data
+
+Most of your interactions on the service is shared among other members of the service, like posts, likes, follows, comments and messages. If your employer uses LinkedIn's enterprise service, your employer may be able to gather and share your data with your permission, which they can later monetize.
+
+Other members and/or their employers can, for legal or professional reasons, archive their communications with you.
+
+Other services that you have connected to your account may look up your profile and collect your personal and public data, this is possible to opt out of. But as you connect your account to other services, their own privacy policy apply in terms of how your data may be used.
+
+Your personal data will be shared with LinkedIn's affiliates, they combine data internally across different services in order to be more relevant and useful to you and others.
+
+
+#### Who is in control of the data
+
+According to their policy, this will be dependent on where you are, if you are outside the "*Designated Countries*", LinkedIn Corporation will be the controller of your personal data. *Designated Countries* include the EU, EEA and Switzerland. If you live within the *Designated Countries*, LinkedIn Ireland Unlimited Company will be the controller of your personal data.
+
+Most of your personal data is kept as long as your account is active, in order to provide you with the service. You have the right to access and control you personal data, as you are able to delete, change/correct, object to and right to access your data.
+<!-- I like that they are very clear about this -->
 
 
 
 ### Signal
 
 <!-- How they present their policy -->
+Signal's privacy policy[^16] is something different than the others, as it is the shortest and gets straight to the point. The policy, as with the others, are divided into sections, see \ref{appendix:signal_toc}
+
+
+#### Why they collect data
+
+In order to use Signal, as with WhatsApp, you need to provide your phone number to create an account, the service will not work without it. They may collect you address book, with your permission, in order to tell you which ones of your contacts are on Signal, however, this information is encrypted and is not accessible by Signal themselves.
+
+
+#### How they share data
+
+The policy states that they "may" share information with third parties, like the ones who send verification codes when setting up your account, and third parties like YouTube, Spotify and Giphy if you share anything from these services within the application. Signal may also share data in order to accommodate legalities.
+
+
+#### Who is in control of the data
+
+You are the sole controller of your data, all your data is encrypted on Signal's servers, and this only includes your phone number, optionally a profile picture and status message, which is not accessible by Signal.
 
 
 
@@ -411,3 +477,6 @@ An example for this could be an older person, where their phone number were leak
 [^11]: Facebook - Inverstors report: https://investor.fb.com/investor-news/press-release-details/2021/Facebook-Reports-Fourth-Quarter-and-Full-Year-2020-Results/default.aspx
 [^12]: Facebook's privacy problems: a roundup: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
 [^13]: Searching the Snapchat data breach: https://www.troyhunt.com/searching-snapchat-data-breach-with/
+[^14]: WhatsApp privacy policy: https://www.whatsapp.com/legal/updates/privacy-policy/
+[^15]: LinkedIn privacy policy: https://www.linkedin.com/legal/privacy-policy
+[^16]: Signal privacy policy: https://signal.org/legal/
