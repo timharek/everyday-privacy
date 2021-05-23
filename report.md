@@ -196,21 +196,26 @@ You are the sole controller of your data, all your data is encrypted on Signal's
 
 ## Security and privacy settings
 
-For both Snapchat and Facebook the steps needed in order to increase your accounts security and maintain you privacy are similar, but there are some difference.
+As for this project, I have only been able to test and verify security and privacy settings on Facebook, Messenger, Instagram, Snapchat and Signal, as I use some of these personally and some of them do not require real personal information in order to create an account.
+
+For Facebook (includes Messenger), Instagram and Snapchat, the steps needed in order to increase your accounts security and maintain you privacy are similar, but there are some difference.
 
 In order to change any setting on Snapchat, it is required that you use the mobile application, you are not able to do so in a browser. For Facebook's products, Facebook, Messenger and Instagram, you are able to almost everything from the browser, but some settings are limited to the mobile applications. 
 One example for this would be deleting all Location History data from Facebook, you are unable to delete this while accessing Facebook from the browser, even their Help-page explicitly say the option is only available on iOS and Android[^9].
 
 ### Security
 
-A notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check your Snapchat account and forgot to logout.
+A notable difference for which security options you have on Facebook and Instagram that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check your Snapchat account and forgot to logout.
 
+Signal has a rather big security advantage, that is since you are not able to send unencrypted (plain text) messages, which makes it impossible for users to mistakenly send unencrypted message. As with Messenger, you have to actively enter "*Secret Message mode*" to send encrypted messages.
+
+A rather surprising security option on Facebook, is that you are able to provide a PGP key, to encrypt your email communications with Facebook[^17], which is not very common among social networks and no other service they I have reviewed offers this option.
 <!-- TODO add more -->
 
 
 ### Privacy
 
-On both Facebook and Snapchat you are able to configure your advertisement settings. 
+On both Facebook, Instagram and Snapchat you are able to configure your advertisement settings. 
 On Snapchat the settings are presented as how their partners can use information about you, both on and off Snapchat, they also have a separate setting where you are able to toggle different interests, so that Snapchat can serve you more personalised content and advertisements.
 On Facebook's products , the settings are presented with _"common questions"_ as the introduction, which resolves about **"Does Facebook sell my data?"**, other than that you are able to manage how your data is being used for advertisements.
 For Instagram, the settings are nearly identical to the ones on Facebook, but you are not given the option to limit advertisements off Instagram based on your data, which you are able to do on Facebook.
@@ -223,6 +228,15 @@ In order to delete your accounts, the steps for each service varies. For Snapcha
 account, which Snapchat does not mention at all.
 Also, it is not possible to delete your Messenger account without deleting your Facebook account. However, it is possible to deactivate your Facebook profile and still use Messenger, but it is not possible to have a Messenger account without an associated Facebook account.
 
+And for Signal, it is only possible to delete your account via the app.
+
+
+#### Location history
+
+On Facebook (including Messenger), you are able to delete your location history, but only via the app, mentioned earlier. But the story is not the same for Instagram, even though it is developed by the same company, you are unable to delete your location history, however, you are able to edit and/or remove location data from individual posts.
+
+As for Snapchat and Signal, Snapchat does not offer any options to delete your location history and for Signal it is not needed because the service does not collect any location data.
+
 
 # Breach/leaked data
 
@@ -230,7 +244,7 @@ Breach data, can both be an intentional or unintentional release of secure or pr
 In the context of this report, we will focus on the potential dangers of having personal data exposed online, and with personal data, this includes; name, date of birth, address, phone number(s), friends and family, political views, religion etc.
 
 Both Facebook's products and Snapchat has both been victims to having data about their users released online, unintentionally. Facebook has had much more of a spotlight in this regard, because of their extremely large user base, with 2.8 billion monthly active users[^11]. Also because of how mainstream media picked up the story about the Cambridge Analytica data scandal, where 50 million peoples data was harvested[^12].
-For Snapchat, they have not had a lot of data breaches except for December 2013 when 4.6 million Snapchat usernames and phone numbers were made publically available on snapchatdb.info[^13].
+For Snapchat, they have not had a lot of data breaches except for December 2013 when 4.6 million Snapchat usernames and phone numbers were made publicly available on snapchatdb.info[^13].
 
 
 ## Potential attacks
@@ -480,3 +494,4 @@ An example for this could be an older person, where their phone number were leak
 [^14]: WhatsApp privacy policy: https://www.whatsapp.com/legal/updates/privacy-policy/
 [^15]: LinkedIn privacy policy: https://www.linkedin.com/legal/privacy-policy
 [^16]: Signal privacy policy: https://signal.org/legal/
+[^17]: How to make Facebook send you encrypted notification emails: https://www.cnet.com/how-to/how-to-make-facebook-send-you-encrypted-notification-emails/
