@@ -13,12 +13,12 @@ toc: true
 \newpage
 # Introduction
 <!-- TODO -->
-The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and show what information is being collected.
+The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and inform about which information is being collected.
 
 # Website
 <!-- TODO -->
 <!-- Screenshot of frontpage -->
-The website starts off by giving the user the ability to select which services they use, where the user are then taken to a separate page with a total overview of all the services the user selected. On this separate page, the user are then presented with steps to secure their account, steps to retake their privacy and what information each service collect. The services also display who owns each service, which has been added to make the user aware who actually owns the data the user provides them.
+The website starts off by giving the user the ability to select which services they use, where the user are then taken to a separate page with a total overview of all the services the user selected. On this separate page, the user are then presented with steps to secure their account, steps to retake their privacy and an overview of what information each service collect. The services also display who owns each service, which has been added to make the user aware who actually owns the data the user provides them.
 
 If there has recently been a breach or leak, there will be a notification alert under the navigation header letting the user know which service is affected and the date of when the news broke.
 
@@ -27,7 +27,7 @@ If there has recently been a breach or leak, there will be a notification alert 
 The website is built with a static-site generator, Jekyll[^1], using HTML, SASS and JavaScript. There is no back-end, nothing is rendered from the server, everything the user sees is already generated and is only displayed by their browser. The data provided by the user is stored in `localStorage` in their browser and never sent to a server. Jekyll uses a template engine called Liquid[^3], which makes it possible to populate HTML and Markdown from data-files
 instead of manually having to update values for each HTML or Markdown file.
 
-SASS[^2] is a CSS post-processor, that supports partials, nesting and much more. I chose to use this as it allows for more readability and sorting, since you can now split up the CSS into different files, called partials, while it is only required to reference one main-stylesheet in HTML.
+SASS is a CSS post-processor[^2], that supports partials, nesting and much more. I chose to use this as it allows for more readability and sorting, since you are able to split up the CSS into different files, called partials, while it is only required to reference one main-stylesheet in HTML.
 
 Jekyll has the ability to populate HTML and Markdown with data-files, stored as `JSON`, `YAML`, `CSV` or `TSV`. I chose to use `YAML` for the added benefit that it can often be easier to read and understand, as the syntax is based on colons, hyphens and indentations. All the different information about each service is stored in `_data/service/`, where each service has their own `YAML` file, this file is then being used to auto-generate a HTML-page from a layout-template. This
 auto-generation is not built into Jekyll by default, and is provided by a plugin, `jekyll-datapage_gen`[^4].
@@ -75,12 +75,12 @@ updating information about the things you might like and dislike", so that they 
 They give you a quick rundown that you are the one in control over your information, you can request to download your own data, but the request can be denied if the request "risks the privacy of other users or is unlawful". You can limit the permission their app has, but this will also limit the app experience. You can modify your advertising preferences, but as mention earlier, they are "constantly collecting and updating information about the things you might like and dislike", so
 updating your advertising preference will update itself later according to how you interact with the service. You can limit who can contact you, view your "Stories" etc. If you want to remove any other information, you have to request to delete your account.
 
-It is explicitly mentioned that "Snap Inc. is the controller of your personal information". Depending on where you live you have varying rights of your own personal information. They justify since their service is free, they can use some of your information to "try and show you ads you'll find interesting", and mention that this does not outweigh your right to privacy, they only use data that does not "significantly impact your privacy".
+It is explicitly mentioned that "Snap Inc. is the controller of your personal information". Depending on where you live you have varying rights of your own personal information. They justify this since their service is free, they can use some of your information to "try and show you ads you'll find interesting", and mention that this does not outweigh your right to privacy, they only use data that does not "significantly impact your privacy".
 
 
 ### Facebook products
 <!-- TODO -->
-Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences. The policy[^8] is divided into different sections with more sub-sections, see \ref{appendix:fb_toc}.
+Facebook presents their policy with a Data policy, where they disclose what information they collect. It is presented in a technical way, long paragraphs and detail heavy sentences. The policy[^8] is divided into multiple sections with more sub-sections, see \ref{appendix:fb_toc}.
 
 
 #### Why they collect the data
@@ -105,7 +105,7 @@ Reasoning behind all the collection and sharing mentioned earlier, is because; t
 
 Facebook stores data "until it is no longer necessary to provide our services and Facebook products, or until your account is deleted - whichever comes first". <!-- Contradicting statement -->
 You are able to delete data at any time, for example if you were to search something, you are able to delete that query at any time, but the log will be deleted automatically after 6 months. 
-If you decide to delete your account, Facebook deletes "things" you have posted, such as photos and status updates. But information others have shared about you will not be deleted.
+If you decide to delete your account, Facebook deletes "things" you have posted, such as photos and status updates. But information others have shared about you will not be deleted, like photos, address books with your details etc.
 
 You are able to exercise your rights provided under the GDPR, which includes; right to access, rectify, port and erase your data. They provide simple instruction to simple view the settings for the different products, and also a link to a form where you can object to how their managing your data.
 
@@ -137,7 +137,7 @@ One example for this would be deleting all Location History data from Facebook, 
 
 ### Security
 
-A notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check you Snapchat account and forgot to logout.
+A notable difference for which security options you have on Facebook that is not offered from Snapchat, is to verify where you are logged in. This could be beneficial if you were to borrow your someone's phone to check your Snapchat account and forgot to logout.
 
 <!-- TODO add more -->
 
@@ -146,14 +146,14 @@ A notable difference for which security options you have on Facebook that is not
 
 On both Facebook and Snapchat you are able to configure your advertisement settings. 
 On Snapchat the settings are presented as how their partners can use information about you, both on and off Snapchat, they also have a separate setting where you are able to toggle different interests, so that Snapchat can serve you more personalised content and advertisements.
-On Facebook's products , the settings are presented with _"common questions"_ as the introduction, which resolves about **"Does Facebook sell my data"**, other than that you are able to manage how your data is being used for advertisements.
+On Facebook's products , the settings are presented with _"common questions"_ as the introduction, which resolves about **"Does Facebook sell my data?"**, other than that you are able to manage how your data is being used for advertisements.
 For Instagram, the settings are nearly identical to the ones on Facebook, but you are not given the option to limit advertisements off Instagram based on your data, which you are able to do on Facebook.
 
-For all services, you are able to request your data to be downloaded in a human-readable format.
+For all services, you are able to request your data to be downloaded in a human-readable format, like HTML.
 
 #### Deleting your account
 
-In order to delete your accounts, the steps for each service varies. For Snapchat and Instagram you cannot delete you account from the apps, but for Snapchat you can find the instructions from the app, which will take you to the correct web-page. But on Instagram's app there is no mention of the step, you either have to look it up online or login on their website. For Facebook, you are able to delete your account via the browser or mobile app. Unexpectedly, both Facebook's and Instagram's guides suggest you download your data before deleting your
+In order to delete your accounts, the steps for each service varies. For Snapchat and Instagram you cannot delete you account from the apps, but for Snapchat you can find the instructions via the app, which will take you to the correct web-page. But on Instagram's app there is no mention of the step, you either have to look it up online or login on via their website. For Facebook, you are able to delete your account via the browser or mobile app. Unexpectedly, both Facebook's and Instagram's guides suggest you download your data before deleting your
 account, which Snapchat does not mention at all.
 Also, it is not possible to delete your Messenger account without deleting your Facebook account. However, it is possible to deactivate your Facebook profile and still use Messenger, but it is not possible to have a Messenger account without an associated Facebook account.
 
@@ -170,7 +170,7 @@ For Snapchat, they have not had a lot of data breaches except for December 2013 
 ## Potential attacks
 <!-- TODO -->
 
-There are a lot of potential attacks that are possible with just a few bits of data associated to a name, here we will go through some of the more common attacks that are possible and that you should be aware of and how you could prevent it.
+There are potential attacks that are possible with just a few bits of data associated to a name, here we will go through some of the more common attacks that are possible and that you should be aware of and how you could prevent it.
 
 ### SMS Two-Factor Authentication
 
