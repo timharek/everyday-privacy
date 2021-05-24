@@ -72,16 +72,16 @@ Snapchat presents their policy in two ways, one that is easy to read, like a sum
 #### Why they collect the data
 
 Snapchat collect a lot of different details about you. According to their policy, these details are collected in order to provide you with a better service and to serve you targeted advertisements. They share their details with other users; business partners, third parties and the general public. Who they end up sharing the information with, depends on how you use the service. The Snapchat app is "constantly collecting and
-updating information about the things you might like and dislike[^7]", so that they can provide you with more relevant content and advertisements. They mention that they are not responsible for how third parties collect and/or use your information. They delete the content whenever it is necessary. This depends on how you use the app, if you are under investigation or if you have saved messages and/or photos in the app.
+updating information about the things you might like and dislike", so that they can provide you with more relevant content and advertisements. They mention that they are not responsible for how third parties collect and/or use your information. They delete the content whenever it is necessary. This depends on how you use the app, if you are under investigation or if you have saved messages and/or photos in the app.
 
 
 #### Who is in control of the data
 
-They give you a quick rundown that you are the one in control over your information and you can request to download your own data, but the request can be denied if the request "risks the privacy of other users or is unlawful[^7]". You can limit the permission their app has, but this will also limit the app experience. You can modify your advertising preferences, but as mention earlier, they are "constantly collecting and updating information about the things you might like and dislike[^7]". 
+They give you a quick rundown that you are the one in control over your information and you can request to download your own data, but the request can be denied if the request "risks the privacy of other users or is unlawful". You can limit the permission their app has, but this will also limit the app experience. You can modify your advertising preferences, but as mention earlier, they are "constantly collecting and updating information about the things you might like and dislike". 
 This means that when you have updated your advertising preferences, it may update itself later based on your behaviour when interacting with the service. Hence, there is little you can do to prevent targeted advertisements.
 However, you can limit who can contact you or view your "Stories". If you want to remove any other information, you have to request to delete your account.
 
-It is explicitly mentioned that "Snap Inc. is the controller of your personal information". Depending on where you live you have varying rights of your own personal information. They justify this since their service is free, they can use some of your information to "try and show you ads you'll find interesting[^7]", and mention that this does not outweigh your right to privacy, they only use data that does not "significantly impact your privacy".
+It is explicitly mentioned that "Snap Inc. is the controller of your personal information". Depending on where you live you have varying rights of your own personal information. They justify this since their service is free, they can use some of your information to "try and show you ads you'll find interesting", and mention that this does not outweigh your right to privacy, they only use data that does not "significantly impact your privacy".
 
 
 ### Facebook products
@@ -91,7 +91,7 @@ Facebook presents their policy with a Data policy where they disclose what infor
 
 #### Why they collect the data
 
-As you may be able to tell, both from the project-website and the overview above, it is a lot of data. Facebook collects these details in order to provide you with a better service and to serve you targeted advertisement. Facebook connects your information across Facebook Products and devices and they use the information they have ("including your activity off our Products, such as the websites you visit and ads you see[^8]"). 
+As you may be able to tell, both from the project-website and the overview above, it is a lot of data. Facebook collects these details in order to provide you with a better service and to serve you targeted advertisement. Facebook connects your information across Facebook Products and devices and they use the information they have ("including your activity off our Products, such as the websites you visit and ads you see"). 
 They also use the information they have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences. This is done in order to maintain their integrity, promote safety and security on and off their products. Information provided is use for research and innovation, for a social good, i.e. general social welfare, technological advancement, public interest, health and well-being.
 
 #### How they share data
@@ -99,12 +99,12 @@ They also use the information they have to verify accounts and activity, combat 
 The section about "How is this information shared?" indicates that you are in control of who you share your information with, if you want to disclose it to the following; `Public`, `Friends of friends`, `Friends only` and `Only me`. This is also true for what others might share about you, that is already available on Facebook Products.
 If you choose to use/enable third-party integrations, such as apps and websites, they receive information about what you post and share.
 If Facebook were to be acquired, they may transfer all your information to the new owner.
-Facebook works with third-party partners which help Facebook provide and improve their products, and Facebook helps the partners grow their business which "makes it possible to operate our companies and provide free services to people around the world[^8]". In the same paragraph, they say "We don't sell any of information to anyone, and we never will[^8]". A contradicting statement when they explain in the subsection below that they provide their partners and advertisers with statistics and reports about user engagement. They do not share personally identifiable information unless you have given them permission.
+Facebook works with third-party partners which help Facebook provide and improve their products, and Facebook helps the partners grow their business which "makes it possible to operate our companies and provide free services to people around the world". In the same paragraph, they say "We don't sell any of information to anyone, and we never will". A contradicting statement when they explain in the subsection below that they provide their partners and advertisers with statistics and reports about user engagement. They do not share personally identifiable information unless you have given them permission.
 
 
 The Facebook companies/products share the same infrastructure, systems and technology. This means that they all share data between them, so that they can "provide an innovative, relevant, consistent and safe experience..." across all the products.
 
-Reasoning behind all the collection and sharing mentioned earlier, is because; they need to fulfill their terms of service, comply with their legal obligations, protect your vital interest, or those of others, as necessary in the public interest and "as necessary for our legitimate interest, including our interest in providing an innovative, personalized, safe, and profitable service to our users and partners...[^8]".
+Reasoning behind all the collection and sharing mentioned earlier, is because; they need to fulfill their terms of service, comply with their legal obligations, protect your vital interest, or those of others, as necessary in the public interest and "as necessary for our legitimate interest, including our interest in providing an innovative, personalized, safe, and profitable service to our users and partners...".
 
 
 #### Who is in control of the data
