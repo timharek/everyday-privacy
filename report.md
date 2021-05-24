@@ -143,7 +143,6 @@ When you delete your account, all account info, undelivered messages and message
 
 ### LinkedIn
 
-<!-- How they present their policy -->
 LinkedIn introduces us to the policy in different way than the others, they start of by showing an embedded YouTube video where they explain the privacy policy[^15] in a rather simple manner. The rest of the policy is presented in multiple section with detailed explanations for each section, see \ref{appendix:linkedin_toc}.
 
 
@@ -253,7 +252,7 @@ There are potential attacks that are possible with just a few bits of data assoc
 
 ### SMS Two-Factor Authentication
 
-By using SMS as a two-factor authentication method, you are vulnerable to social engineering and identity theft attacks. If your phone number and password were leaked alongside your username for a given service, they could potentially contact you via phone, email or social media impersonating the given service to try to get your two-factor authentication code. But, a scary scenario, would be that they try to try impersonate you while contacting your phone number's carrier in order
+By using SMS as a two-factor authentication method, you may be more vulnerable to social engineering and identity theft attacks. If your phone number and password were leaked alongside your username for a given service, they could potentially contact you via phone, email or social media impersonating the given service to try to get your two-factor authentication code. But, a scary scenario, would be that they try to try impersonate you while contacting your phone number's carrier in order
 to get a new SIM-card they could control in your name. Then they would be able to get the same two-factor code as you and login.
 
 ### Phishing attacks
@@ -291,13 +290,15 @@ This goes a bit back to when Facebook's policies says they use information they 
 
 ## Security and privacy settings
 
-The types of settings you are able to change for each services varies, as you may have been able to see on the project's website, but there are a few strange anomalies. For one, there should not be a difference in how you adjust settings via an app and browser when the service provide their service through both. 
-Like I mentioned earlier with Facebook's location history, why should I only be able to delete it via the application? There might be a valid reason to not have their app installed on your phone, therefore you should have the ability to do the same in the browser as you can via the app and vice versa.
+The types of settings you are able to change for each services varies, as you may have been able to see on the project's website, but there are a few strange anomalies. For one, there should not be a difference in how you adjust settings via an app and browser when the service is provided through both. 
+Like I mentioned earlier with Facebook's location history, why should I only be able to delete it via the app? There might be a valid reason to not have their app installed on your phone, therefore you should have the ability to do the same in the browser as you can via the app and vice versa.
 
-For Messenger, I find it strange you are unable to adjust any settings at all without having to go directly to your Facebook account. Messenger should have the same options as Facebook, since they both share exactly the same data between each other.
+For Messenger, I find it strange that you are unable to adjust any settings at all without having to go directly to your Facebook account. Messenger should have the same options as Facebook, since they both share exactly the same data between each other.
+
+A very welcome feature by Facebook is the ability to do a "*Privacy Checkup*", which works as an intractable way to adjust some of your privacy settings. Some of these settings have nice illustrations to demonstrate what each setting may enable or disable. This may make it more convenient to check your privacy settings regularly, as it might not be as intimidating as looking through all the different settings for your account.
 
 
-## Why data leaks matters <!-- TODO -->
+## Why data breach/leaks matters
 <!-- TODO -->
 
 # Conclusion
