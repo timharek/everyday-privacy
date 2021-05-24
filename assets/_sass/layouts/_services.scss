@@ -69,6 +69,10 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 1em;
 
+    @media (max-width: $breakpoint-medium) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .service-checkbox {
         position: absolute !important;
         top: -9999px !important;
