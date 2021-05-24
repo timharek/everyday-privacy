@@ -1,7 +1,7 @@
 ---
 papersize: a4
-title: Privacy and security project
-subtitle: Z-INF
+title: Everyday Privacy
+subtitle: Security and privacy project in Z-INF
 author: Tim Hårek Andreassen
 date: 2021-05-24
 
