@@ -16,6 +16,9 @@ collections:
     sort_by: name
     output: true
     permalink: /:collection/:title
+  pwd_managers:
+    sort_by: name
+    output: false
 
 defaults:
   - scope:
