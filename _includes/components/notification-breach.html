@@ -1,13 +1,12 @@
-{% assign services = site.data.service %}
 {% assign breaches = "" %}
-{% for service in services %}
-    {% assign recent_breach = service[1].recent_breach | date: "%Y-%m-%d" | append: "," %}
+{% for service in site.services %}
+    {% assign recent_breach = service.recent_breach | date: "%Y-%m-%d" | append: "," %}
     {% assign breaches = breaches | append: recent_breach %}
 {% endfor %}
 {% assign breaches = breaches | split: "," | sort | reverse %}
 <div class="warning">
-    {% assign perpetrator = services | where: "recent_breach", breaches[0] %}
-    <a href="/services/{{ perpetrator[0].name | downcase }}">
+    {% assign perpetrator = site.services | where: "recent_breach", breaches[0] %}
+    <a href="{{ perpetrator[0].url }}">
         There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
     </a>
 </div>
