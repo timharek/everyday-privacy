@@ -9,7 +9,7 @@ tags:
   - Social Media
   - Messaging
 desc: >-
-  As the largest social network, Facebook is the one platform you should be very careful with, because of how much data you provide them with can have big consequences for you in the future.
+  Messaging application provided by Facebook, where you can connect with friends, family and businesses on Facebook.
 
 security:
   - desc: Same as <a href="/services/facebook">Facebook</a>
@@ -73,4 +73,6 @@ collect: # What they collect
     how: They connect information about your activities on different Facebook products and devices.
   - what: Location information
     how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
+
+last_update: 2021-05-24
 ---
