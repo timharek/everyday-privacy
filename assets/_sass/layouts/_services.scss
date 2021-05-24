@@ -37,91 +37,22 @@
     Individual service page, _layout/service.html
 */
 .service-page {
-    margin-bottom: 1em;
-    .heading {
-        margin-bottom: 1em;
-        transition: all 250ms ease;
-        @include box-info(none, var(--color-dark), inherit);
+    @include service-box("service");
 
-        &:hover {
-            background: var(--color-info);
-        }
+    .warning {
+        @include alert(var(--color-alert), white, 0);
+    }
 
-        .title {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .title--wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-
-            img {
-                max-width: 100px;
-                margin-right: 1em;
-            }
-            h1 {
-                margin: 0;
-                margin-bottom: 0.15em;
-                font-size: 2.5em;
-            }
-            h2 {
-                margin: 0;
-            }
-        }
-        @include tags(var(--color-dark), white);
-
-        .desc {
-            margin-bottom: 0;
+    .expand-box {
+        &:not(:last-of-type) {
+            margin-bottom: 1em;
         }
     }
 
-    .content {
-        .recent {
-            padding: 1em;
-        }
-
-        h1 ~ .recent {
-            padding-top: 0;
-        }
-
-        .expand-box {
-            details {
-                width: fit-content;
-            }
-        }
-
-        dl {
-            display: grid;
-            grid-template-columns: auto 1fr;
-
-            dd {
-                margin-inline-start: 1em;
-                margin-bottom: 0.5em;
-            }
-            @media (max-width: $breakpoint-small) {
-                grid-template-columns: auto;
-
-                dd {
-                    margin-inline-start: 0;
-                }
-            }
-        }
-
-        details {
-            &:not(:last-of-type) {
-                margin-bottom: 0.5em;
-            }
-        }
-    }
-
-    .collect {
-        @include box-info(none, var(--color-alert), inherit);
-    }
-
-    .steps-you-can-take {
-        @include box-info(var(--color-info), var(--color-dark), var(--color-dark));
+    .last-updated {
+        display: block;
+        padding: 1em;
+        text-align: right;
     }
 }
 
