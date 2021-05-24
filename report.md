@@ -265,8 +265,6 @@ Your email provider is most likely able to detect some of the more common phishi
 An example for this could be an older person, where their phone number were leaked along with their age, confirming for the attacker that this is an older person, which may not be tech savvy. Then the attacker could send this person an survey where they ask them which services they use, and if the victim answers this survey of the more common phishing attacks methods, but your phone number is not. Like the previous example, if your phone number were leaked alongside your username for a
 given service, they could try to get you to provide them with credentials for the given and/or other services while they impersonate someone they are not.
 
-An example for this could be an older person, where their phone number were leaked along with their age, confirming for the attacker that this is an older person, which may not be tech savvy. Then the attacker could send this person an survey where they ask them which services they use. If the victim answers this survey, the attacker could call them an impersonate for example their bank in order to try to get their banking details.
-
 
 # Discussions
 <!-- Brief overview of what I'm going to discuss -->
