@@ -15,7 +15,10 @@ classoption: titlepage
 \newpage
 # Introduction
 <!-- TODO -->
-The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and inform about which information is being collected.
+The goal of this project is to educate everyday folks about online privacy and security, by securing their accounts and removing unnecessary data, and inform about which information is being collected. 
+A secondary goal would be to do this in such a manner that everyone is able to contribute to the project, update when new information comes, add new services and reach more people.
+
+Today, there are existing solutions to this problem, like PrivacyTools[^20] and Prism Break[^21]. But these tools are proactive, you need to seek information actively. With this project, you should be able to specify what kind of services you use and get the correct information.
 
 # Website
 <!-- TODO -->
@@ -287,6 +290,7 @@ I would also like to point out that LinkedIn's policy stands out in this regard,
 Another thing that is mentioned in multiple policies, is that of address books. How come someone I know has the right to upload and share my information with a service that I might not want to use or support? The service should simply just delete this information if there is match. Someone could have added a bunch of personal data to their address book, like real addresses, multiple emails, family relations etc. No one other than yourself should have the right to be allowed to store this sensitive information with one service.
 This goes a bit back to when Facebook's policies says they use information they get from their partners to give you personalized advertisements, even though you do not have an Facebook account. This also mentioned, in clear plain text that they collect data about you "whether or not you have a Facebook account", even though Facebook has denied that they do this when asked about *Shadow profiles*[^19].
 
+Although none of the services; Facebook products (including WhatsApp), Snapchat and LinkedIn, mention that they sell data, it is heavily implied that do, and they defend it by painting a picture that there is no other way that they can provide their service to their users.
 
 ## Security and privacy settings
 
@@ -298,11 +302,18 @@ For Messenger, I find it strange that you are unable to adjust any settings at a
 A very welcome feature by Facebook is the ability to do a "*Privacy Checkup*", which works as an intractable way to adjust some of your privacy settings. Some of these settings have nice illustrations to demonstrate what each setting may enable or disable. This may make it more convenient to check your privacy settings regularly, as it might not be as intimidating as looking through all the different settings for your account.
 
 
-## Why data breach/leaks matters
-<!-- TODO -->
-
 # Conclusion
-<!-- TODO -->
+
+Starting of with this project, I was prepared to learn a lot and see a lot of surprises, but after reading every services privacy policies and going through some of services security and privacy settings, I am still in awe of what I have learned.
+
+For the privacy policies, we can conclude that they are able to provide users with information explaining what they collect, how they collect and why they collect data. But, there is a lot of variance in how they present it. 
+I believe Snapchat is a great example of how it could be, they have a non-technical version of their privacy policy which they say is for those that are only able to spare a few minutes. This explains and give some justification to how their application operates and handles data.
+With all the other policies, except Signal's, you need some technical understanding and up to 20 minutes of spare time to read, and then again you would need time to process all this information.
+
+As with the security and privacy settings, there is a lot you can do, you can increase the security of each service substantially and you are able to limit how your data is being used, mostly limiting how they can give you relevant advertisements.
+
+I believe the project's website has been able to achieve its goal, if someone wants to learn how to increase the security of their account or limit data hoarding, you can do so via the website. While you are there, you are able to see what kind of data they actually collect, based on the service's policy. If someone wants to learn more about a specific service, they can see the recent headlines the service has been in and their recent data breaches (if there are any).
+
 
 # Future work
 <!-- TODO -->
@@ -519,3 +530,5 @@ A very welcome feature by Facebook is the ability to do a "*Privacy Checkup*", w
 [^17]: How to make Facebook send you encrypted notification emails: https://www.cnet.com/how-to/how-to-make-facebook-send-you-encrypted-notification-emails/
 [^18]: The Instagram ads Facebook won't show you: https://signal.org/blog/the-instagram-ads-you-will-never-see/
 [^19]: Zuckerberg denies knowledge of Facebook shadow profiles: https://techcrunch.com/2018/04/11/facebook-shadow-profiles-hearing-lujan-zuckerberg/
+[^20]: PrivacyTools: https://privacytools.io/
+[^21]: Prism Break: https://prism-break.org/en/
