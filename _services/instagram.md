@@ -1,7 +1,7 @@
 ---
 name: Instagram
 slug: instagram
-logo: /assets/img/services/instagram/logo.png
+logo: /assets/img/services/instagram/logo.svg
 owner: Facebook, Inc.
 recent_breach: 
 tags: 

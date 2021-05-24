@@ -1,7 +1,7 @@
 ---
 name: Facebook
 slug: facebook
-logo: /assets/img/services/facebook/logo.png
+logo: /assets/img/services/facebook/logo.svg
 owner: Facebook, Inc.
 recent_breach: 2021-04-03
 tags: 

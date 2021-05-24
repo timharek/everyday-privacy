@@ -1,7 +1,7 @@
 ---
 name: LinkedIn
 slug: linkedin
-logo: /assets/img/services/linkedin/logo.png
+logo: /assets/img/services/linkedin/logo.svg
 owner: Microsoft Corporation
 recent_breach: 
 tags: 

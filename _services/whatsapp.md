@@ -1,7 +1,7 @@
 ---
 name: WhatsApp
 slug: whatsapp
-logo: /assets/img/services/whatsapp/logo.png
+logo: /assets/img/services/whatsapp/logo.svg
 owner: Facebook, Inc.
 recent_breach: 
 tags: 

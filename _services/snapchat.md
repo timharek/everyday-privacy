@@ -1,7 +1,7 @@
 ---
 name: Snapchat
 slug: snapchat
-logo: /assets/img/services/snapchat/logo.png
+logo: /assets/img/services/snapchat/logo.svg
 owner: Snap, Inc.
 recent_breach: 2014-01-01
 tags: 
