@@ -316,7 +316,11 @@ I believe the project's website has been able to achieve its goal, if someone wa
 
 
 # Future work
-<!-- TODO -->
+
+Like mentioned in the introduction as a secondary goal, everyone should be able to contribute to this project and improve upon it. Therefore this project will be published online as an open source project under the GPLv3 license, requiring all kinds of forks of the project to remain open source and publicly available.
+
+For the future of the project, I would like to add even more services, not just social media, but nation specific services, like Finn.no etc.
+
 
 \newpage
 \appendix
