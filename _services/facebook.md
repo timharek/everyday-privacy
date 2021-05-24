@@ -1,4 +1,6 @@
+---
 name: Facebook
+slug: facebook
 logo: /assets/img/services/facebook/logo.png
 owner: Facebook, Inc.
 recent_breach: 2021-04-03
@@ -161,3 +163,4 @@ collect: # What they collect
     how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
 
 last_update: 2021-05-09
+---

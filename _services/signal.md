@@ -1,4 +1,6 @@
+---
 name: Signal
+slug: signal
 logo: /assets/img/services/signal.svg
 owner: Signal Technology Foundation
 recent_breach: 
@@ -52,3 +54,4 @@ privacy:
           - Un-toggle Signal's access to your <b>Contacts</b>
 
 last_update: 2021-05-16
+---

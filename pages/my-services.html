@@ -4,17 +4,13 @@ title: My services
 permalink: /my
 ---
 
-{% assign services_hash = site.data.service %}
-{% include liquid/get_services.html %}
-
 <h1>Secure your accounts (self-configuration)</h1>
 <div class="none-selected">
     <p>You have not selected any services, go back to the <a href="/">front-page</a> or see <a href="/services">all services</a></p>
 </div>
 
 <section class="selected">
-    {% for the_service in services %}
-    {% assign service = services_hash[the_service] %}
+    {% for service in site.services %}
     <div id="{{ service.name | downcase }}" class="selected--service">
         <header class="service__header">
             <div class="service__header--text">
@@ -57,7 +53,7 @@ permalink: /my
                 {% endfor %}
             </div>
         </div>
-        <a class="service__button" href="/services/{{ service.name | downcase }}">Learn more</a>
+        <a class="service__button" href="{{ service.url }}">Learn more</a>
     </div>
     {% endfor %}
 </section>

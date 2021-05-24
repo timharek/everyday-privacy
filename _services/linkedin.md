@@ -1,4 +1,6 @@
+---
 name: LinkedIn
+slug: linkedin
 logo: /assets/img/services/linkedin/logo.png
 owner: Microsoft Corporation
 recent_breach: 
@@ -49,3 +51,4 @@ collect: # What they collect
 
 
 last_update: 2021-05-16
+---

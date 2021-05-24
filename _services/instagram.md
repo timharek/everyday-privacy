@@ -1,4 +1,6 @@
+---
 name: Instagram
+slug: instagram
 logo: /assets/img/services/instagram/logo.png
 owner: Facebook, Inc.
 recent_breach: 
@@ -150,3 +152,4 @@ collect: # What they collect
     how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
 
 last_update: 2021-05-09
+---

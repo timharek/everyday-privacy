@@ -10,18 +10,23 @@ url: "https://everyday-privacy.com" # the base hostname & protocol for your site
 sass:
   sass_dir: assets/_sass
 
+
+collections:
+  services:
+    sort_by: name
+    output: true
+    permalink: /:collection/:title
+
+defaults:
+  - scope:
+      path: ""
+      types: "services"
+    values:
+      layout: "service"
+
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-datapage-generator
-
-page_gen-dirs: false
-
-page_gen:
-  - data: 'service'
-    template: 'service'
-    name: 'name'
-    dir: 'services'
 
 exclude:
   - README.md

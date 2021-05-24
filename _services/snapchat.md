@@ -1,4 +1,6 @@
+---
 name: Snapchat
+slug: snapchat
 logo: /assets/img/services/snapchat/logo.png
 owner: Snap, Inc.
 recent_breach: 2014-01-01
@@ -122,3 +124,4 @@ collect: # What they collect
     how: With permission, they can collect precise location using GPS, wireless netoworks, cell towers, Wi-Fi access points, bluetooth, gyroscopes, accelerometers and compasses.
 
 last_update: 2021-05-09
+---

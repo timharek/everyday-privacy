@@ -1,4 +1,6 @@
+---
 name: WhatsApp
+slug: whatsapp
 logo: /assets/img/services/whatsapp/logo.png
 owner: Facebook, Inc.
 recent_breach: 
@@ -60,3 +62,4 @@ collect: # What they collect
     how: Through your interaction with their websites and applications, also from other Facebook products/companies.
 
 last_update: 2021-05-16
+---
