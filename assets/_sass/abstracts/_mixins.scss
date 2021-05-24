@@ -67,6 +67,10 @@
             margin: 0;
             padding: 1em;
             padding-top: 0;
+
+            &:only-child {
+                padding-top: 1em;
+            }
         }
     }
 
