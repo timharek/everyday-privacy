@@ -1,3 +1,4 @@
+---
 name: Messenger
 logo: /assets/img/services/messenger/logo.svg
 owner: Facebook, Inc.
@@ -72,3 +73,4 @@ collect: # What they collect
     how: They connect information about your activities on different Facebook products and devices.
   - what: Location information
     how: Current location, where you live, places you liked to visit, businesses and people near you to see what you enjoy and might enjoy.
+---
