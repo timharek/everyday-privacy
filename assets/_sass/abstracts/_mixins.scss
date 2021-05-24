@@ -12,6 +12,77 @@
     color: $font-color;
 }
 
+@mixin service-box($name, $bg-color: var(--color-info), $border-color: var(--color-dark), $font-color: var(--color-dark)) {
+    @include box-info($bg-color, $border-color, $font-color);
+    padding: 0;
+
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
+
+    header.#{$name}__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: $border-color;
+        color: white;
+        padding: 0.5em;
+
+        .#{$name}__header--text {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 75px;
+                margin-right: 0.5em;
+            }
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        @include tags($bg-color, $border-color);
+    }
+
+    .#{$name}__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+
+        & > * {
+            width: calc(50% - 0.5em);
+            flex-grow: 0;
+
+            &:only-child {
+                width: 100%;
+            }
+
+            @media (max-width: $breakpoint-medium) {
+                width: 100%;
+            }
+        }
+    }
+
+    a.#{$name}__button {
+        display: block;
+        background: $border-color;
+        color: white;
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
 @mixin label($bg-color, $font-color) {
     display: inline-block;
     background: $bg-color;
@@ -77,5 +148,4 @@
         background: $active-bg-color;
         color: $active-font-color;
     }
-
 }

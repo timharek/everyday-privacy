@@ -16,8 +16,8 @@ permalink: /my
     {% for the_service in services %}
     {% assign service = services_hash[the_service] %}
     <div id="{{ service.name | downcase }}" class="selected--service">
-        <span class="service--logo">
-            <div class="logo--text">
+        <header class="service__header">
+            <div class="service__header--text">
                 <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
                 <span class="name-owner">
                     <h2>{{ service.name }}</h2>
@@ -29,8 +29,8 @@ permalink: /my
                     <li>{{ tag }}</li>
                 {% endfor %}
             </ul>
-        </span>
-        <div class="service--container">
+        </header>
+        <div class="service__content">
             {% assign security = service.security %}
             {% assign privacy = service.privacy %}
 
@@ -57,7 +57,7 @@ permalink: /my
                 {% endfor %}
             </div>
         </div>
-        <a class="learn-more" href="/services/{{ service.name | downcase }}">Learn more</a>
+        <a class="service__button" href="/services/{{ service.name | downcase }}">Learn more</a>
     </div>
     {% endfor %}
 </section>
