@@ -3,11 +3,13 @@ papersize: a4
 title: Privacy and security project
 subtitle: Z-INF
 author: Tim Hårek Andreassen
-date: 2021-04-20
+date: 2021-05-24
 
 geometry: margin=3cm
 numbersections: true
 toc: true
+titlepage: true
+classoption: titlepage
 ---
 
 \newpage
@@ -49,7 +51,7 @@ As everything is stored in the browser, the user has the ability to remove their
 I chose to use the most common and popular services, as these are well known and they can often be overlooked in terms of security and privacy, specifically Facebook products (Facebook, Messenger, Instagram and WhatsApp), Snapchat, LinkedIn and Signal. Some of them are social networks and some focus primarily on messaging.
 
 <!-- Explain what each service is -->
-Facebook products is owned and developed by Facebook Inc., which is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus. This report will go into detail for Facebook products, specifically Facebook, Instagram and Messenger, as all of these share the same policy.
+Facebook products is owned and developed by Facebook Inc., which is a technology company that offers services in their social network ecosystem, i.e. Facebook, Instagram, WhatsApp and Oculus. This report will go into detail for Facebook products, specifically Facebook, Instagram and Messenger, as all of these share the same policy. And WhatsApp separately since they have their own policy, even though they are all under the same umbrella.
 Snapchat is a social messaging application owned and developed by Snap Inc., which is camera company, they provide fast and fun ways to express yourself, live in the moment, learn about the world and have fun together. 
 LinkedIn is a professional networking social network owned and developed by Microsoft Corporation.
 Signal is a encrypted messaging services developed and owned by the non-profit organization Signal Foundation.
@@ -60,7 +62,7 @@ Signal is a encrypted messaging services developed and owned by the non-profit o
 The purpose of a privacy policy is to disclose all of the different ways a company uses, discloses and manages a customer or client's data[^6]. Here I will go into what each of the policies say they collect and why they collect what they collect. 
 
 
-### Snapchat (Snap Inc.)
+### Snapchat 
 Snapchat presents their policy in two ways, one that is easy to read, like a summary, and one more technical and detailed. Both of them cover the same material, but the technical version lets you know what they collect, why they collect it and who they share that information with. I will cover the more technical one, as it contains more information. The policy[^7] is divided into different sections, see \ref{appendix:snapchat_toc}.
 
 
