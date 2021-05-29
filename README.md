@@ -28,4 +28,4 @@ You can run `start.sh`:
 ```
 
 ## License
-[MIT License](LICENSE.md)
+[GPLv3 License](LICENSE.md)
