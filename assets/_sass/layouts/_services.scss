@@ -141,25 +141,3 @@
     display: inline-block;
     margin: 1em 0;
 }
-
-span.device {
-    &::after {
-        display: inline-block;
-        position: relative;
-        font-size: 0.75rem;
-        right: -0.5em;
-
-        &.browser {
-            @include label(var(--color-green), white) content: "browser";
-        }
-        &.app {
-            @include label(var(--color-primary), white) content: "app";
-        }
-        &.app-only {
-            @include label(var(--color-red), white) content: "app only";
-        }
-        &.browser-only {
-            @include label(var(--color-red), white) content: "browser only";
-        }
-    }
-}
