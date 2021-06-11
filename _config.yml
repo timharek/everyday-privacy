@@ -1,13 +1,12 @@
 title: Everyday Privacy
 email: tim@harek.dev
-description: >- 
-   Your information is for sale. Your deepest secrets are being shared around the web. Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much. 
-baseurl: "" 
-url: "https://everyday-privacy.com" 
+description: >-
+  Your information is for sale. Your deepest secrets are being shared around the web. Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much.
+baseurl: ""
+url: "https://everyday-privacy.com"
 
 sass:
   sass_dir: assets/_sass
-
 
 collections:
   services:
@@ -28,6 +27,9 @@ defaults:
 # Build settings
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
 
 exclude:
   - README.md
