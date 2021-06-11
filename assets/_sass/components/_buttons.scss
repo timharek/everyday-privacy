@@ -1,42 +1,42 @@
 @mixin button($bg-color, $font-color, $hover-bg-color, $hover-font-color, $active-bg-color, $active-font-color) {
-	padding: 1em;
-	font-size: 1rem;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 
-	background: $bg-color;
-	color: $font-color;
-	font-weight: bold;
+    background: $bg-color;
+    color: $font-color;
+    font-weight: bold;
 
-	transition: all 250ms ease;
+    transition: all 250ms ease;
 
-	&:hover {
-		background: $hover-bg-color;
-		color: $hover-font-color;
-	}
+    &:hover {
+        background: $hover-bg-color;
+        color: $hover-font-color;
+    }
 
-	&:active {
-		background: $active-bg-color;
-		color: $active-font-color;
-	}
+    &:active {
+        background: $active-bg-color;
+        color: $active-font-color;
+    }
 }
 
 @mixin button-primary() {
-	@include button(
-		var(--color-primary),
-		white,
-		var(--color-gray),
-		white,
-		var(--color-blue-light),
-		var(--color-primary)
-	);
+    @include button(
+        var(--color-primary),
+        white,
+        var(--color-gray),
+        white,
+        var(--color-blue-light),
+        var(--color-primary)
+    );
 }
 
 button,
 .btn {
-	&.submit {
-		width: 100%;
-		@include button-primary();
-	}
+    &.submit {
+        width: 100%;
+        @include button-primary();
+    }
 }

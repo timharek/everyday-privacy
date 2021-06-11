@@ -1,187 +1,187 @@
 @mixin box-border($border-color) {
-	box-sizing: border-box;
-	border-radius: 10px;
-	border: 5px solid $border-color;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 5px solid $border-color;
 }
 
 @mixin box-info($bg-color, $border-color, $font-color) {
-	padding: 1em;
+    padding: 1em;
 
-	@include box-border($border-color);
-	background: $bg-color;
-	color: $font-color;
+    @include box-border($border-color);
+    background: $bg-color;
+    color: $font-color;
 }
 
 @mixin service-box(
-	$name,
-	$bg-color: var(--color-blue-light),
-	$border-color: var(--color-primary),
-	$font-color: var(--color-primary)
+    $name,
+    $bg-color: var(--color-blue-light),
+    $border-color: var(--color-primary),
+    $font-color: var(--color-primary)
 ) {
-	@include box-info($bg-color, $border-color, $font-color);
-	padding: 0;
+    @include box-info($bg-color, $border-color, $font-color);
+    padding: 0;
 
-	&:not(:last-of-type) {
-		margin-bottom: 1em;
-	}
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
+    }
 
-	header.#{$name}__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-		background: $border-color;
-		color: white;
-		padding: 0.5em;
+    header.#{$name}__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: $border-color;
+        color: white;
+        padding: 0.5em;
 
-		.#{$name}__header--text {
-			display: flex;
-			align-items: center;
+        .#{$name}__header--text {
+            display: flex;
+            align-items: center;
 
-			img {
-				max-width: 75px;
-				margin-right: 0.5em;
-			}
-		}
+            img {
+                max-width: 75px;
+                margin-right: 0.5em;
+            }
+        }
 
-		h1,
-		h2,
-		h3 {
-			margin: 0;
-		}
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
 
-		h3 {
-			font-weight: normal;
-			white-space: nowrap;
-		}
+        h3 {
+            font-weight: normal;
+            white-space: nowrap;
+        }
 
-		.#{$name}__header--name {
-			font-size: 1.5em;
-		}
+        .#{$name}__header--name {
+            font-size: 1.5em;
+        }
 
-		.#{$name}__header--owner {
-			font-size: 1.25em;
-			font-weight: normal;
-		}
+        .#{$name}__header--owner {
+            font-size: 1.25em;
+            font-weight: normal;
+        }
 
-		@include tags($bg-color, $border-color);
-	}
+        @include tags($bg-color, $border-color);
+    }
 
-	.#{$name}__details {
-		&--description {
-			margin: 0;
-			padding: 1em;
-			padding-top: 0;
+    .#{$name}__details {
+        &--description {
+            margin: 0;
+            padding: 1em;
+            padding-top: 0;
 
-			&:only-child {
-				padding-top: 1em;
-			}
-		}
-	}
+            &:only-child {
+                padding-top: 1em;
+            }
+        }
+    }
 
-	.#{$name}__content {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		gap: 1em;
-		padding: 1em;
+    .#{$name}__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
 
-		& > * {
-			width: calc(50% - 0.5em);
-			flex-grow: 0;
+        & > * {
+            width: calc(50% - 0.5em);
+            flex-grow: 0;
 
-			&:only-child {
-				width: 100%;
-			}
+            &:only-child {
+                width: 100%;
+            }
 
-			@media (max-width: $breakpoint-medium) {
-				width: 100%;
-			}
-		}
+            @media (max-width: $breakpoint-medium) {
+                width: 100%;
+            }
+        }
 
-		h1,
-		h2,
-		h3 {
-			margin: 0;
-			margin-bottom: 0.5em;
-		}
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            margin-bottom: 0.5em;
+        }
 
-		&--full {
-			width: 100%;
-		}
+        &--full {
+            width: 100%;
+        }
 
-		h1 {
-			font-size: 2rem;
-			margin: 0;
-		}
-		dl {
-			display: grid;
-			grid-template-columns: auto 1fr;
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
 
-			dd {
-				margin-inline-start: 1em;
-				margin-bottom: 0.5em;
-			}
-			@media (max-width: $breakpoint-small) {
-				grid-template-columns: auto;
+            dd {
+                margin-inline-start: 1em;
+                margin-bottom: 0.5em;
+            }
+            @media (max-width: $breakpoint-small) {
+                grid-template-columns: auto;
 
-				dd {
-					margin-inline-start: 0;
-				}
-			}
-		}
-	}
+                dd {
+                    margin-inline-start: 0;
+                }
+            }
+        }
+    }
 
-	a.#{$name}__button {
-		display: block;
-		background: $border-color;
-		color: white;
-		padding: 1em;
-		margin: 0;
-		text-align: center;
-		font-size: 1.5rem;
-	}
+    a.#{$name}__button {
+        display: block;
+        background: $border-color;
+        color: white;
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
 
 @mixin label($bg-color, $font-color) {
-	display: inline-block;
-	background: $bg-color;
-	color: $font-color;
-	padding: 0.25em 0.5em;
-	margin: 0.25em 0;
-	border-radius: 5px;
+    display: inline-block;
+    background: $bg-color;
+    color: $font-color;
+    padding: 0.25em 0.5em;
+    margin: 0.25em 0;
+    border-radius: 5px;
 }
 
 @mixin tags($bg-color, $font-color) {
-	.tags {
-		list-style: none;
-		padding: 0;
+    .tags {
+        list-style: none;
+        padding: 0;
 
-		li {
-			@include label($bg-color, $font-color);
+        li {
+            @include label($bg-color, $font-color);
 
-			&.green {
-				background: var(--color-green);
-				color: white;
-				font-weight: bold;
-			}
+            &.green {
+                background: var(--color-green);
+                color: white;
+                font-weight: bold;
+            }
 
-			&.red {
-				background: var(--color-red);
-				color: white;
-				font-weight: bold;
-			}
-		}
-	}
+            &.red {
+                background: var(--color-red);
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 @mixin alert($bg-color, $font-color, $radius: 5px) {
-	border-radius: $radius;
-	padding: 1em;
-	background: $bg-color;
-	color: $font-color;
+    border-radius: $radius;
+    padding: 1em;
+    background: $bg-color;
+    color: $font-color;
 
-	a {
-		color: $font-color;
-	}
+    a {
+        color: $font-color;
+    }
 }
