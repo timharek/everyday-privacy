@@ -37,6 +37,7 @@
         .#{$name}__header--text {
             display: flex;
             align-items: center;
+            flex-grow: 1;
 
             img {
                 max-width: 75px;
