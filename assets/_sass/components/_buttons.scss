@@ -23,7 +23,14 @@
 }
 
 @mixin button-primary() {
-	@include button(var(--color-primary), white, var(--color-primary), white, var(--color-info), var(--color-primary));
+	@include button(
+		var(--color-primary),
+		white,
+		var(--color-gray),
+		white,
+		var(--color-blue-light),
+		var(--color-primary)
+	);
 }
 
 button,
