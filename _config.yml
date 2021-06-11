@@ -36,5 +36,3 @@ exclude:
   - LICENSE.md
   - CONTRIBUTING.md
   - start.sh
-  - report.md
-  - report.pdf
