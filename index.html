@@ -1,23 +1,34 @@
 ---
 layout: default
 ---
+
 {% include components/notification-breach.html %}
 
-<section class="introduction">
-    <h1>Learn about privacy and security</h1>
-    <p>
-        Your information is for sale. Your deepest secrets are being shared around the web.
-        Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much.
-    </p>
-</section>
+<div class="introduction">
+    {% include assets/privacy-protection.svg %}
+    <section>
+        <h1>Learn about privacy and security</h1>
+        <p>
+            Your information is for sale. Your deepest secrets are being shared around the web. Take responsibility of
+            your own data by learning more about what you give up and how you can still use the services you love
+            without giving away too much.
+        </p>
+    </section>
+</div>
 
 <h1>Select services you use</h1>
 <section class="select-wrapper">
     <section class="select">
         {% for service in site.services %}
         <label class="service" for="{{ service.name | downcase }}-select">
-            <input type="checkbox" class="service-checkbox" id="{{ service.name | downcase }}-select" value="{{ service.name | lowercase }}" name="{{ service.name }}" />
-            <div class="service-container" >
+            <input
+                type="checkbox"
+                class="service-checkbox"
+                id="{{ service.name | downcase }}-select"
+                value="{{ service.name | lowercase }}"
+                name="{{ service.name }}"
+            />
+            <div class="service-container">
                 <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
                 <h2>{{ service.name }}</h2>
             </div>
@@ -34,7 +45,7 @@ layout: default
 
         for (var i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
-                servicesChecked.push(checkboxes[i].getAttribute('name'));
+                servicesChecked.push(checkboxes[i].getAttribute("name"));
             }
         }
 
@@ -42,9 +53,9 @@ layout: default
     }
 
     function setLocalStorageAndRedirect() {
-        var services = getCheckedBoxes('service-checkbox');
-        localStorage.setItem('services', JSON.stringify(services));
+        var services = getCheckedBoxes("service-checkbox");
+        localStorage.setItem("services", JSON.stringify(services));
 
-        location.href = '/my';
+        location.href = "/my";
     }
 </script>

@@ -18,6 +18,24 @@ body {
 
 .introduction {
     @include box-info(none, var(--color-primary), var(--color-primary));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: column;
+    }
+
+    svg {
+        max-width: 50%;
+
+        @media (max-width: $breakpoint-small) {
+            max-width: 75%;
+        }
+    }
 
     h1 {
         font-size: 2em;
