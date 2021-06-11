@@ -1,11 +1,39 @@
+@mixin button($bg-color, $font-color, $hover-bg-color, $hover-font-color, $active-bg-color, $active-font-color) {
+	padding: 1em;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+
+	background: $bg-color;
+	color: $font-color;
+	font-weight: bold;
+
+	transition: all 250ms ease;
+
+	&:hover {
+		background: $hover-bg-color;
+		color: $hover-font-color;
+	}
+
+	&:active {
+		background: $active-bg-color;
+		color: $active-font-color;
+	}
+}
+
 button,
 .btn {
-    &.submit {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100%;
+	&.submit {
+		width: 100%;
 
-        @include button(var(--color-primary), white, var(--color-dark), inherit, var(--color-info), var(--color-dark));
-    }
+		@include button(
+			var(--color-primary),
+			white,
+			var(--color-primary),
+			white,
+			var(--color-info),
+			var(--color-primary)
+		);
+	}
 }

@@ -1,35 +1,36 @@
 :root {
-    //--color-primary: #3da9fc;
-    --color-primary: #094067;
-    --color-alert: #ef4565;
-    --color-info: #d8eefe;
-    --color-dark: #094067;
-    --color-bg: #fffffe;
-    --color-green: #008a5e;
+	--color-gray: #3d4756;
+	--color-green: #008a5e;
+	--color-red: #ef4565;
+	--color-blue-dark: #094067;
+	--color-blue-light: #d8eefe;
+	--color-primary: var(--color-blue-dark);
+	--color-white: #fffffe;
+	--color-bg: var(--color-white);
 }
 
 html,
 body {
-    background: var(--color-bg);
-    font-family: $font-family-sans;
+	background: var(--color-bg);
+	font-family: $font-family-sans;
 
-    font-size: $font-size-desktop;
+	font-size: $font-size-desktop;
 
-    @media (max-width: $breakpoint-small) {
-        font-size: $font-size-mobile;
-    }
+	@media (max-width: $breakpoint-small) {
+		font-size: $font-size-mobile;
+	}
 }
 
 .container {
-    max-width: $page-max-width;
-    padding: 0 1em;
-    margin: 0 auto;
+	max-width: $page-max-width;
+	padding: 0 1em;
+	margin: 0 auto;
 }
 
 .introduction {
-    @include box-info(none, var(--color-dark), var(--color-dark));
-    
-    h1 {
-        font-size: 2em;
-    }
+	@include box-info(none, var(--color-primary), var(--color-primary));
+
+	h1 {
+		font-size: 2em;
+	}
 }
