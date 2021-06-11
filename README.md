@@ -31,6 +31,17 @@ You can run `start.sh`:
 ## Contributing
 Please see [CONTRIBUTE.md](CONTRIBUTE.md)
 
+
+
+## Future goals
+- [ ] More services; Twitter, Google (Mail, Drive, Search etc.) and more...
+- [ ] Operating systems
+- [ ] Cloud providers
+- [ ] Support nation specific services
+- [ ] Probably more
+
+
+
 ## License
 [GPLv3 License](LICENSE.md)
 
