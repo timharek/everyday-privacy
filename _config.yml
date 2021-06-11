@@ -1,11 +1,9 @@
 title: Everyday Privacy
 email: tim@harek.dev
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://everyday-privacy.com" # the base hostname & protocol for your site, e.g. http://example.com
+description: >- 
+   Your information is for sale. Your deepest secrets are being shared around the web. Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much. 
+baseurl: "" 
+url: "https://everyday-privacy.com" 
 
 sass:
   sass_dir: assets/_sass
