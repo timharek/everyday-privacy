@@ -8,6 +8,8 @@ url: "https://everyday-privacy.com"
 sass:
   sass_dir: assets/_sass
 
+github: https://github.com/timharek/everyday-privacy
+
 collections:
   services:
     sort_by: name
