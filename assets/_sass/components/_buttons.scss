@@ -22,18 +22,14 @@
 	}
 }
 
+@mixin button-primary() {
+	@include button(var(--color-primary), white, var(--color-primary), white, var(--color-info), var(--color-primary));
+}
+
 button,
 .btn {
 	&.submit {
 		width: 100%;
-
-		@include button(
-			var(--color-primary),
-			white,
-			var(--color-primary),
-			white,
-			var(--color-info),
-			var(--color-primary)
-		);
+		@include button-primary();
 	}
 }
