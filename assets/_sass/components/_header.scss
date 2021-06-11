@@ -1,22 +1,28 @@
 header.main-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
     gap: 1em;
 
+    .logo {
+        font-size: 2em;
+    }
+
     ul {
         list-style: none;
         padding: 0;
+        padding-top: 0.5em;
         margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        border-top: 2px solid var(--color-primary);
 
         li {
             display: inline;
-
-            &:not(:last-of-type) {
-                margin-right: 0.5em;
-            }
         }
     }
 }
