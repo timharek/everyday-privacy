@@ -2,12 +2,13 @@
     <div class="logo">
         <a href="/">{{ site.title }}</a>
     </div>
-    <ul role="navigation">
-        {% assign pages = site.pages | where: "menu", "main" %}
-        {% for page in pages %}
+    <nav>
+        <ul>
+            {% assign pages = site.pages | where: "menu", "main" %} {% for page in pages %}
             <li>
                 <a href="{{ page.url }}">{{ page.short_title | default: page.title }}</a>
             </li>
-        {% endfor %}
-    </ul>
+            {% endfor %}
+        </ul>
+    </nav>
 </header>
