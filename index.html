@@ -20,7 +20,7 @@ layout: default
 <section class="select-wrapper">
     <section class="select">
         {% for service in site.services %}
-        <label class="service" for="{{ service.name | downcase }}-select">
+        <label class="service" for="{{ service.name | downcase }}-select" aria-label="Select {{ service.name }}">
             <input
                 type="checkbox"
                 class="service-checkbox"
