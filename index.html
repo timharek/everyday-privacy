@@ -16,9 +16,9 @@ layout: default
     </section>
 </div>
 
-<h1>Select services you use</h1>
 <section class="select-wrapper">
-    <section class="select">
+    <h2>Select services you use</h2>
+    <div class="select">
         {% for service in site.services %}
         <label class="service" for="{{ service.name | downcase }}-select" aria-label="Select {{ service.name }}">
             <input
@@ -30,15 +30,15 @@ layout: default
             />
             <div class="service-container">
                 <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
-                <h2>{{ service.name }}</h2>
+                <h3>{{ service.name }}</h3>
             </div>
         </label>
         {% endfor %}
-    </section>
+    </div>
     <button class="submit" onclick="setLocalStorageAndRedirect()">Submit</button>
 </section>
 
-<script type="text/javascript">
+<script>
     function getCheckedBoxes(checkboxName) {
         var checkboxes = document.getElementsByClassName(checkboxName);
         var servicesChecked = [];

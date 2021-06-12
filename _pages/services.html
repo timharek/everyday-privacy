@@ -5,19 +5,18 @@ short_title: All Services
 menu: main
 permalink: /services
 ---
+
 <h1>Services and platforms</h1>
-<section class="all-services">
+<div class="all-services">
     {% for service in site.services %}
-        <a href="{{ service.url }}" class="service">
-
-            <span class="logo">
-                <img src="{{ service.logo }}" alt="{{ service.name }} logo">
-            </span>
-            <span class="meta">
-                <h2>{{ service.name }}</h2>
-                <h3>Owned by {{ service.owner }}</h3>
-            </span>
-
-        </a>
+    <a href="{{ service.url }}" class="service">
+        <span class="logo">
+            <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
+        </span>
+        <span class="meta">
+            <h2>{{ service.name }}</h2>
+            <h3>Owned by {{ service.owner }}</h3>
+        </span>
+    </a>
     {% endfor %}
-</section>
+</div>

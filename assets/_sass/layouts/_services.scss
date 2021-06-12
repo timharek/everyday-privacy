@@ -62,6 +62,10 @@
 .select-wrapper {
     position: relative;
     padding-bottom: 2em;
+
+    h2 {
+        font-size: 1.8em;
+    }
 }
 
 .select {
@@ -114,7 +118,7 @@
         }
 
         @media (max-width: $breakpoint-small) {
-            h2 {
+            h3 {
                 font-size: 1em;
             }
             img {

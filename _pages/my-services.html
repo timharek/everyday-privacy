@@ -6,10 +6,13 @@ permalink: /my
 
 <h1>Secure your accounts (self-configuration)</h1>
 <div class="none-selected">
-    <p>You have not selected any services, go back to the <a href="/">front-page</a> or see <a href="/services">all services</a></p>
+    <p>
+        You have not selected any services, go back to the <a href="/">front-page</a> or see
+        <a href="/services">all services</a>
+    </p>
 </div>
 
-<section class="selected">
+<div class="selected">
     {% for service in site.services %}
     <div id="{{ service.name | downcase }}" class="selected--service">
         <header class="service__header">
@@ -22,23 +25,18 @@ permalink: /my
             </div>
             <ul class="tags">
                 {% for tag in service.tags %}
-                    <li>{{ tag }}</li>
+                <li>{{ tag }}</li>
                 {% endfor %}
             </ul>
         </header>
         <div class="service__content">
-            {% assign security = service.security %}
-            {% assign privacy = service.privacy %}
-
-            {% if security and privacy %}
-                <div>
-                    {% if security %}
-                        {% include components/list-details.html array=security title="Security settings" type="ol" %}
-                    {% endif %}
-                    {% if privacy %}
-                        {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %}
-                    {% endif %}
-                </div>
+            {% assign security = service.security %} {% assign privacy = service.privacy %} {% if security and privacy
+            %}
+            <div>
+                {% if security %} {% include components/list-details.html array=security title="Security settings"
+                type="ol" %} {% endif %} {% if privacy %} {% include components/list-details.html array=privacy
+                title="Privacy settings" type="ol" %} {% endif %}
+            </div>
             {% endif %}
 
             <div class="what-they-collect">
@@ -46,9 +44,7 @@ permalink: /my
                 {% for item in service.collect %}
                 <details>
                     <summary>{{ item.what }}</summary>
-                    <p class="desc">
-                        {{ item.how }}
-                    </p>
+                    <p class="desc">{{ item.how }}</p>
                 </details>
                 {% endfor %}
             </div>
@@ -56,9 +52,9 @@ permalink: /my
         <a class="service__button" href="{{ service.url }}">Learn more</a>
     </div>
     {% endfor %}
-</section>
+</div>
 
-<script type="text/javascript">
+<script>
     window.onload = populateTemplate();
 
     function populateTemplate() {
@@ -71,7 +67,5 @@ permalink: /my
                 document.getElementById(array[i].toLowerCase()).style.display = "block";
             }
         }
-            
-
     }
 </script>
