@@ -31,7 +31,7 @@ You can run `start.sh`:
 ```
 
 ## Contributing
-Please see [CONTRIBUTE.md](CONTRIBUTE.md)
+Please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 
 
