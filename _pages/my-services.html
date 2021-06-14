@@ -30,13 +30,8 @@ permalink: /my
             </ul>
         </header>
         <div class="service__content">
-            {% assign security = service.security %} {% assign privacy = service.privacy %} {% if security and privacy
-            %}
-            <div>
-                {% if security %} {% include components/list-details.html array=security title="Security settings"
-                type="ol" %} {% endif %} {% if privacy %} {% include components/list-details.html array=privacy
-                title="Privacy settings" type="ol" %} {% endif %}
-            </div>
+            {% assign security = service.security %} {% assign privacy = service.privacy %} {% if security and privacy %}
+            <div>{% if security %} {% include components/list-details.html array=security title="Security settings" type="ol" %} {% endif %} {% if privacy %} {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %} {% endif %}</div>
             {% endif %}
 
             <div class="what-they-collect">
@@ -50,6 +45,7 @@ permalink: /my
             </div>
         </div>
         <a class="service__button" href="{{ service.url }}">Learn more</a>
+        <button onclick="toggleDetails()">Toggle</button>
     </div>
     {% endfor %}
 </div>
@@ -66,6 +62,31 @@ permalink: /my
             for (i = 0; i < array.length; i++) {
                 document.getElementById(array[i].toLowerCase()).style.display = "block";
             }
+        }
+    }
+    // Only one details can be open
+    function oneDetails() {
+        const details = document.querySelectorAll("details");
+
+        // Add the onclick listeners.
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    }
+
+    function toggleDetails() {
+        const parent = event.target.parentNode;
+        const parentDetails = document.getElementById(parent.id).getElementsByTagName("details");
+
+        for (detail of parentDetails) {
+            detail.removeAttribute("open");
         }
     }
 </script>
