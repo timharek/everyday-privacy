@@ -80,7 +80,8 @@
     }
 
     .service-checkbox {
-        display: none;
+        position: absolute !important;
+        left: -9999px !important;
 
         &:checked + .service-container {
             background: var(--color-primary);
@@ -98,10 +99,8 @@
     }
 
     .service {
-        display: block;
-        overflow: hidden;
-        position: relative;
         text-align: center;
+        min-width: 100%;
 
         .service-container {
             padding: 1em;
