@@ -9,5 +9,5 @@ tags:
 recommended: true
 website: https://bitwarden.com
 desc: >-
-  Bitwarden is the easiest and safest way to store your logins and passwords across all of your devices (iOS, Android, Chrome, Firefox, Opera, Windows, Mac, Linux, and more).
+  Cross-Platform *open source* password manager, providing a way to store your login credentials, such as passwords, IDs and much more.
 ---

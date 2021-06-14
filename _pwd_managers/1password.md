@@ -9,5 +9,5 @@ tags:
 recommended: false
 website: https://www.1password.com/
 desc: >-
-  A password manager and secure wallet for Mac, Windows, iOS, and Android.
+  Cross-Platform *closed source* password manager, providing a way to store your login credentials, such as passwords, IDs and much more.
 ---

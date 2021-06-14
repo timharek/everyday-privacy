@@ -3,4 +3,10 @@
 
 .pwd-manager {
     @include service-box("manager");
+
+    .manager__content {
+        p {
+            margin: 0;
+        }
+    }
 }
