@@ -1,28 +1,36 @@
 header.main-header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
-    gap: 1em;
+    gap: .5em;
 
     .logo {
         font-size: 2em;
+        a {
+            text-decoration: none;
+        }
     }
 
     ul {
         list-style: none;
         padding: 0;
-        padding-top: 0.5em;
         margin: 0;
         width: 100%;
         display: flex;
         justify-content: center;
         gap: 1em;
-        border-top: 2px solid var(--color-primary);
 
         li {
             display: inline;
         }
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+        border: 1px solid var(--color-primary);
     }
 }
