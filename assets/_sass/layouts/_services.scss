@@ -43,16 +43,16 @@
         @include alert(var(--color-red), white, 0);
     }
 
-    .expand-box {
-        &:not(:last-of-type) {
-            margin-bottom: 1em;
-        }
-    }
-
     .last-updated {
         display: block;
         padding: 1em;
         text-align: right;
+    }
+}
+
+.expand-box {
+    &:not(:last-of-type) {
+        margin-bottom: 1em;
     }
 }
 
