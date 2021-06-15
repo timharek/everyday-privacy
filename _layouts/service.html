@@ -51,7 +51,10 @@ layout: default
             </div>
             {% endif %}
             <div>
-                <h2>What they collect [<a href="{{ page.policy }}">source</a>]</h2>
+                <h2>
+                    What they collect [<a href="{{ page.policy }}">source</a>]
+                    {% include components/button.close.html %}
+                </h2>
                 {% for item in page.collect %}
                 <details>
                     <summary>{{ item.what }}</summary>
@@ -73,3 +76,4 @@ layout: default
         <span class="last-updated"> Last updated: {{ page.last_update }} </span>
     </div>
 </div>
+

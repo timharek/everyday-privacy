@@ -35,7 +35,9 @@ permalink: /my
             {% endif %}
 
             <div class="what-they-collect">
-                <h2>What they collect</h2>
+                <h2>What they collect 
+                    {% include components/button.close.html %}
+                </h2>
                 {% for item in service.collect %}
                 <details>
                     <summary>{{ item.what }}</summary>
@@ -45,7 +47,6 @@ permalink: /my
             </div>
         </div>
         <a class="service__button" href="{{ service.url }}">Learn more</a>
-        <button onclick="toggleDetails()">Toggle</button>
     </div>
     {% endfor %}
 </div>
@@ -62,31 +63,6 @@ permalink: /my
             for (i = 0; i < array.length; i++) {
                 document.getElementById(array[i].toLowerCase()).style.display = "block";
             }
-        }
-    }
-    // Only one details can be open
-    function oneDetails() {
-        const details = document.querySelectorAll("details");
-
-        // Add the onclick listeners.
-        details.forEach((targetDetail) => {
-            targetDetail.addEventListener("click", () => {
-                // Close all the details that are not targetDetail.
-                details.forEach((detail) => {
-                    if (detail !== targetDetail) {
-                        detail.removeAttribute("open");
-                    }
-                });
-            });
-        });
-    }
-
-    function toggleDetails() {
-        const parent = event.target.parentNode;
-        const parentDetails = document.getElementById(parent.id).getElementsByTagName("details");
-
-        for (detail of parentDetails) {
-            detail.removeAttribute("open");
         }
     }
 </script>

@@ -39,4 +39,17 @@ button,
         width: 100%;
         @include button-primary();
     }
+    &.close {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        color: var(--color-primary);
+
+        &:hover {
+            color: var(--color-gray);
+        }
+    }
 }

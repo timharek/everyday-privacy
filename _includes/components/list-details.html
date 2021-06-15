@@ -1,5 +1,9 @@
 <div class="expand-box">
-    <h2>{{ include.title }}</h2>
+    <h2>{{ include.title }} 
+        <button class="close" onclick="collapseDetails()">
+            {% include components/button.close.svg %}
+        </button>
+    </h2>
     {% for item in include.array %}
     <details>
         <summary>
