@@ -9,6 +9,9 @@ sass:
   sass_dir: assets/_sass
 
 github: "https://github.com/timharek/everyday-privacy"
+author:
+  name: Tim Hårek Andreassen
+  email: tim@harek.dev
 
 collections:
   services:
