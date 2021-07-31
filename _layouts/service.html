@@ -45,16 +45,21 @@ layout: default
         %} {% include components/external-links-list.html array=page.headlines
         title="Headlines" %} {% endif %}
       </div>
-      {% if page.security or page.privacy %}
       <h1 class="service__content--full">
         Secure your account (self-configuration)
       </h1>
+      {% if page.security or page.privacy %}
       <div>
         {% if page.security %} {% include components/list-details.html
         array=page.security title="Security settings" type="ol" %} {% endif %}
         {% if page.privacy %} {% include components/list-details.html
         array=page.privacy title="Privacy settings" type="ol" %} {% endif %}
       </div>
+      {% else %}
+      <span>
+        This page is missing some configurations, want to
+        <a href="https://github.com/timharek/everyday-privacy" target="_blank">contribute?</a>
+      </span>
       {% endif %}
       <div>
         <h2>
