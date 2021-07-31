@@ -3,77 +3,82 @@ layout: default
 ---
 
 <div class="service-page">
-    <div class="service">
-        <header class="service__header">
-            <div class="service__header--text">
-                <img src="{{ page.logo }}" alt="{{ page.title }} logo" />
-                <span class="name-owner">
-                    <h1 class="service__header--name">{{ page.title }}</h1>
-                    <h2 class="service__header--owner">Owned by {{ page.owner }}</h2>
-                </span>
-            </div>
-            <ul class="tags">
-                {% for tag in page.tags %}
-                <li>{{ tag }}</li>
-                {% endfor %}
-            </ul>
-        </header>
-        <div class="service__details">
-            {% assign recent_breach = page.recent_breach | date: "%m" %} {% assign this_month = "now" | date: "%m" %} {%
-            assign months_since_breach = recent_breach | minus: this_month %} {% if months_since_breach <= 2 and
-            months_since_breach >= -2 %}
-            <div class="warning">
-                There was recently a breach: {% if months_since_breach == 0 %} {% assign breach_day = page.recent_breach
-                | date: "%d" %} {% assign today_day = "now" | date: "%d" %} {% assign days_ago = today_day | minus:
-                breach_day %}
-                <b>{{ days_ago }} days ago</b>
-                {% else if months_since_breach == 1 %}
-                <b>{{ months_since_breach | abs }} month ago</b>
-                {% else %}
-                <b>{{ months_since_breach | abs }} months ago</b>
-                {% endif %} – {{ page.recent_breach }}
-            </div>
-            {% endif %}
-            <p class="service__details--description">{{ page.desc }}</p>
-        </div>
-        <div class="service__content">
-            <div class="service__content--full">
-                {% if page.breaches %} {% include components/external-links-list.html array=page.breaches
-                title="Breaches" %} {% endif %} {% if page.headlines %} {% include components/external-links-list.html
-                array=page.headlines title="Headlines" %} {% endif %}
-            </div>
-            {% if page.security or page.privacy %}
-            <h1 class="service__content--full">Secure your account (self-configuration)</h1>
-            <div>
-                {% if page.security %} {% include components/list-details.html array=page.security title="Security
-                settings" type="ol" %} {% endif %} {% if page.privacy %} {% include components/list-details.html
-                array=page.privacy title="Privacy settings" type="ol" %} {% endif %}
-            </div>
-            {% endif %}
-            <div>
-                <h2>
-                    What they collect [<a href="{{ page.policy }}">source</a>]
-                    {% include components/button.close.html %}
-                </h2>
-                {% for item in page.collect %}
-                <details>
-                    <summary>{{ item.what }}</summary>
-                    <p class="desc">{{ item.how }}</p>
-                </details>
-                {% endfor %}
-            </div>
-            {% if alternatives %}
-            <div class="alternatives">
-                <h1>Alternatives</h1>
-                {% for alt in page.alternatives %}
-                <div class="alternative">
-                    <img src="/assets/img/alternatives/{{ alt }}/logo.png" alt="" />
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div>
-        <span class="last-updated"> Last updated: {{ page.last_update }} </span>
+  <div class="service">
+    <header class="service__header">
+      <div class="service__header--text">
+        <img src="{{ page.logo }}" alt="{{ page.title }} logo" />
+        <span class="name-owner">
+          <h1 class="service__header--name">{{ page.title }}</h1>
+          <h2 class="service__header--owner">Owned by {{ page.owner }}</h2>
+        </span>
+      </div>
+      <ul class="tags">
+        {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </header>
+    <div class="service__details">
+      {% assign recent_breach = page.recent_breach | date: "%m" %} {% assign
+      this_month = "now" | date: "%m" %} {% assign months_since_breach =
+      recent_breach | minus: this_month %} {% if months_since_breach <= 2 and
+      months_since_breach >= -2 %}
+      <div class="warning">
+        There was recently a breach: {% if months_since_breach == 0 %} {% assign
+        breach_day = page.recent_breach | date: "%d" %} {% assign today_day =
+        "now" | date: "%d" %} {% assign days_ago = today_day | minus: breach_day
+        %}
+        <b>{{ days_ago }} days ago</b>
+        {% else if months_since_breach == 1 %}
+        <b>{{ months_since_breach | abs }} month ago</b>
+        {% else %}
+        <b>{{ months_since_breach | abs }} months ago</b>
+        {% endif %} – {{ page.recent_breach }}
+      </div>
+      {% endif %}
+      <p class="service__details--description">{{ page.desc }}</p>
     </div>
+    <div class="service__content">
+      <div class="service__content--full">
+        {% if page.breaches %} {% include components/external-links-list.html
+        array=page.breaches title="Breaches" %} {% endif %} {% if page.headlines
+        %} {% include components/external-links-list.html array=page.headlines
+        title="Headlines" %} {% endif %}
+      </div>
+      {% if page.security or page.privacy %}
+      <h1 class="service__content--full">
+        Secure your account (self-configuration)
+      </h1>
+      <div>
+        {% if page.security %} {% include components/list-details.html
+        array=page.security title="Security settings" type="ol" %} {% endif %}
+        {% if page.privacy %} {% include components/list-details.html
+        array=page.privacy title="Privacy settings" type="ol" %} {% endif %}
+      </div>
+      {% endif %}
+      <div>
+        <h2>
+          What they collect [<a href="{{ page.policy }}">source</a>] {% include
+          components/button.close.html %}
+        </h2>
+        {% for item in page.collect %}
+        <details>
+          <summary>{{ item.what }}</summary>
+          <p class="desc">{{ item.how }}</p>
+        </details>
+        {% endfor %}
+      </div>
+      {% if alternatives %}
+      <div class="alternatives">
+        <h1>Alternatives</h1>
+        {% for alt in page.alternatives %}
+        <div class="alternative">
+          <img src="/assets/img/alternatives/{{ alt }}/logo.png" alt="" />
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <span class="last-updated"> Last updated: {{ page.last_update }} </span>
+  </div>
 </div>
-

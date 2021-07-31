@@ -5,57 +5,62 @@ layout: default
 {% include components/notification-breach.html %}
 
 <div class="introduction">
-    {% include assets/privacy-protection.svg %}
-    <section>
-        <h1>Learn about privacy and security</h1>
-        <p>
-            Your information is for sale. Your deepest secrets are being shared around the web. Take responsibility of
-            your own data by learning more about what you give up and how you can still use the services you love
-            without giving away too much.
-        </p>
-    </section>
+  {% include assets/privacy-protection.svg %}
+  <section>
+    <h1>Learn about privacy and security</h1>
+    <p>
+      Your information is for sale. Your deepest secrets are being shared around
+      the web. Take responsibility of your own data by learning more about what
+      you give up and how you can still use the services you love without giving
+      away too much.
+    </p>
+  </section>
 </div>
 
 <section class="select-wrapper">
-    <h2>Select services you use</h2>
-    <div class="select">
-        {% for service in site.services %}
-        <label class="service" for="{{ service.name | downcase }}-select" aria-label="Select {{ service.name }}">
-            <input
-                type="checkbox"
-                class="service-checkbox"
-                id="{{ service.name | downcase }}-select"
-                value="{{ service.name | lowercase }}"
-                name="{{ service.name }}"
-            />
-            <div class="service-container">
-                <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
-                <h3>{{ service.name }}</h3>
-            </div>
-        </label>
-        {% endfor %}
-    </div>
-    <button class="submit" onclick="setLocalStorageAndRedirect()">Submit</button>
+  <h2>Select services you use</h2>
+  <div class="select">
+    {% for service in site.services %}
+    <label
+      class="service"
+      for="{{ service.name | downcase }}-select"
+      aria-label="Select {{ service.name }}"
+    >
+      <input
+        type="checkbox"
+        class="service-checkbox"
+        id="{{ service.name | downcase }}-select"
+        value="{{ service.name | lowercase }}"
+        name="{{ service.name }}"
+      />
+      <div class="service-container">
+        <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
+        <h3>{{ service.name }}</h3>
+      </div>
+    </label>
+    {% endfor %}
+  </div>
+  <button class="submit" onclick="setLocalStorageAndRedirect()">Submit</button>
 </section>
 
 <script>
-    function getCheckedBoxes(checkboxName) {
-        var checkboxes = document.getElementsByClassName(checkboxName);
-        var servicesChecked = [];
+  function getCheckedBoxes(checkboxName) {
+    var checkboxes = document.getElementsByClassName(checkboxName);
+    var servicesChecked = [];
 
-        for (var i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].checked) {
-                servicesChecked.push(checkboxes[i].getAttribute("name"));
-            }
-        }
-
-        return servicesChecked.length > 0 ? servicesChecked : null;
+    for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].checked) {
+        servicesChecked.push(checkboxes[i].getAttribute("name"));
+      }
     }
 
-    function setLocalStorageAndRedirect() {
-        var services = getCheckedBoxes("service-checkbox");
-        localStorage.setItem("services", JSON.stringify(services));
+    return servicesChecked.length > 0 ? servicesChecked : null;
+  }
 
-        location.href = "/my";
-    }
+  function setLocalStorageAndRedirect() {
+    var services = getCheckedBoxes("service-checkbox");
+    localStorage.setItem("services", JSON.stringify(services));
+
+    location.href = "/my";
+  }
 </script>

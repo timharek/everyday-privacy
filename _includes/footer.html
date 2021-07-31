@@ -1,15 +1,18 @@
 <footer>
-    <div class="footer--section">
-        <ul class="footer--list inline">
-            {% assign pages = site.pages | where: "menu", "footer" %} {% for page in pages %}
-            <li>
-                <a href="{{ page.url }}">{{ page.short_title | default: page.title }}</a>
-            </li>
-            {% endfor %} {% if site.github %}
-            <li>
-                <a href="{{ site.github }}">Source code</a>
-            </li>
-            {% endif %}
-        </ul>
-    </div>
+  <div class="footer--section">
+    <ul class="footer--list inline">
+      {% assign pages = site.pages | where: "menu", "footer" %} {% for page in
+      pages %}
+      <li>
+        <a href="{{ page.url }}"
+          >{{ page.short_title | default: page.title }}</a
+        >
+      </li>
+      {% endfor %} {% if site.github %}
+      <li>
+        <a href="{{ site.github }}">Source code</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
 </footer>

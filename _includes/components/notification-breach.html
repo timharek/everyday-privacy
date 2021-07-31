@@ -1,19 +1,14 @@
-{% assign breaches = "" %}
-{% for service in site.services %}
-    {% assign recent_breach = service.recent_breach | date: "%Y-%m-%d" | append: "," %}
-    {% assign breaches = breaches | append: recent_breach %}
-{% endfor %}
-{% assign breaches = breaches | split: "," | sort | reverse %}
-
-{% assign perpetrator = site.services | where: "recent_breach", breaches[0] %}
-{% assign recent_breach = breaches[0] | date: "%m" %}
-{% assign this_month = "now" | date: "%m" %}
-{% assign months_since_breach = recent_breach | minus: this_month %}
-
-{% if months_since_breach <= 2 and months_since_breach >= -2 %}
+{% assign breaches = "" %} {% for service in site.services %} {% assign
+recent_breach = service.recent_breach | date: "%Y-%m-%d" | append: "," %} {%
+assign breaches = breaches | append: recent_breach %} {% endfor %} {% assign
+breaches = breaches | split: "," | sort | reverse %} {% assign perpetrator =
+site.services | where: "recent_breach", breaches[0] %} {% assign recent_breach =
+breaches[0] | date: "%m" %} {% assign this_month = "now" | date: "%m" %} {%
+assign months_since_breach = recent_breach | minus: this_month %} {% if
+months_since_breach <= 2 and months_since_breach >= -2 %}
 <div class="warning">
-    <a href="{{ perpetrator[0].url }}">
-        There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
-    </a>
+  <a href="{{ perpetrator[0].url }}">
+    There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
+  </a>
 </div>
 {% endif %}

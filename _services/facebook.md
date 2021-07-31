@@ -4,7 +4,7 @@ slug: facebook
 logo: /assets/img/services/facebook/logo.svg
 owner: Facebook, Inc.
 recent_breach: 2021-04-03
-tags: 
+tags:
   - Proprietary
   - Free
   - Social Media
@@ -15,7 +15,7 @@ desc: >-
 
 security:
   - desc: Activate Two-Factor Authentication (2FA)
-    device: 
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
@@ -25,16 +25,16 @@ security:
           - You will be asked for your account password
           - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
           - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you are logged in 
-    device: 
+  - desc: Verify where you are logged in
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
           - Then go to <b>Security and Login</b>
           - Verify your devices
           - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password  
-    device: 
+  - desc: Choose a strong password
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
@@ -43,22 +43,22 @@ security:
           - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols. (preferably from a <a href="/password-manager">password manager</a>)
 
 privacy:
-  - desc: Privacy Checkup 
-    device: 
+  - desc: Privacy Checkup
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Privacy Checkup</b>
           - Go through each topic, and select the options that suits you the most
   - desc: Turn off Location History
-    device: 
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
           - Then go to <b>Account Settings</b>
           - From here, select <b>Location</b>
           - Press <b>Edit</b> and chose the option <b>Off</b>
-  - desc: Delete Location History 
-    device: 
+  - desc: Delete Location History
+    device:
       - name: app-only
         steps:
           - Go to the hamburger-menu in bottom right corner
@@ -68,32 +68,32 @@ privacy:
           - Tap <b>View your Location History</b>
           - Tap the <i>three dots</i> in the top right
           - Tap <b>Delete all location history</b>
-  - desc: Turn off Face recognition 
-    device: 
+  - desc: Turn off Face recognition
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
           - Then go to <b>Privacy</b>
           - From here, select <b>Face Recognition</b>
           - Press <b>Edit</b> and choose the option <b>Off</b>
-  - desc: Disable data sharing with advertisers 
-    device: 
+  - desc: Disable data sharing with advertisers
+    device:
       - name: browser
         steps:
           - Go to <b>Settings & Privacy</b> -> <b>Settings</b>
           - Select <b>Ads</b> on the left side
           - Choose <b>Ad Setting</b> on the left side
           - Click on each of the different categories and disable everything
-  - desc: Download Your Information 
-    device: 
+  - desc: Download Your Information
+    device:
       - name: browser
         steps:
           - Go to <a href="https://www.facebook.com/dyi" target="_blank">facebook.com/dyi</a>
           - Select the data range <b>All of my data</b> with the format of your choosing (HTML is easy to understand, it can be opened in the browser)
           - Press <b>Create File</b>-button
           - And wait, you will either get an email or a notification letting you know when you can download the data.
-  - desc: Delete Your account 
-    device: 
+  - desc: Delete Your account
+    device:
       - name: app
         steps:
           - Go to the hamburger-menu in bottom right corner
@@ -115,12 +115,12 @@ privacy:
 breaches:
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
     url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
-    date: 2021-04-03 
+    date: 2021-04-03
   - name: Facebook admits year-long data breach exposed 6 million users
-    date: 2013-06-22 
+    date: 2013-06-22
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
   - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
-    date: 2018-07-06 
+    date: 2018-07-06
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
     date: 2018-01-01 #TODO: need to verify this
@@ -146,14 +146,14 @@ collect: # What they collect
     how: How you interact with all of their products, engagement, who you share with, duration of interaction.
   - what: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-  - what: Debit or credit card number 
+  - what: Debit or credit card number
     how: If you make any purchases using Facebook, these details will be saved and collected for 7 years.
   - what: Device information
     how: Via computers, phones, connected TVs and other web-connected device. Operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names, types and plugins (browsers).
   - what: Device operations
     how: Operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, mouse movements.
   - what: Identifiers
-    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs. 
+    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs.
   - what: Information from partners (even without an account)
     how: >-
       Your interactions with apps, ads using Facebook's Analytics tools. These partners provide information about your activities off Facebook - including information about your device, websites you visit, purchases you make, the ads yu see, and how you use their services, whether or not you have a Facebook account or are logged into Facebook.

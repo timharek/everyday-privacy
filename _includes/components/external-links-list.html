@@ -1,16 +1,14 @@
 {% if include.array %}
 <div class="external-links">
-    <h2>{{ include.title }}</h2>
-    <dl>
-        {% assign array = include.array | sort: "date" | reverse %}
-        {% for item in array %}
-        <dt>
-            {{ item.date }}
-        </dt>
-        <dd>
-            <a href="{{ item.url }}">{{ item.name }}</a>
-        </dd>
-        {% endfor %}
-    </dl>
+  <h2>{{ include.title }}</h2>
+  <dl>
+    {% assign array = include.array | sort: "date" | reverse %} {% for item in
+    array %}
+    <dt>{{ item.date }}</dt>
+    <dd>
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    </dd>
+    {% endfor %}
+  </dl>
 </div>
 {% endif %}

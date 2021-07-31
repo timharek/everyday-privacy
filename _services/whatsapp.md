@@ -3,8 +3,8 @@ name: WhatsApp
 slug: whatsapp
 logo: /assets/img/services/whatsapp/logo.svg
 owner: Facebook, Inc.
-recent_breach: 
-tags: 
+recent_breach:
+tags:
   - Proprietary
   - Free
   - Messaging
@@ -12,16 +12,16 @@ desc: >-
   A secure messaging and calling app, available on phones all over the world.
 
 breaches:
-  - name: WhatsApp leaks usernames, telephone numbers and messages 
-    url: https://web.archive.org/web/20110523235136/http://www.yourdailymac.net/2011/05/whatsapp-leaks-usernames-telephone-numbers-and-messages/ 
+  - name: WhatsApp leaks usernames, telephone numbers and messages
+    url: https://web.archive.org/web/20110523235136/http://www.yourdailymac.net/2011/05/whatsapp-leaks-usernames-telephone-numbers-and-messages/
     date: 2011-05-19
   - name: Sniffer tool displays other people's WhatsApp messages
     url: http://www.h-online.com/security/news/item/Sniffer-tool-displays-other-people-s-WhatsApp-messages-1574382.html
     date: 2012-05-13
 
 headlines:
-  - name: "Where WhatsApp Went Wrong: EFF's Four Biggest Security Concerns" 
-    url: https://www.eff.org/deeplinks/2016/10/where-whatsapp-went-wrong-effs-four-biggest-security-concerns 
+  - name: "Where WhatsApp Went Wrong: EFF's Four Biggest Security Concerns"
+    url: https://www.eff.org/deeplinks/2016/10/where-whatsapp-went-wrong-effs-four-biggest-security-concerns
     date: 2016-10-13
   - name: "New WhatsApp Warning: Security Flaw Confirmed—1 Billion Users Told Update Apps Now"
     url: https://www.forbes.com/sites/zakdoffman/2019/10/03/new-whatsapp-warning-security-flaw-confirmed1-billion-users-told-update-apps-now/

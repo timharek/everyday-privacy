@@ -1,26 +1,43 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="{{ page.desc | page.excerpt | page.description | default: site.description }}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ site.title }}" />
-    <meta name="twitter:description" content="{{ page.desc | page.excerpt |page.description | default: site.description }}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ page.image | default: "/assets/img/cover.png" | relative_url }}" />
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="{{ page.desc | page.excerpt | page.description | default: site.description }}" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.image | default: "/assets/img/cover.png" | relative_url }}" />
-    <meta name="apple-mobile-web-app-capable" content="no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta
+    name="description"
+    content="{{ page.desc | page.excerpt | page.description | default: site.description }}"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta
+    name="twitter:description"
+    content="{{ page.desc | page.excerpt |page.description | default: site.description }}"
+  />
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image | default:
+  "/assets/img/cover.png" | relative_url }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:description"
+    content="{{ page.desc | page.excerpt | page.description | default: site.description }}"
+  />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.image | default:
+  "/assets/img/cover.png" | relative_url }}" />
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style"> <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
+  <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ site.url }}/feed.xml"
+    title="{{ site.title }}"
+  />
 
-    {%- feed_meta -%} {% if page.title %}
-    <title>{{ site.title }} - {{ page.title }}</title>
-    {% else %}
-    <title>{{ site.title }}</title>
-    {% endif %}
+  {%- feed_meta -%} {% if page.title %}
+  <title>{{ site.title }} - {{ page.title }}</title>
+  {% else %}
+  <title>{{ site.title }}</title>
+  {% endif %}
 </head>

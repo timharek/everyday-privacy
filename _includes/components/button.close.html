@@ -1,14 +1,14 @@
 <button class="close" onclick="collapseDetails()">
-    {% include components/button.close.svg %}
+  {% include components/button.close.svg %}
 </button>
 
 <script>
-    function collapseDetails() {
-        const parent = event.target.parentNode.parentNode.parentNode.parentNode;
-        const parentDetails = parent.querySelectorAll("details");
+  function collapseDetails() {
+    const parent = event.target.parentNode.parentNode.parentNode.parentNode;
+    const parentDetails = parent.querySelectorAll("details");
 
-        parentDetails.forEach((detail) => {
-            detail.removeAttribute("open");
-        });
-    }
+    parentDetails.forEach((detail) => {
+      detail.removeAttribute("open");
+    });
+  }
 </script>

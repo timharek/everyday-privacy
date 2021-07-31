@@ -4,7 +4,7 @@ slug: snapchat
 logo: /assets/img/services/snapchat/logo.svg
 owner: Snap, Inc.
 recent_breach: 2014-01-01
-tags: 
+tags:
   - Proprietary
   - Free
   - Social Media
@@ -12,15 +12,15 @@ desc: >-
   A multimedia messaging app, where you mainly send photos as messages.
 security:
   - desc: Activate Two-Factor Authentication (2FA)
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
           - Then choose <b>Two-Factor Authentication</b>
           - Chose 2FA method, recommended to use an <b>Authentication App</b> instead of <b>Text message</b>.
           - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Choose a strong password 
-    device: 
+  - desc: Choose a strong password
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
@@ -29,13 +29,13 @@ security:
 
 privacy:
   - desc: Adjust who can interact with you
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
           - Under the section <b>Who can...</b>, you can specify different parts of your account
   - desc: Advertisement preferences
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
@@ -43,7 +43,7 @@ privacy:
           - Go to <b>Advert Preferences</b>
           - Here you can toggle off all the different settings you want to opt-out of. This is how you can limit/control how Snapchat and third-parties use information about you.
   - desc: Lifestyle & Interests
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
@@ -51,7 +51,7 @@ privacy:
           - Go to <b>Lifestyle & Interests</b>
           - Here you can toggle off all the different settings you want to opt-out of. This is how you can limit/control how Snapchat and third-parties use information about you.
   - desc: Remove imported Contacts data
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
@@ -60,15 +60,15 @@ privacy:
           - Toggle off <b>Sync Contacts</b>
           - Lastly, press <b>Delete All Contacts data</b>
   - desc: Limit App Permissions (Clipboard & iOS Shortcuts)
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to <b>Settings</b>
           - Under <b>Additional services</b> select <b>Manage</b>
           - Select <b>Permissions</b>
           - Here you are able to disable Clipboard & iOS Shortcuts
-  - desc: Download your data 
-    device: 
+  - desc: Download your data
+    device:
       - name: browser-only
         steps:
           - Log into your account on <a href="https://accounts.snapchat.com">accounts.snapchat.com</a>
@@ -77,8 +77,8 @@ privacy:
           - If you have verified an email address with Snapchat, they will send you an email with a link once your data is ready to download.
           - Follow the link in your email to download your data
           - Click the link to download your data
-  - desc: Delete your account 
-    device: 
+  - desc: Delete your account
+    device:
       - name: browser-only
         steps:
           - Log into your account on <a href="http://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdelete_account">accounts.snapchat.com/delete_account</a>
@@ -98,7 +98,7 @@ headlines:
     date: 2019-05-23
 
 collect: # What they collect
-  - what: Account details 
+  - what: Account details
     how: When you sign up, you are required to provide your real name, email, phone number & date of birth.
   - what: Debit or credit card number
     how: If you purchase any of their paid services they store your debit or credit card number.
@@ -106,12 +106,12 @@ collect: # What they collect
     how: >-
       Whenever you send a message via chat and/or message. This is deleted from their servers when the snap or message is opened or expired IF it's not saved by the recipeient in chat or snap memories.
   - what: Your usage
-    how: >- 
+    how: >-
       Which filters you view and/or apply to snaps, which stories you watch on Discover, whether you use Spectacles and your search queries.
-  - what: Your communications 
+  - what: Your communications
     how: Timestamp, number of messages, which friends, message interactions, via your message and photo exchanges.
   - what: Device information
-    how: Hardware model, operating system, device memory, advertising identifiers, apps installed, unique device identifiers, browser type, language, battery level and time zone. 
+    how: Hardware model, operating system, device memory, advertising identifiers, apps installed, unique device identifiers, browser type, language, battery level and time zone.
   - what: Details from device sensors
     how: How fast your device is moving, via the accelerometers, rotation via gyroscopes, direction via compass, sound via microphones and if you have headphones connected.
   - what: Wireless and mobile network connections

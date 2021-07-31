@@ -3,17 +3,17 @@ name: Instagram
 slug: instagram
 logo: /assets/img/services/instagram/logo.svg
 owner: Facebook, Inc.
-recent_breach: 
-tags: 
+recent_breach:
+tags:
   - Proprietary
   - Free
   - Social Media
 desc: >-
-  Photo and video sharing social network, usually connected to your Facebook account. 
+  Photo and video sharing social network, usually connected to your Facebook account.
 
 security:
-  - desc: Activate Two-Factor Authentication (2FA) 
-    device: 
+  - desc: Activate Two-Factor Authentication (2FA)
+    device:
       - name: app
         steps:
           - Go to your profile
@@ -22,8 +22,8 @@ security:
           - Select <b>Two-factor authentication</b>
           - Now you can setup with the method of your choice, it is recommended to use an <b>Authentication App</b> instead of <b>Text Message (SMS)</b>
           - Depending on the choice you make here, you will need to follow the instructions with the method you choose.
-  - desc: Verify where you are logged in 
-    device: 
+  - desc: Verify where you are logged in
+    device:
       - name: app
         steps:
           - Go to your profile in the bottom right corner
@@ -31,8 +31,8 @@ security:
           - Tap <b>Settings</b>, choose </b>Security</b>
           - Verify where you are logged in
           - If there are some you do not recognize, or you are not sure, it is recommended to use <b>Log out of all sessions</b>-button.
-  - desc: Choose a strong password  
-    device: 
+  - desc: Choose a strong password
+    device:
       - name: browser
         steps:
           - Go to <b>Settings</b>
@@ -47,8 +47,8 @@ security:
           - Use a unique password with at least 16 characters with lower- and uppercase characters, numbers and special symbols. (preferably from a <a href="/password-manager">password manager</a>)
 
 privacy:
-  - desc: Disable contact syncing 
-    device: 
+  - desc: Disable contact syncing
+    device:
       - name: app-only
         steps:
           - Go to your profile in the bottom right corner
@@ -56,15 +56,15 @@ privacy:
           - Tap <b>Settings</b>, choose </b>Account</b>
           - Go to <b>Contact syncing</b>
           - Toggle it off
-  - desc: Delete synced contacts 
-    device: 
+  - desc: Delete synced contacts
+    device:
       - name: browser-only
         steps:
           - Go to <b>Settings</b>
           - Select <b>Manage Contacts</b> on the left side
           - Click <b>Delete All</b>
-  - desc: Disable data sharing with advertisers 
-    device: 
+  - desc: Disable data sharing with advertisers
+    device:
       - name: app-only
         steps:
           - Go to your profile in the bottom right corner
@@ -72,8 +72,8 @@ privacy:
           - Tap <b>Settings</b>, choose </b>Ads</b>
           - Go to <b>Data About Your Activity From Partners</b>
           - Toggle off <b>Use Data from Partners</b>
-  - desc: Download your data 
-    device: 
+  - desc: Download your data
+    device:
       - name: app
         steps:
           - Go to your profile in the bottom right corner
@@ -88,8 +88,8 @@ privacy:
           - Select <b>Privacy and Security</b> on the left side
           - Under <b>Data Download</b>, click <b>Request Download</b>
           - Choose HTML for easiest to read data and click <b>Next</b>
-  - desc: Delete your account 
-    device: 
+  - desc: Delete your account
+    device:
       - name: browser-only
         steps:
           - Go to the <a href="https://instagram.com/accounts/remove/request/permanent/">Delete Your Account</a>-page
@@ -102,12 +102,12 @@ breaches:
     date: 2019-05-21
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
     url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
-    date: 2021-04-03 
+    date: 2021-04-03
   - name: Facebook admits year-long data breach exposed 6 million users
-    date: 2013-06-22 
+    date: 2013-06-22
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
   - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
-    date: 2018-07-06 
+    date: 2018-07-06
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
     date: 2018-01-01 #TODO: need to verify this
@@ -135,14 +135,14 @@ collect: # What they collect
     how: How you interact with all of their products, engagement, who you share with, duration of interaction.
   - what: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-  - what: Debit or credit card number 
+  - what: Debit or credit card number
     how: If you make any purchases using Facebook, these details will be saved and collected for 7 years.
   - what: Device information
     how: Via computers, phones, connected TVs and other web-connected device. Operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names, types and plugins (browsers).
   - what: Device operations
     how: Operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, mouse movements.
   - what: Identifiers
-    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs. 
+    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs.
   - what: Information from partners (even without an account)
     how: >-
       Your interactions with apps, ads using Facebook's Analytics tools. These partners provide information about your activities off Facebook - including information about your device, websites you visit, purchases you make, the ads yu see, and how you use their services, whether or not you have a Facebook account or are logged into Facebook.

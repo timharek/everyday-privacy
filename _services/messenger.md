@@ -2,8 +2,8 @@
 name: Messenger
 logo: /assets/img/services/messenger/logo.svg
 owner: Facebook, Inc.
-recent_breach: 
-tags: 
+recent_breach:
+tags:
   - Proprietary
   - Free
   - Social Media
@@ -30,12 +30,12 @@ privacy:
 breaches:
   - name: 533 million Facebook users' phone numbers and personal data have been leaked online
     url: https://www.businessinsider.com/stolen-data-of-533-million-facebook-users-leaked-online-2021-4
-    date: 2021-04-03 
+    date: 2021-04-03
   - name: Facebook admits year-long data breach exposed 6 million users
-    date: 2013-06-22 
+    date: 2013-06-22
     url: https://www.reuters.com/article/net-us-facebook-security/facebook-admits-year-long-data-breach-exposed-6-million-users-idUSBRE95K18Y20130621
   - name: Facebook Bug Made Up to 14 Million Users Posts Public for Days
-    date: 2018-07-06 
+    date: 2018-07-06
     url: https://www.wired.com/story/facebook-bug-14-million-users-posts-public/
   - name: Facebook–Cambridge Analytica data scandal
     date: 2018-01-01 #TODO: need to verify this
@@ -58,14 +58,14 @@ collect: # What they collect
     how: How you interact with all of their products, engagement, who you share with, duration of interaction.
   - what: What others share and say about you
     how: What others say about you, shares with and about you. How people interacts with your profile, and imports from address books.
-  - what: Debit or credit card number 
+  - what: Debit or credit card number
     how: If you make any purchases using Facebook, these details will be saved and collected for 7 years.
   - what: Device information
     how: Via computers, phones, connected TVs and other web-connected device. Operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names, types and plugins (browsers).
   - what: Device operations
     how: Operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, mouse movements.
   - what: Identifiers
-    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs. 
+    how: Device IDs from your devices, ad identifiers from Facebook and other services, family device IDs.
   - what: Information from partners (even without an account)
     how: >-
       Your interactions with apps, ads using Facebook's Analytics tools. These partners provide information about your activities off Facebook - including information about your device, websites you visit, purchases you make, the ads yu see, and how you use their services, whether or not you have a Facebook account or are logged into Facebook.

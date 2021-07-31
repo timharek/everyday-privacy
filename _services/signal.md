@@ -3,17 +3,17 @@ name: Signal
 slug: signal
 logo: /assets/img/services/signal.svg
 owner: Signal Technology Foundation
-recent_breach: 
-tags: 
+recent_breach:
+tags:
   - Open Source
   - Free
   - Messaging
 desc: >-
   Cross-platform centralized encrypted messaging service, developed by a non-profit organization.
-  
+
 headlines:
   - name: Signal brings painless encrypted calling to iOS
-    url: https://www.theverge.com/2014/7/29/5945547/signal-brings-painless-encrypted-calling-whisper-systems-moxie-marlinspike 
+    url: https://www.theverge.com/2014/7/29/5945547/signal-brings-painless-encrypted-calling-whisper-systems-moxie-marlinspike
     date: 2014-07-29
   - name: The Difficulty Of Private Contact Discovery
     url: https://signal.org/blog/contact-discovery/
@@ -25,20 +25,20 @@ headlines:
 policy: https://signal.org/legal/
 collect: # What they collect
   - what: Your phone number
-    how: When registering, you are unable to sign up for Signal without a phone number. 
+    how: When registering, you are unable to sign up for Signal without a phone number.
   - what: Your contacts (optional)
     how: If you share your address book you will be able to see who in your address book is on Signal. This data is transmitted cryptographically to their servers.
 
 security:
   - desc: Add/change PIN
-    device: 
+    device:
       - name: app-only
         steps:
           - Tap on your profile in the top left
           - Go to <b>Account</b>
           - Select <b>Change PIN</b>
   - desc: Verify Linked Devices
-    device: 
+    device:
       - name: app-only
         steps:
           - Tap on your profile in the top left
@@ -47,7 +47,7 @@ security:
 
 privacy:
   - desc: Revoke access to address book (contacts)
-    device: 
+    device:
       - name: app-only
         steps:
           - Go to your device settings and look for Signal

@@ -1,15 +1,18 @@
 <header class="main-header">
-    <div class="logo">
-        <a href="/">{{ site.title }}</a>
-    </div>
-    <hr>
-    <nav>
-        <ul>
-            {% assign pages = site.pages | where: "menu", "main" %} {% for page in pages %}
-            <li>
-                <a href="{{ page.url }}">{{ page.short_title | default: page.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
+  <div class="logo">
+    <a href="/">{{ site.title }}</a>
+  </div>
+  <hr />
+  <nav>
+    <ul>
+      {% assign pages = site.pages | where: "menu", "main" %} {% for page in
+      pages %}
+      <li>
+        <a href="{{ page.url }}"
+          >{{ page.short_title | default: page.title }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>

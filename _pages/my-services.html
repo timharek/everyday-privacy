@@ -6,63 +6,68 @@ permalink: /my
 
 <h1>Secure your accounts (self-configuration)</h1>
 <div class="none-selected">
-    <p>
-        You have not selected any services, go back to the <a href="/">front-page</a> or see
-        <a href="/services">all services</a>
-    </p>
+  <p>
+    You have not selected any services, go back to the
+    <a href="/">front-page</a> or see
+    <a href="/services">all services</a>
+  </p>
 </div>
 
 <div class="selected">
-    {% for service in site.services %}
-    <div id="{{ service.name | downcase }}" class="selected--service">
-        <header class="service__header">
-            <div class="service__header--text">
-                <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
-                <span class="name-owner">
-                    <h2>{{ service.name }}</h2>
-                    <h3>Owned by {{ service.owner }}</h3>
-                </span>
-            </div>
-            <ul class="tags">
-                {% for tag in service.tags %}
-                <li>{{ tag }}</li>
-                {% endfor %}
-            </ul>
-        </header>
-        <div class="service__content">
-            {% assign security = service.security %} {% assign privacy = service.privacy %} {% if security and privacy %}
-            <div>{% if security %} {% include components/list-details.html array=security title="Security settings" type="ol" %} {% endif %} {% if privacy %} {% include components/list-details.html array=privacy title="Privacy settings" type="ol" %} {% endif %}</div>
-            {% endif %}
+  {% for service in site.services %}
+  <div id="{{ service.name | downcase }}" class="selected--service">
+    <header class="service__header">
+      <div class="service__header--text">
+        <img src="{{ service.logo }}" alt="{{ service.name }} logo" />
+        <span class="name-owner">
+          <h2>{{ service.name }}</h2>
+          <h3>Owned by {{ service.owner }}</h3>
+        </span>
+      </div>
+      <ul class="tags">
+        {% for tag in service.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </header>
+    <div class="service__content">
+      {% assign security = service.security %} {% assign privacy =
+      service.privacy %} {% if security and privacy %}
+      <div>
+        {% if security %} {% include components/list-details.html array=security
+        title="Security settings" type="ol" %} {% endif %} {% if privacy %} {%
+        include components/list-details.html array=privacy title="Privacy
+        settings" type="ol" %} {% endif %}
+      </div>
+      {% endif %}
 
-            <div class="what-they-collect">
-                <h2>What they collect 
-                    {% include components/button.close.html %}
-                </h2>
-                {% for item in service.collect %}
-                <details>
-                    <summary>{{ item.what }}</summary>
-                    <p class="desc">{{ item.how }}</p>
-                </details>
-                {% endfor %}
-            </div>
-        </div>
-        <a class="service__button" href="{{ service.url }}">Learn more</a>
+      <div class="what-they-collect">
+        <h2>What they collect {% include components/button.close.html %}</h2>
+        {% for item in service.collect %}
+        <details>
+          <summary>{{ item.what }}</summary>
+          <p class="desc">{{ item.how }}</p>
+        </details>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+    <a class="service__button" href="{{ service.url }}">Learn more</a>
+  </div>
+  {% endfor %}
 </div>
 
 <script>
-    window.onload = populateTemplate();
+  window.onload = populateTemplate();
 
-    function populateTemplate() {
-        var array = JSON.parse(localStorage.getItem("services"));
+  function populateTemplate() {
+    var array = JSON.parse(localStorage.getItem("services"));
 
-        if (array === undefined || array === null) {
-            document.querySelector(".none-selected").style.display = "block";
-        } else {
-            for (i = 0; i < array.length; i++) {
-                document.getElementById(array[i].toLowerCase()).style.display = "block";
-            }
-        }
+    if (array === undefined || array === null) {
+      document.querySelector(".none-selected").style.display = "block";
+    } else {
+      for (i = 0; i < array.length; i++) {
+        document.getElementById(array[i].toLowerCase()).style.display = "block";
+      }
     }
+  }
 </script>

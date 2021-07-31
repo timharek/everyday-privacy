@@ -3,21 +3,21 @@ name: LinkedIn
 slug: linkedin
 logo: /assets/img/services/linkedin/logo.svg
 owner: Microsoft Corporation
-recent_breach: 
-tags: 
+recent_breach:
+tags:
   - Proprietary
   - Freemium
 desc: >-
   Business-oriented social networking service, used for professional networking
-  
+
 breaches:
-  - name: LinkedIn Confirms Account Passwords Hacked 
-    url: https://www.pcworld.com/article/257045/6-5m-linkedin-passwords-posted-online-after-apparent-hack.html 
+  - name: LinkedIn Confirms Account Passwords Hacked
+    url: https://www.pcworld.com/article/257045/6-5m-linkedin-passwords-posted-online-after-apparent-hack.html
     date: 2012-06-06
 
 headlines:
-  - name: Microsoft to Acquire LinkedIn for $26.2 Billion 
-    url: https://www.wsj.com/articles/microsoft-to-acquire-linkedin-in-deal-valued-at-26-2-billion-1465821523 
+  - name: Microsoft to Acquire LinkedIn for $26.2 Billion
+    url: https://www.wsj.com/articles/microsoft-to-acquire-linkedin-in-deal-valued-at-26-2-billion-1465821523
     date: 2016-06-14
   - name: LinkedIn Illegally Sold Your Professional Data, Lawsuit Claims
     url: https://www.mic.com/articles/101236/linked-in-illegally-sold-your-professional-data-lawsuit-claims
@@ -48,7 +48,6 @@ collect: # What they collect
     how: If permission is given, precise GPS location is given, if not, IP address location is collected.
   - what: Messages content
     how: When you send, receive or engage with messages.
-
 
 last_update: 2021-05-16
 ---
