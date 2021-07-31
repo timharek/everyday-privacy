@@ -3,7 +3,7 @@ name: LinkedIn
 slug: linkedin
 logo: /assets/img/services/linkedin/logo.svg
 owner: Microsoft Corporation
-recent_breach:
+recent_breach: 2021-06-22
 tags:
   - Proprietary
   - Freemium
@@ -14,6 +14,9 @@ breaches:
   - name: LinkedIn Confirms Account Passwords Hacked
     url: https://www.pcworld.com/article/257045/6-5m-linkedin-passwords-posted-online-after-apparent-hack.html
     date: 2012-06-06
+  - name: 700 Million LinkedIn Records For Sale on Hacker Forum
+    url: https://www.privacysharks.com/exclusive-700-million-linkedin-records-for-sale-on-hacker-forum-june-22nd-2021/
+    date: 2021-06-22
 
 headlines:
   - name: Microsoft to Acquire LinkedIn for $26.2 Billion
@@ -49,5 +52,5 @@ collect: # What they collect
   - what: Messages content
     how: When you send, receive or engage with messages.
 
-last_update: 2021-05-16
+last_update: 2021-07-31
 ---
