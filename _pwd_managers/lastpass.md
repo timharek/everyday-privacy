@@ -6,7 +6,6 @@ owner: LogMeIn
 tags:
   - Proprietary
   - '"Free"'
-recommended: false
 website: https://www.lastpass.com/
 desc: >-
   Cross-Platform *closed source* password manager, providing a way to store your login credentials, such as passwords, IDs and much more.
