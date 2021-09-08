@@ -5,6 +5,8 @@ description: >-
 baseurl: ""
 url: "https://everyday-privacy.com"
 
+permalink: pretty
+
 sass:
   sass_dir: assets/_sass
 
