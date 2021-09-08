@@ -35,6 +35,9 @@ headlines:
   - name: Facebook to Acquire WhatsApp
     url: https://about.fb.com/news/2014/02/facebook-to-acquire-whatsapp/
     date: 2014-02-19
+  - name: "Facebook says it doesn't read WhatsApp messages, but an investigation found it actually does"
+    url: https://www.businessinsider.in/tech/news/facebook-says-it-doesnt-read-whatsapp-messages-but-an-investigation-found-it-actually-does/articleshow/86010839.cms
+    date: 2021-09-08
 
 policy: https://www.whatsapp.com/legal/updates/privacy-policy/
 collect: # What they collect
