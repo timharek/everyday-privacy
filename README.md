@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aac7ddd0-1e35-45f9-9445-d03cad91400b/deploy-status)](https://app.netlify.com/sites/everyday-privacy/deploys)
-
 # Everyday Privacy
 
 The goal of this project is to educate people about online privacy and security, by securing their accounts and removing unnecessary data, and inform about which information is being collected. 
