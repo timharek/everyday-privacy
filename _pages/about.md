@@ -33,4 +33,4 @@ All branding on this website belongs to the apporiotate owner of each service, w
 [prism]: https://prism-break.org
 [uib]: https://uib.no/en
 [undraw]: https://undraw.co
-[guide]: https://github.com/timharek/everyday-privacy/blob/main/CONTRIBUTE.md
+[guide]: https://github.com/timharek/everyday-privacy/blob/main/CONTRIBUTING.md
