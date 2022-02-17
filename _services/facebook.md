@@ -2,7 +2,7 @@
 name: Facebook
 slug: facebook
 logo: /assets/img/services/facebook/logo.svg
-owner: Facebook, Inc.
+owner: Meta Platforms
 recent_breach: 2021-04-03
 tags:
   - Proprietary
@@ -133,6 +133,9 @@ headlines:
   - name: "Facebook's privacy problems: a roundup"
     url: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
     date: 2018-12-15
+  - name: "Facebook announces name change to Meta in rebranding effort"
+    url: https://www.theguardian.com/technology/2021/oct/28/facebook-name-change-rebrand-meta
+    date: 2021-10-28
 
 policy: https://www.facebook.com/policy/
 collect: # What they collect

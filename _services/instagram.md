@@ -2,7 +2,7 @@
 name: Instagram
 slug: instagram
 logo: /assets/img/services/instagram/logo.svg
-owner: Facebook, Inc.
+owner: Meta Platforms
 recent_breach:
 tags:
   - Proprietary
@@ -123,6 +123,9 @@ headlines:
   - name: "Facebook's privacy problems: a roundup"
     url: https://www.theguardian.com/technology/2018/dec/14/facebook-privacy-problems-roundup
     date: 2018-12-15
+  - name: "Facebook announces name change to Meta in rebranding effort"
+    url: https://www.theguardian.com/technology/2021/oct/28/facebook-name-change-rebrand-meta
+    date: 2021-10-28
 
 collect: # What they collect
   - what: Information in camera viewport

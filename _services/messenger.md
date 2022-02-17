@@ -1,7 +1,7 @@
 ---
 name: Messenger
 logo: /assets/img/services/messenger/logo.svg
-owner: Facebook, Inc.
+owner: Meta Platforms
 recent_breach:
 tags:
   - Proprietary

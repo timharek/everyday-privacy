@@ -2,7 +2,7 @@
 name: WhatsApp
 slug: whatsapp
 logo: /assets/img/services/whatsapp/logo.svg
-owner: Facebook, Inc.
+owner: Meta Platforms
 recent_breach:
 tags:
   - Proprietary
@@ -38,6 +38,9 @@ headlines:
   - name: "Facebook says it doesn't read WhatsApp messages, but an investigation found it actually does"
     url: https://www.businessinsider.in/tech/news/facebook-says-it-doesnt-read-whatsapp-messages-but-an-investigation-found-it-actually-does/articleshow/86010839.cms
     date: 2021-09-08
+  - name: "Facebook announces name change to Meta in rebranding effort"
+    url: https://www.theguardian.com/technology/2021/oct/28/facebook-name-change-rebrand-meta
+    date: 2021-10-28
 
 policy: https://www.whatsapp.com/legal/updates/privacy-policy/
 collect: # What they collect
