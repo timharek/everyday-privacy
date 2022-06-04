@@ -1,11 +1,33 @@
-{% assign breaches = "" %} {% for service in site.services %} {% assign
-recent_breach = service.recent_breach | date: "%Y-%m-%d" | append: "," %} {%
-assign breaches = breaches | append: recent_breach %} {% endfor %} {% assign
-breaches = breaches | split: "," | sort | reverse %} {% assign perpetrator =
-site.services | where: "recent_breach", breaches[0] %} {% assign recent_breach =
-breaches[0] | date: "%m" %} {% assign this_month = "now" | date: "%m" %} {%
-assign months_since_breach = recent_breach | minus: this_month %} {% if
-months_since_breach <= 2 and months_since_breach >= -2 %}
+{% assign breaches = "" %}
+{% comment %} Assigns all breach dates to an array {% endcomment %}
+{% for service in site.services %}
+  {% assign recent_breach = service.recent_breach | date: "%Y-%m-%d" | append: "," %}
+  {% assign breaches = breaches | append: recent_breach %}
+{% endfor %}
+
+{% assign breaches = breaches | split: "," | sort | reverse %}
+
+{% comment %} Returns the most perpetrator after breaches has been sorted {% endcomment %}
+{% assign perpetrator = site.services | where: "recent_breach", breaches[0] %}
+
+{% comment %} Gets the most recent breache's month and year {% endcomment %}
+{% assign recent_breach_month = breaches[0] | date: "%m" %}
+{% assign recent_breach_year = breaches[0] | date: "%Y" %}
+
+
+{% comment %} Gets todays month and year {% endcomment %}
+{% assign today_month = "now" | date: "%m" %}
+{% assign today_year = "now" | date: "%Y" %}
+
+{% assign months_since_breach = recent_breach_month | minus: today_month %}
+
+{% comment %}
+Displays the warning if the breach was this year and within 2 months of todays month.
+
+I.e. recent_breach = "2021-02-02" and today = "2021-03-01", the if-statement would return true,
+but if recent_breach = "2020-02-02" and today = "2021-03-01", the if-statement would return false.
+{% endcomment %}
+{% if today_year == recent_reach_year and months_since_breach <= 2 and months_since_breach >= -2 %}
 <div class="warning">
   <a href="{{ perpetrator[0].url }}">
     There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
