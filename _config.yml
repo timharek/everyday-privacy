@@ -1,5 +1,5 @@
 title: Everyday Privacy
-email: tim@harek.dev
+email: tim@harek.no
 description: >-
   Your data is up for sale. What you are doing and sharing around the web is being sold to advertiseres and other third-parties. Take responsibility of your own data by learning more about what you give up and how you can still use the services you love without giving away too much.
 baseurl: ""
@@ -11,7 +11,7 @@ sass:
 github: "https://github.com/timharek/everyday-privacy"
 author:
   name: Tim Hårek Andreassen
-  email: tim@harek.dev
+  email: tim@harek.no
 
 collections:
   services:
