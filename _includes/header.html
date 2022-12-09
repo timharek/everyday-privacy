@@ -8,7 +8,7 @@
       {% assign pages = site.pages | where: "menu", "main" %} {% for page in
       pages %}
       <li>
-        <a href="{{ page.url }}"
+        <a href="{{ page.url }}.html"
           >{{ page.short_title | default: page.title }}</a
         >
       </li>

@@ -29,7 +29,7 @@ but if recent_breach = "2020-02-02" and today = "2021-03-01", the if-statement w
 {% endcomment %}
 {% if today_year == recent_reach_year and months_since_breach <= 2 and months_since_breach >= -2 %}
 <div class="warning">
-  <a href="{{ perpetrator[0].url }}">
+  <a href="{{ perpetrator[0].url }}.html">
     There was recently a breach at {{ perpetrator[0].name }}: {{ breaches[0] }}
   </a>
 </div>
