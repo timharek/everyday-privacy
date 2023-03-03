@@ -4,6 +4,8 @@
 
 [![builds.sr.ht status](https://builds.sr.ht/~timharek/everyday-privacy.com.svg)](https://builds.sr.ht/~timharek/everyday-privacy.com)
 
+This project is archived, the website has been taken offline.
+
 # Everyday Privacy
 
 The goal of this project is to educate people about online privacy and security,
